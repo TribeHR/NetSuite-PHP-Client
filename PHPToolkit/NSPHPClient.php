@@ -1,7 +1,5 @@
 <?php
 
-require "NSconfig.php";
-
 function arrayValuesAreEmpty ($array)
 {
     if (!is_array($array))
