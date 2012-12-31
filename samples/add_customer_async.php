@@ -1,8 +1,10 @@
 <?php
 
+namespace NetSuite\WebServices;
 require_once '../PHPToolkit/NetSuiteService.php';
 
 $service = new NetSuiteService();
+$service->setPassport($nsaccount = 'MYACCT1', $nsemail = 'jDoe@netsuite.com', $nsrole = '3', $nspassword = 'mySecretPwd');
 
 // create Customer record
 $customer1 = new Customer();
