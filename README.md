@@ -5,7 +5,7 @@ This PHP Client is based on the [NetSuite PHP Toolkit](http://www.netsuite.com/p
 
 
 ## Using this Library
------------
+---------------------
 First, make sure you have a valid NetSuite account - as you'll need your account and authentication information in order to use this library.
 
 The following is a simplified example to illustrate fetching a customer from within a NetSuite account
@@ -38,11 +38,11 @@ $getResponse = $service->get($request);
 ```
 
 ## Frequently Asked Questions
------------
+-----------------------------
 ### How do I connect to a different endpoint?
 NetSuite endpoint information is specified in NSconfig.php. You can specify a new end point or host by modifying `$nsendpoint` and/or `$nshost`, however this version of the client was generated against the 2012_2 release.
 
 
 ## Credits
------------
+----------
 Written by the clever folks at [TribeHR](http://tribehr.com)
