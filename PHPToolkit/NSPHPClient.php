@@ -179,7 +179,6 @@ class NSPHPClient {
 
     protected function __construct($wsdl=null, $options=array()) {
         global $nshost, $nsendpoint;
-        global $nsaccount, $nsemail, $nsrole, $nspassword;
         global $debuginfo;
 
         if (!isset($wsdl)) {
