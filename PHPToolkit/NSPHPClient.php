@@ -1,6 +1,7 @@
 <?php
 
-require "NSconfig.php";
+namespace NetSuite\WebServices;
+require_once "NSConfig.php";
 
 function arrayValuesAreEmpty ($array)
 {
@@ -179,7 +180,6 @@ class NSPHPClient {
 
     protected function __construct($wsdl=null, $options=array()) {
         global $nshost, $nsendpoint;
-        global $nsaccount, $nsemail, $nsrole, $nspassword;
         global $debuginfo;
 
         if (!isset($wsdl)) {
@@ -235,9 +235,8 @@ class NSPHPClient {
         }
 
         $options['user_agent'] =  $httpheaders;
-        $this->setPassport($nsaccount, $nsemail, $nsrole, $nspassword);
 
-        $this->client = new SoapClient($wsdl, $options);
+        $this->client = new \SoapClient($wsdl, $options);
     }
 
     public function setPassport($nsaccount, $nsemail, $nsrole, $nspassword) {
@@ -268,7 +267,7 @@ class NSPHPClient {
     }
 
     public function addHeader($header_name, $header) {
-        $this->soapHeaders[$header_name] = new SoapHeader("ns", $header_name, $header);
+        $this->soapHeaders[$header_name] = new \SoapHeader("ns", $header_name, $header);
     }
     public function clearHeader($header_name) {
         unset($this->soapHeaders[$header_name]);
