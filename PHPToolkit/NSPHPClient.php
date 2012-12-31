@@ -235,7 +235,6 @@ class NSPHPClient {
         }
 
         $options['user_agent'] =  $httpheaders;
-        $this->setPassport($nsaccount, $nsemail, $nsrole, $nspassword);
 
         $this->client = new \SoapClient($wsdl, $options);
     }
