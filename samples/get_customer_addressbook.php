@@ -1,5 +1,6 @@
 <?php
 
+namespace NetSuite\WebServices;
 require_once '../PHPToolkit/NetSuiteService.php';
 require_once "../PHPToolkit/NSconfig.php";
 

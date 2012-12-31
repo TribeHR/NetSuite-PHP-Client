@@ -1,5 +1,7 @@
 <?php
 
+namespace NetSuite\WebServices;
+
 function arrayValuesAreEmpty ($array)
 {
     if (!is_array($array))
@@ -235,7 +237,7 @@ class NSPHPClient {
         $options['user_agent'] =  $httpheaders;
         $this->setPassport($nsaccount, $nsemail, $nsrole, $nspassword);
 
-        $this->client = new SoapClient($wsdl, $options);
+        $this->client = new \SoapClient($wsdl, $options);
     }
 
     public function setPassport($nsaccount, $nsemail, $nsrole, $nspassword) {
@@ -266,7 +268,7 @@ class NSPHPClient {
     }
 
     public function addHeader($header_name, $header) {
-        $this->soapHeaders[$header_name] = new SoapHeader("ns", $header_name, $header);
+        $this->soapHeaders[$header_name] = new \SoapHeader("ns", $header_name, $header);
     }
     public function clearHeader($header_name) {
         unset($this->soapHeaders[$header_name]);
