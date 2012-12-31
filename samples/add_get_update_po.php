@@ -2,10 +2,9 @@
 
 namespace NetSuite\WebServices;
 require_once '../PHPToolkit/NetSuiteService.php';
-require_once "../PHPToolkit/NSconfig.php";
 
 $service = new NetSuiteService();
-$service->setPassport($nsaccount, $nsemail, $nsrole, $nspassword);
+$service->setPassport($nsaccount = 'MYACCT1', $nsemail = 'jDoe@netsuite.com', $nsrole = '3', $nspassword = 'mySecretPwd');
 
 $po = new PurchaseOrder();
 $po->entity = new RecordRef();
