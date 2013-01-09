@@ -139,7 +139,7 @@ function milliseconds()
 function cleanUpNamespaces($xml_root)
 {
     $xml_root = str_replace('xsi:type', 'xsitype', $xml_root);
-    $record_element = new SimpleXMLElement($xml_root);
+    $record_element = new \SimpleXMLElement($xml_root);
 
     foreach ($record_element->getDocNamespaces() as $name => $ns)
     {
@@ -149,11 +149,11 @@ function cleanUpNamespaces($xml_root)
         }
     }
 
-    $record_element = new SimpleXMLElement($xml_root);
+    $record_element = new \SimpleXMLElement($xml_root);
 
     foreach($record_element->children() as $field)
     {
-        $field_element = new SimpleXMLElement($field->asXML());
+        $field_element = new \SimpleXMLElement($field->asXML());
 
         foreach ($field_element->getDocNamespaces() as $name2 => $ns2)
         {
