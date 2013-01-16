@@ -1,7 +1,7 @@
 <?php
 
 namespace NetSuite\WebServices;
-require_once "NSConfig.php";
+require_once "NSconfig.php";
 
 function arrayValuesAreEmpty ($array)
 {
