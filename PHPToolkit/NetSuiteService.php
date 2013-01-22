@@ -3,7 +3,7 @@
 namespace NetSuite\WebServices;
 require_once "NSPHPClient.php";
 
-if (!class_exists("RecordType")) {
+if (!class_exists(__NAMESPACE__ . "\\RecordType")) {
 /**
  * RecordType
  */
@@ -629,7 +629,7 @@ class RecordType {
 	const workOrder = "workOrder";
 }}
 
-if (!class_exists("SearchRecordType")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchRecordType")) {
 /**
  * SearchRecordType
  */
@@ -843,7 +843,7 @@ class SearchRecordType {
 	const vendor = "vendor";
 }}
 
-if (!class_exists("GetAllRecordType")) {
+if (!class_exists(__NAMESPACE__ . "\\GetAllRecordType")) {
 /**
  * GetAllRecordType
  */
@@ -937,7 +937,7 @@ class GetAllRecordType {
 	const taxType = "taxType";
 }}
 
-if (!class_exists("GetCustomizationType")) {
+if (!class_exists(__NAMESPACE__ . "\\GetCustomizationType")) {
 /**
  * GetCustomizationType
  */
@@ -987,7 +987,7 @@ class GetCustomizationType {
 	const transactionColumnCustomField = "transactionColumnCustomField";
 }}
 
-if (!class_exists("InitializeType")) {
+if (!class_exists(__NAMESPACE__ . "\\InitializeType")) {
 /**
  * InitializeType
  */
@@ -1081,7 +1081,7 @@ class InitializeType {
 	const workOrder = "workOrder";
 }}
 
-if (!class_exists("InitializeRefType")) {
+if (!class_exists(__NAMESPACE__ . "\\InitializeRefType")) {
 /**
  * InitializeRefType
  */
@@ -1179,7 +1179,7 @@ class InitializeRefType {
 	const workOrder = "workOrder";
 }}
 
-if (!class_exists("InitializeAuxRefType")) {
+if (!class_exists(__NAMESPACE__ . "\\InitializeAuxRefType")) {
 /**
  * InitializeAuxRefType
  */
@@ -1201,7 +1201,7 @@ class InitializeAuxRefType {
 	const apAccount = "apAccount";
 }}
 
-if (!class_exists("DeletedRecordType")) {
+if (!class_exists(__NAMESPACE__ . "\\DeletedRecordType")) {
 /**
  * DeletedRecordType
  */
@@ -1623,7 +1623,7 @@ class DeletedRecordType {
 	const workOrder = "workOrder";
 }}
 
-if (!class_exists("AsyncStatusType")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncStatusType")) {
 /**
  * AsyncStatusType
  */
@@ -1653,7 +1653,7 @@ class AsyncStatusType {
 	const finished = "finished";
 }}
 
-if (!class_exists("SearchStringFieldOperator")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchStringFieldOperator")) {
 /**
  * SearchStringFieldOperator
  */
@@ -1699,7 +1699,7 @@ class SearchStringFieldOperator {
 	const startsWith = "startsWith";
 }}
 
-if (!class_exists("SearchLongFieldOperator")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchLongFieldOperator")) {
 /**
  * SearchLongFieldOperator
  */
@@ -1765,7 +1765,7 @@ class SearchLongFieldOperator {
 	const notLessThanOrEqualTo = "notLessThanOrEqualTo";
 }}
 
-if (!class_exists("SearchTextNumberFieldOperator")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchTextNumberFieldOperator")) {
 /**
  * SearchTextNumberFieldOperator
  */
@@ -1831,7 +1831,7 @@ class SearchTextNumberFieldOperator {
 	const notLessThanOrEqualTo = "notLessThanOrEqualTo";
 }}
 
-if (!class_exists("SearchDoubleFieldOperator")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchDoubleFieldOperator")) {
 /**
  * SearchDoubleFieldOperator
  */
@@ -1897,7 +1897,7 @@ class SearchDoubleFieldOperator {
 	const notLessThanOrEqualTo = "notLessThanOrEqualTo";
 }}
 
-if (!class_exists("SearchDateFieldOperator")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchDateFieldOperator")) {
 /**
  * SearchDateFieldOperator
  */
@@ -1963,7 +1963,7 @@ class SearchDateFieldOperator {
 	const within = "within";
 }}
 
-if (!class_exists("SearchEnumMultiSelectFieldOperator")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchEnumMultiSelectFieldOperator")) {
 /**
  * SearchEnumMultiSelectFieldOperator
  */
@@ -1981,7 +1981,7 @@ class SearchEnumMultiSelectFieldOperator {
 	const noneOf = "noneOf";
 }}
 
-if (!class_exists("SearchMultiSelectFieldOperator")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchMultiSelectFieldOperator")) {
 /**
  * SearchMultiSelectFieldOperator
  */
@@ -1999,7 +1999,7 @@ class SearchMultiSelectFieldOperator {
 	const noneOf = "noneOf";
 }}
 
-if (!class_exists("SearchDate")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchDate")) {
 /**
  * SearchDate
  */
@@ -2581,7 +2581,7 @@ class SearchDate {
 	const yesterday = "yesterday";
 }}
 
-if (!class_exists("DurationUnit")) {
+if (!class_exists(__NAMESPACE__ . "\\DurationUnit")) {
 /**
  * DurationUnit
  */
@@ -2595,7 +2595,7 @@ class DurationUnit {
 	const hour = "hour";
 }}
 
-if (!class_exists("CalendarEventAttendeeResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventAttendeeResponse")) {
 /**
  * CalendarEventAttendeeResponse
  */
@@ -2621,7 +2621,7 @@ class CalendarEventAttendeeResponse {
 	const _tentative = "_tentative";
 }}
 
-if (!class_exists("GetSelectValueFilterOperator")) {
+if (!class_exists(__NAMESPACE__ . "\\GetSelectValueFilterOperator")) {
 /**
  * GetSelectValueFilterOperator
  */
@@ -2643,7 +2643,7 @@ class GetSelectValueFilterOperator {
 	const startsWith = "startsWith";
 }}
 
-if (!class_exists("StatusDetailType")) {
+if (!class_exists(__NAMESPACE__ . "\\StatusDetailType")) {
 /**
  * StatusDetailType
  */
@@ -2665,7 +2665,7 @@ class StatusDetailType {
 	const INFO = "INFO";
 }}
 
-if (!class_exists("StatusDetailCodeType")) {
+if (!class_exists(__NAMESPACE__ . "\\StatusDetailCodeType")) {
 /**
  * StatusDetailCodeType
  */
@@ -7643,7 +7643,7 @@ class StatusDetailCodeType {
 	const ZIP_FILE_CONTAINS_VIRUS = "ZIP_FILE_CONTAINS_VIRUS";
 }}
 
-if (!class_exists("FaultCodeType")) {
+if (!class_exists(__NAMESPACE__ . "\\FaultCodeType")) {
 /**
  * FaultCodeType
  */
@@ -7745,7 +7745,7 @@ class FaultCodeType {
 	const WS_LOG_IN_REQD = "WS_LOG_IN_REQD";
 }}
 
-if (!class_exists("Passport")) {
+if (!class_exists(__NAMESPACE__ . "\\Passport")) {
 /**
  * Passport
  */
@@ -7779,7 +7779,7 @@ class Passport {
 	);
 }}
 
-if (!class_exists("SsoPassport")) {
+if (!class_exists(__NAMESPACE__ . "\\SsoPassport")) {
 /**
  * SsoPassport
  */
@@ -7807,7 +7807,7 @@ class SsoPassport {
 	);
 }}
 
-if (!class_exists("SsoCredentials")) {
+if (!class_exists(__NAMESPACE__ . "\\SsoCredentials")) {
 /**
  * SsoCredentials
  */
@@ -7853,7 +7853,7 @@ class SsoCredentials {
 	);
 }}
 
-if (!class_exists("ChangePassword")) {
+if (!class_exists(__NAMESPACE__ . "\\ChangePassword")) {
 /**
  * ChangePassword
  */
@@ -7887,7 +7887,7 @@ class ChangePassword {
 	);
 }}
 
-if (!class_exists("ChangeEmail")) {
+if (!class_exists(__NAMESPACE__ . "\\ChangeEmail")) {
 /**
  * ChangeEmail
  */
@@ -7921,7 +7921,7 @@ class ChangeEmail {
 	);
 }}
 
-if (!class_exists("StatusDetail")) {
+if (!class_exists(__NAMESPACE__ . "\\StatusDetail")) {
 /**
  * StatusDetail
  */
@@ -7949,7 +7949,7 @@ class StatusDetail {
 	);
 }}
 
-if (!class_exists("Status")) {
+if (!class_exists(__NAMESPACE__ . "\\Status")) {
 /**
  * Status
  */
@@ -7971,7 +7971,7 @@ class Status {
 	);
 }}
 
-if (!class_exists("WsRole")) {
+if (!class_exists(__NAMESPACE__ . "\\WsRole")) {
 /**
  * WsRole
  */
@@ -8005,7 +8005,7 @@ class WsRole {
 	);
 }}
 
-if (!class_exists("WsRoleList")) {
+if (!class_exists(__NAMESPACE__ . "\\WsRoleList")) {
 /**
  * WsRoleList
  */
@@ -8021,7 +8021,7 @@ class WsRoleList {
 	);
 }}
 
-if (!class_exists("Record")) {
+if (!class_exists(__NAMESPACE__ . "\\Record")) {
 /**
  * Record
  */
@@ -8037,7 +8037,7 @@ class Record {
 	);
 }}
 
-if (!class_exists("NullField")) {
+if (!class_exists(__NAMESPACE__ . "\\NullField")) {
 /**
  * NullField
  */
@@ -8053,7 +8053,7 @@ class NullField {
 	);
 }}
 
-if (!class_exists("SearchRecord")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchRecord")) {
 /**
  * SearchRecord
  */
@@ -8063,7 +8063,7 @@ class SearchRecord {
 	);
 }}
 
-if (!class_exists("SearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchRow")) {
 /**
  * SearchRow
  */
@@ -8073,7 +8073,7 @@ class SearchRow {
 	);
 }}
 
-if (!class_exists("SearchResult")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchResult")) {
 /**
  * SearchResult
  */
@@ -8131,7 +8131,7 @@ class SearchResult {
 	);
 }}
 
-if (!class_exists("AsyncStatusResult")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncStatusResult")) {
 /**
  * AsyncStatusResult
  */
@@ -8165,7 +8165,7 @@ class AsyncStatusResult {
 	);
 }}
 
-if (!class_exists("GetAllResult")) {
+if (!class_exists(__NAMESPACE__ . "\\GetAllResult")) {
 /**
  * GetAllResult
  */
@@ -8193,7 +8193,7 @@ class GetAllResult {
 	);
 }}
 
-if (!class_exists("GetSavedSearchResult")) {
+if (!class_exists(__NAMESPACE__ . "\\GetSavedSearchResult")) {
 /**
  * GetSavedSearchResult
  */
@@ -8221,7 +8221,7 @@ class GetSavedSearchResult {
 	);
 }}
 
-if (!class_exists("GetCustomizationIdResult")) {
+if (!class_exists(__NAMESPACE__ . "\\GetCustomizationIdResult")) {
 /**
  * GetCustomizationIdResult
  */
@@ -8249,7 +8249,7 @@ class GetCustomizationIdResult {
 	);
 }}
 
-if (!class_exists("GetSelectValueResult")) {
+if (!class_exists(__NAMESPACE__ . "\\GetSelectValueResult")) {
 /**
  * GetSelectValueResult
  */
@@ -8283,7 +8283,7 @@ class GetSelectValueResult {
 	);
 }}
 
-if (!class_exists("RecordList")) {
+if (!class_exists(__NAMESPACE__ . "\\RecordList")) {
 /**
  * RecordList
  */
@@ -8299,7 +8299,7 @@ class RecordList {
 	);
 }}
 
-if (!class_exists("SearchRowList")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchRowList")) {
 /**
  * SearchRowList
  */
@@ -8315,7 +8315,7 @@ class SearchRowList {
 	);
 }}
 
-if (!class_exists("RecordRefList")) {
+if (!class_exists(__NAMESPACE__ . "\\RecordRefList")) {
 /**
  * RecordRefList
  */
@@ -8331,7 +8331,7 @@ class RecordRefList {
 	);
 }}
 
-if (!class_exists("BaseRef")) {
+if (!class_exists(__NAMESPACE__ . "\\BaseRef")) {
 /**
  * BaseRef
  */
@@ -8347,7 +8347,7 @@ class BaseRef {
 	);
 }}
 
-if (!class_exists("BaseRefList")) {
+if (!class_exists(__NAMESPACE__ . "\\BaseRefList")) {
 /**
  * BaseRefList
  */
@@ -8363,7 +8363,7 @@ class BaseRefList {
 	);
 }}
 
-if (!class_exists("RecordRef")) {
+if (!class_exists(__NAMESPACE__ . "\\RecordRef")) {
 /**
  * RecordRef
  */
@@ -8391,7 +8391,7 @@ class RecordRef extends BaseRef {
 	);
 }}
 
-if (!class_exists("Duration")) {
+if (!class_exists(__NAMESPACE__ . "\\Duration")) {
 /**
  * Duration
  */
@@ -8413,7 +8413,7 @@ class Duration {
 	);
 }}
 
-if (!class_exists("CustomRecordRef")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordRef")) {
 /**
  * CustomRecordRef
  */
@@ -8441,7 +8441,7 @@ class CustomRecordRef extends BaseRef {
 	);
 }}
 
-if (!class_exists("CustomizationRef")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomizationRef")) {
 /**
  * CustomizationRef
  */
@@ -8475,7 +8475,7 @@ class CustomizationRef extends BaseRef {
 	);
 }}
 
-if (!class_exists("CustomizationRefList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomizationRefList")) {
 /**
  * CustomizationRefList
  */
@@ -8491,7 +8491,7 @@ class CustomizationRefList {
 	);
 }}
 
-if (!class_exists("InitializeRecord")) {
+if (!class_exists(__NAMESPACE__ . "\\InitializeRecord")) {
 /**
  * InitializeRecord
  */
@@ -8525,7 +8525,7 @@ class InitializeRecord {
 	);
 }}
 
-if (!class_exists("InitializeRef")) {
+if (!class_exists(__NAMESPACE__ . "\\InitializeRef")) {
 /**
  * InitializeRef
  */
@@ -8553,7 +8553,7 @@ class InitializeRef extends BaseRef {
 	);
 }}
 
-if (!class_exists("InitializeRefList")) {
+if (!class_exists(__NAMESPACE__ . "\\InitializeRefList")) {
 /**
  * InitializeRefList
  */
@@ -8569,7 +8569,7 @@ class InitializeRefList {
 	);
 }}
 
-if (!class_exists("InitializeAuxRef")) {
+if (!class_exists(__NAMESPACE__ . "\\InitializeAuxRef")) {
 /**
  * InitializeAuxRef
  */
@@ -8597,7 +8597,7 @@ class InitializeAuxRef extends BaseRef {
 	);
 }}
 
-if (!class_exists("UpdateInviteeStatusReference")) {
+if (!class_exists(__NAMESPACE__ . "\\UpdateInviteeStatusReference")) {
 /**
  * UpdateInviteeStatusReference
  */
@@ -8619,7 +8619,7 @@ class UpdateInviteeStatusReference {
 	);
 }}
 
-if (!class_exists("GetAllRecord")) {
+if (!class_exists(__NAMESPACE__ . "\\GetAllRecord")) {
 /**
  * GetAllRecord
  */
@@ -8635,7 +8635,7 @@ class GetAllRecord {
 	);
 }}
 
-if (!class_exists("GetSavedSearchRecord")) {
+if (!class_exists(__NAMESPACE__ . "\\GetSavedSearchRecord")) {
 /**
  * GetSavedSearchRecord
  */
@@ -8651,7 +8651,7 @@ class GetSavedSearchRecord {
 	);
 }}
 
-if (!class_exists("CustomizationType")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomizationType")) {
 /**
  * CustomizationType
  */
@@ -8667,7 +8667,7 @@ class CustomizationType {
 	);
 }}
 
-if (!class_exists("ListOrRecordRef")) {
+if (!class_exists(__NAMESPACE__ . "\\ListOrRecordRef")) {
 /**
  * ListOrRecordRef
  */
@@ -8701,7 +8701,7 @@ class ListOrRecordRef {
 	);
 }}
 
-if (!class_exists("CustomFieldRef")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomFieldRef")) {
 /**
  * CustomFieldRef
  */
@@ -8711,7 +8711,7 @@ class CustomFieldRef {
 	);
 }}
 
-if (!class_exists("LongCustomFieldRef")) {
+if (!class_exists(__NAMESPACE__ . "\\LongCustomFieldRef")) {
 /**
  * LongCustomFieldRef
  */
@@ -8733,7 +8733,7 @@ class LongCustomFieldRef extends CustomFieldRef {
 	);
 }}
 
-if (!class_exists("DoubleCustomFieldRef")) {
+if (!class_exists(__NAMESPACE__ . "\\DoubleCustomFieldRef")) {
 /**
  * DoubleCustomFieldRef
  */
@@ -8755,7 +8755,7 @@ class DoubleCustomFieldRef extends CustomFieldRef {
 	);
 }}
 
-if (!class_exists("BooleanCustomFieldRef")) {
+if (!class_exists(__NAMESPACE__ . "\\BooleanCustomFieldRef")) {
 /**
  * BooleanCustomFieldRef
  */
@@ -8777,7 +8777,7 @@ class BooleanCustomFieldRef extends CustomFieldRef {
 	);
 }}
 
-if (!class_exists("StringCustomFieldRef")) {
+if (!class_exists(__NAMESPACE__ . "\\StringCustomFieldRef")) {
 /**
  * StringCustomFieldRef
  */
@@ -8799,7 +8799,7 @@ class StringCustomFieldRef extends CustomFieldRef {
 	);
 }}
 
-if (!class_exists("DateCustomFieldRef")) {
+if (!class_exists(__NAMESPACE__ . "\\DateCustomFieldRef")) {
 /**
  * DateCustomFieldRef
  */
@@ -8821,7 +8821,7 @@ class DateCustomFieldRef extends CustomFieldRef {
 	);
 }}
 
-if (!class_exists("SelectCustomFieldRef")) {
+if (!class_exists(__NAMESPACE__ . "\\SelectCustomFieldRef")) {
 /**
  * SelectCustomFieldRef
  */
@@ -8843,7 +8843,7 @@ class SelectCustomFieldRef extends CustomFieldRef {
 	);
 }}
 
-if (!class_exists("MultiSelectCustomFieldRef")) {
+if (!class_exists(__NAMESPACE__ . "\\MultiSelectCustomFieldRef")) {
 /**
  * MultiSelectCustomFieldRef
  */
@@ -8865,7 +8865,7 @@ class MultiSelectCustomFieldRef extends CustomFieldRef {
 	);
 }}
 
-if (!class_exists("CustomFieldList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomFieldList")) {
 /**
  * CustomFieldList
  */
@@ -8881,7 +8881,7 @@ class CustomFieldList {
 	);
 }}
 
-if (!class_exists("SearchBooleanField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchBooleanField")) {
 /**
  * SearchBooleanField
  */
@@ -8897,7 +8897,7 @@ class SearchBooleanField {
 	);
 }}
 
-if (!class_exists("SearchStringField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchStringField")) {
 /**
  * SearchStringField
  */
@@ -8919,7 +8919,7 @@ class SearchStringField {
 	);
 }}
 
-if (!class_exists("SearchLongField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchLongField")) {
 /**
  * SearchLongField
  */
@@ -8947,7 +8947,7 @@ class SearchLongField {
 	);
 }}
 
-if (!class_exists("SearchTextNumberField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchTextNumberField")) {
 /**
  * SearchTextNumberField
  */
@@ -8975,7 +8975,7 @@ class SearchTextNumberField {
 	);
 }}
 
-if (!class_exists("SearchDoubleField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchDoubleField")) {
 /**
  * SearchDoubleField
  */
@@ -9003,7 +9003,7 @@ class SearchDoubleField {
 	);
 }}
 
-if (!class_exists("SearchDateField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchDateField")) {
 /**
  * SearchDateField
  */
@@ -9037,7 +9037,7 @@ class SearchDateField {
 	);
 }}
 
-if (!class_exists("SearchEnumMultiSelectField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchEnumMultiSelectField")) {
 /**
  * SearchEnumMultiSelectField
  */
@@ -9059,7 +9059,7 @@ class SearchEnumMultiSelectField {
 	);
 }}
 
-if (!class_exists("SearchMultiSelectField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchMultiSelectField")) {
 /**
  * SearchMultiSelectField
  */
@@ -9081,7 +9081,7 @@ class SearchMultiSelectField {
 	);
 }}
 
-if (!class_exists("SearchCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchCustomField")) {
 /**
  * SearchCustomField
  */
@@ -9091,7 +9091,7 @@ class SearchCustomField {
 	);
 }}
 
-if (!class_exists("SearchBooleanCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchBooleanCustomField")) {
 /**
  * SearchBooleanCustomField
  */
@@ -9113,7 +9113,7 @@ class SearchBooleanCustomField extends SearchCustomField {
 	);
 }}
 
-if (!class_exists("SearchStringCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchStringCustomField")) {
 /**
  * SearchStringCustomField
  */
@@ -9141,7 +9141,7 @@ class SearchStringCustomField extends SearchCustomField {
 	);
 }}
 
-if (!class_exists("SearchLongCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchLongCustomField")) {
 /**
  * SearchLongCustomField
  */
@@ -9175,7 +9175,7 @@ class SearchLongCustomField extends SearchCustomField {
 	);
 }}
 
-if (!class_exists("SearchDoubleCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchDoubleCustomField")) {
 /**
  * SearchDoubleCustomField
  */
@@ -9209,7 +9209,7 @@ class SearchDoubleCustomField extends SearchCustomField {
 	);
 }}
 
-if (!class_exists("SearchDateCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchDateCustomField")) {
 /**
  * SearchDateCustomField
  */
@@ -9249,7 +9249,7 @@ class SearchDateCustomField extends SearchCustomField {
 	);
 }}
 
-if (!class_exists("SearchEnumMultiSelectCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchEnumMultiSelectCustomField")) {
 /**
  * SearchEnumMultiSelectCustomField
  */
@@ -9277,7 +9277,7 @@ class SearchEnumMultiSelectCustomField extends SearchCustomField {
 	);
 }}
 
-if (!class_exists("SearchMultiSelectCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchMultiSelectCustomField")) {
 /**
  * SearchMultiSelectCustomField
  */
@@ -9305,7 +9305,7 @@ class SearchMultiSelectCustomField extends SearchCustomField {
 	);
 }}
 
-if (!class_exists("SearchCustomFieldList")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchCustomFieldList")) {
 /**
  * SearchCustomFieldList
  */
@@ -9321,7 +9321,7 @@ class SearchCustomFieldList {
 	);
 }}
 
-if (!class_exists("SearchColumnField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnField")) {
 /**
  * SearchColumnField
  */
@@ -9337,7 +9337,7 @@ class SearchColumnField {
 	);
 }}
 
-if (!class_exists("SearchColumnBooleanField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnBooleanField")) {
 /**
  * SearchColumnBooleanField
  */
@@ -9353,7 +9353,7 @@ class SearchColumnBooleanField extends SearchColumnField {
 	);
 }}
 
-if (!class_exists("SearchColumnStringField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnStringField")) {
 /**
  * SearchColumnStringField
  */
@@ -9369,7 +9369,7 @@ class SearchColumnStringField extends SearchColumnField {
 	);
 }}
 
-if (!class_exists("SearchColumnLongField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnLongField")) {
 /**
  * SearchColumnLongField
  */
@@ -9385,7 +9385,7 @@ class SearchColumnLongField extends SearchColumnField {
 	);
 }}
 
-if (!class_exists("SearchColumnTextNumberField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnTextNumberField")) {
 /**
  * SearchColumnTextNumberField
  */
@@ -9401,7 +9401,7 @@ class SearchColumnTextNumberField extends SearchColumnField {
 	);
 }}
 
-if (!class_exists("SearchColumnDoubleField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnDoubleField")) {
 /**
  * SearchColumnDoubleField
  */
@@ -9417,7 +9417,7 @@ class SearchColumnDoubleField extends SearchColumnField {
 	);
 }}
 
-if (!class_exists("SearchColumnDateField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnDateField")) {
 /**
  * SearchColumnDateField
  */
@@ -9433,7 +9433,7 @@ class SearchColumnDateField extends SearchColumnField {
 	);
 }}
 
-if (!class_exists("SearchColumnEnumSelectField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnEnumSelectField")) {
 /**
  * SearchColumnEnumSelectField
  */
@@ -9449,7 +9449,7 @@ class SearchColumnEnumSelectField extends SearchColumnField {
 	);
 }}
 
-if (!class_exists("SearchColumnSelectField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnSelectField")) {
 /**
  * SearchColumnSelectField
  */
@@ -9465,7 +9465,7 @@ class SearchColumnSelectField extends SearchColumnField {
 	);
 }}
 
-if (!class_exists("SearchColumnCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnCustomField")) {
 /**
  * SearchColumnCustomField
  */
@@ -9481,7 +9481,7 @@ class SearchColumnCustomField {
 	);
 }}
 
-if (!class_exists("SearchColumnBooleanCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnBooleanCustomField")) {
 /**
  * SearchColumnBooleanCustomField
  */
@@ -9503,7 +9503,7 @@ class SearchColumnBooleanCustomField extends SearchColumnCustomField {
 	);
 }}
 
-if (!class_exists("SearchColumnStringCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnStringCustomField")) {
 /**
  * SearchColumnStringCustomField
  */
@@ -9525,7 +9525,7 @@ class SearchColumnStringCustomField extends SearchColumnCustomField {
 	);
 }}
 
-if (!class_exists("SearchColumnLongCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnLongCustomField")) {
 /**
  * SearchColumnLongCustomField
  */
@@ -9547,7 +9547,7 @@ class SearchColumnLongCustomField extends SearchColumnCustomField {
 	);
 }}
 
-if (!class_exists("SearchColumnDoubleCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnDoubleCustomField")) {
 /**
  * SearchColumnDoubleCustomField
  */
@@ -9569,7 +9569,7 @@ class SearchColumnDoubleCustomField extends SearchColumnCustomField {
 	);
 }}
 
-if (!class_exists("SearchColumnDateCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnDateCustomField")) {
 /**
  * SearchColumnDateCustomField
  */
@@ -9591,7 +9591,7 @@ class SearchColumnDateCustomField extends SearchColumnCustomField {
 	);
 }}
 
-if (!class_exists("SearchColumnEnumMultiSelectCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnEnumMultiSelectCustomField")) {
 /**
  * SearchColumnEnumMultiSelectCustomField
  */
@@ -9613,7 +9613,7 @@ class SearchColumnEnumMultiSelectCustomField extends SearchColumnCustomField {
 	);
 }}
 
-if (!class_exists("SearchColumnSelectCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnSelectCustomField")) {
 /**
  * SearchColumnSelectCustomField
  */
@@ -9635,7 +9635,7 @@ class SearchColumnSelectCustomField extends SearchColumnCustomField {
 	);
 }}
 
-if (!class_exists("SearchColumnMultiSelectCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnMultiSelectCustomField")) {
 /**
  * SearchColumnMultiSelectCustomField
  */
@@ -9657,7 +9657,7 @@ class SearchColumnMultiSelectCustomField extends SearchColumnCustomField {
 	);
 }}
 
-if (!class_exists("SearchColumnCustomFieldList")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchColumnCustomFieldList")) {
 /**
  * SearchColumnCustomFieldList
  */
@@ -9673,7 +9673,7 @@ class SearchColumnCustomFieldList {
 	);
 }}
 
-if (!class_exists("ItemAvailabilityFilter")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemAvailabilityFilter")) {
 /**
  * ItemAvailabilityFilter
  */
@@ -9695,7 +9695,7 @@ class ItemAvailabilityFilter {
 	);
 }}
 
-if (!class_exists("ItemAvailability")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemAvailability")) {
 /**
  * ItemAvailability
  */
@@ -9771,7 +9771,7 @@ class ItemAvailability {
 	);
 }}
 
-if (!class_exists("ItemAvailabilityList")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemAvailabilityList")) {
 /**
  * ItemAvailabilityList
  */
@@ -9787,7 +9787,7 @@ class ItemAvailabilityList {
 	);
 }}
 
-if (!class_exists("GetItemAvailabilityResult")) {
+if (!class_exists(__NAMESPACE__ . "\\GetItemAvailabilityResult")) {
 /**
  * GetItemAvailabilityResult
  */
@@ -9809,7 +9809,7 @@ class GetItemAvailabilityResult {
 	);
 }}
 
-if (!class_exists("BudgetExchangeRateFilter")) {
+if (!class_exists(__NAMESPACE__ . "\\BudgetExchangeRateFilter")) {
 /**
  * BudgetExchangeRateFilter
  */
@@ -9837,7 +9837,7 @@ class BudgetExchangeRateFilter {
 	);
 }}
 
-if (!class_exists("BudgetExchangeRate")) {
+if (!class_exists(__NAMESPACE__ . "\\BudgetExchangeRate")) {
 /**
  * BudgetExchangeRate
  */
@@ -9883,7 +9883,7 @@ class BudgetExchangeRate {
 	);
 }}
 
-if (!class_exists("BudgetExchangeRateList")) {
+if (!class_exists(__NAMESPACE__ . "\\BudgetExchangeRateList")) {
 /**
  * BudgetExchangeRateList
  */
@@ -9899,7 +9899,7 @@ class BudgetExchangeRateList {
 	);
 }}
 
-if (!class_exists("GetBudgetExchangeRateResult")) {
+if (!class_exists(__NAMESPACE__ . "\\GetBudgetExchangeRateResult")) {
 /**
  * GetBudgetExchangeRateResult
  */
@@ -9921,7 +9921,7 @@ class GetBudgetExchangeRateResult {
 	);
 }}
 
-if (!class_exists("ConsolidatedExchangeRateFilter")) {
+if (!class_exists(__NAMESPACE__ . "\\ConsolidatedExchangeRateFilter")) {
 /**
  * ConsolidatedExchangeRateFilter
  */
@@ -9949,7 +9949,7 @@ class ConsolidatedExchangeRateFilter {
 	);
 }}
 
-if (!class_exists("ConsolidatedExchangeRate")) {
+if (!class_exists(__NAMESPACE__ . "\\ConsolidatedExchangeRate")) {
 /**
  * ConsolidatedExchangeRate
  */
@@ -9995,7 +9995,7 @@ class ConsolidatedExchangeRate {
 	);
 }}
 
-if (!class_exists("ConsolidatedExchangeRateList")) {
+if (!class_exists(__NAMESPACE__ . "\\ConsolidatedExchangeRateList")) {
 /**
  * ConsolidatedExchangeRateList
  */
@@ -10011,7 +10011,7 @@ class ConsolidatedExchangeRateList {
 	);
 }}
 
-if (!class_exists("GetConsolidatedExchangeRateResult")) {
+if (!class_exists(__NAMESPACE__ . "\\GetConsolidatedExchangeRateResult")) {
 /**
  * GetConsolidatedExchangeRateResult
  */
@@ -10033,7 +10033,7 @@ class GetConsolidatedExchangeRateResult {
 	);
 }}
 
-if (!class_exists("CurrencyRateFilter")) {
+if (!class_exists(__NAMESPACE__ . "\\CurrencyRateFilter")) {
 /**
  * CurrencyRateFilter
  */
@@ -10061,7 +10061,7 @@ class CurrencyRateFilter {
 	);
 }}
 
-if (!class_exists("CurrencyRate")) {
+if (!class_exists(__NAMESPACE__ . "\\CurrencyRate")) {
 /**
  * CurrencyRate
  */
@@ -10101,7 +10101,7 @@ class CurrencyRate extends Record {
 	);
 }}
 
-if (!class_exists("CurrencyRateList")) {
+if (!class_exists(__NAMESPACE__ . "\\CurrencyRateList")) {
 /**
  * CurrencyRateList
  */
@@ -10117,7 +10117,7 @@ class CurrencyRateList {
 	);
 }}
 
-if (!class_exists("GetCurrencyRateResult")) {
+if (!class_exists(__NAMESPACE__ . "\\GetCurrencyRateResult")) {
 /**
  * GetCurrencyRateResult
  */
@@ -10139,7 +10139,7 @@ class GetCurrencyRateResult {
 	);
 }}
 
-if (!class_exists("DataCenterUrls")) {
+if (!class_exists(__NAMESPACE__ . "\\DataCenterUrls")) {
 /**
  * DataCenterUrls
  */
@@ -10167,7 +10167,7 @@ class DataCenterUrls {
 	);
 }}
 
-if (!class_exists("GetDataCenterUrlsResult")) {
+if (!class_exists(__NAMESPACE__ . "\\GetDataCenterUrlsResult")) {
 /**
  * GetDataCenterUrlsResult
  */
@@ -10189,7 +10189,7 @@ class GetDataCenterUrlsResult {
 	);
 }}
 
-if (!class_exists("PostingTransactionSummaryField")) {
+if (!class_exists(__NAMESPACE__ . "\\PostingTransactionSummaryField")) {
 /**
  * PostingTransactionSummaryField
  */
@@ -10253,7 +10253,7 @@ class PostingTransactionSummaryField {
 	);
 }}
 
-if (!class_exists("PostingTransactionSummaryFilter")) {
+if (!class_exists(__NAMESPACE__ . "\\PostingTransactionSummaryFilter")) {
 /**
  * PostingTransactionSummaryFilter
  */
@@ -10317,7 +10317,7 @@ class PostingTransactionSummaryFilter {
 	);
 }}
 
-if (!class_exists("PostingTransactionSummary")) {
+if (!class_exists(__NAMESPACE__ . "\\PostingTransactionSummary")) {
 /**
  * PostingTransactionSummary
  */
@@ -10387,7 +10387,7 @@ class PostingTransactionSummary {
 	);
 }}
 
-if (!class_exists("PostingTransactionSummaryList")) {
+if (!class_exists(__NAMESPACE__ . "\\PostingTransactionSummaryList")) {
 /**
  * PostingTransactionSummaryList
  */
@@ -10403,7 +10403,7 @@ class PostingTransactionSummaryList {
 	);
 }}
 
-if (!class_exists("GetPostingTransactionSummaryResult")) {
+if (!class_exists(__NAMESPACE__ . "\\GetPostingTransactionSummaryResult")) {
 /**
  * GetPostingTransactionSummaryResult
  */
@@ -10449,7 +10449,7 @@ class GetPostingTransactionSummaryResult {
 	);
 }}
 
-if (!class_exists("GetSelectValueFieldDescription")) {
+if (!class_exists(__NAMESPACE__ . "\\GetSelectValueFieldDescription")) {
 /**
  * GetSelectValueFieldDescription
  */
@@ -10501,7 +10501,7 @@ class GetSelectValueFieldDescription {
 	);
 }}
 
-if (!class_exists("GetSelectValueFilter")) {
+if (!class_exists(__NAMESPACE__ . "\\GetSelectValueFilter")) {
 /**
  * GetSelectValueFilter
  */
@@ -10523,7 +10523,7 @@ class GetSelectValueFilter {
 	);
 }}
 
-if (!class_exists("GetSelectFilterByFieldValueList")) {
+if (!class_exists(__NAMESPACE__ . "\\GetSelectFilterByFieldValueList")) {
 /**
  * GetSelectFilterByFieldValueList
  */
@@ -10539,7 +10539,7 @@ class GetSelectFilterByFieldValueList {
 	);
 }}
 
-if (!class_exists("GetSelectFilterByFieldValue")) {
+if (!class_exists(__NAMESPACE__ . "\\GetSelectFilterByFieldValue")) {
 /**
  * GetSelectFilterByFieldValue
  */
@@ -10567,7 +10567,7 @@ class GetSelectFilterByFieldValue {
 	);
 }}
 
-if (!class_exists("GetServerTimeResult")) {
+if (!class_exists(__NAMESPACE__ . "\\GetServerTimeResult")) {
 /**
  * GetServerTimeResult
  */
@@ -10589,7 +10589,7 @@ class GetServerTimeResult {
 	);
 }}
 
-if (!class_exists("DeletedRecord")) {
+if (!class_exists(__NAMESPACE__ . "\\DeletedRecord")) {
 /**
  * DeletedRecord
  */
@@ -10611,7 +10611,7 @@ class DeletedRecord {
 	);
 }}
 
-if (!class_exists("DeletedRecordList")) {
+if (!class_exists(__NAMESPACE__ . "\\DeletedRecordList")) {
 /**
  * DeletedRecordList
  */
@@ -10627,7 +10627,7 @@ class DeletedRecordList {
 	);
 }}
 
-if (!class_exists("GetDeletedResult")) {
+if (!class_exists(__NAMESPACE__ . "\\GetDeletedResult")) {
 /**
  * GetDeletedResult
  */
@@ -10649,7 +10649,7 @@ class GetDeletedResult {
 	);
 }}
 
-if (!class_exists("GetDeletedFilter")) {
+if (!class_exists(__NAMESPACE__ . "\\GetDeletedFilter")) {
 /**
  * GetDeletedFilter
  */
@@ -10671,7 +10671,7 @@ class GetDeletedFilter {
 	);
 }}
 
-if (!class_exists("AttachReference")) {
+if (!class_exists(__NAMESPACE__ . "\\AttachReference")) {
 /**
  * AttachReference
  */
@@ -10687,7 +10687,7 @@ class AttachReference {
 	);
 }}
 
-if (!class_exists("DetachReference")) {
+if (!class_exists(__NAMESPACE__ . "\\DetachReference")) {
 /**
  * DetachReference
  */
@@ -10703,7 +10703,7 @@ class DetachReference {
 	);
 }}
 
-if (!class_exists("AttachContactReference")) {
+if (!class_exists(__NAMESPACE__ . "\\AttachContactReference")) {
 /**
  * AttachContactReference
  */
@@ -10725,7 +10725,7 @@ class AttachContactReference extends AttachReference {
 	);
 }}
 
-if (!class_exists("AttachBasicReference")) {
+if (!class_exists(__NAMESPACE__ . "\\AttachBasicReference")) {
 /**
  * AttachBasicReference
  */
@@ -10741,7 +10741,7 @@ class AttachBasicReference extends AttachReference {
 	);
 }}
 
-if (!class_exists("DetachBasicReference")) {
+if (!class_exists(__NAMESPACE__ . "\\DetachBasicReference")) {
 /**
  * DetachBasicReference
  */
@@ -10757,7 +10757,7 @@ class DetachBasicReference extends DetachReference {
 	);
 }}
 
-if (!class_exists("NSSoapFault")) {
+if (!class_exists(__NAMESPACE__ . "\\NSSoapFault")) {
 /**
  * NSSoapFault
  */
@@ -10779,7 +10779,7 @@ class NSSoapFault {
 	);
 }}
 
-if (!class_exists("InsufficientPermissionFault")) {
+if (!class_exists(__NAMESPACE__ . "\\InsufficientPermissionFault")) {
 /**
  * InsufficientPermissionFault
  */
@@ -10789,7 +10789,7 @@ class InsufficientPermissionFault extends NSSoapFault {
 	);
 }}
 
-if (!class_exists("InvalidAccountFault")) {
+if (!class_exists(__NAMESPACE__ . "\\InvalidAccountFault")) {
 /**
  * InvalidAccountFault
  */
@@ -10799,7 +10799,7 @@ class InvalidAccountFault extends NSSoapFault {
 	);
 }}
 
-if (!class_exists("InvalidCredentialsFault")) {
+if (!class_exists(__NAMESPACE__ . "\\InvalidCredentialsFault")) {
 /**
  * InvalidCredentialsFault
  */
@@ -10809,7 +10809,7 @@ class InvalidCredentialsFault extends NSSoapFault {
 	);
 }}
 
-if (!class_exists("InvalidSessionFault")) {
+if (!class_exists(__NAMESPACE__ . "\\InvalidSessionFault")) {
 /**
  * InvalidSessionFault
  */
@@ -10819,7 +10819,7 @@ class InvalidSessionFault extends NSSoapFault {
 	);
 }}
 
-if (!class_exists("ExceededRequestLimitFault")) {
+if (!class_exists(__NAMESPACE__ . "\\ExceededRequestLimitFault")) {
 /**
  * ExceededRequestLimitFault
  */
@@ -10829,7 +10829,7 @@ class ExceededRequestLimitFault extends NSSoapFault {
 	);
 }}
 
-if (!class_exists("ExceededUsageLimitFault")) {
+if (!class_exists(__NAMESPACE__ . "\\ExceededUsageLimitFault")) {
 /**
  * ExceededUsageLimitFault
  */
@@ -10839,7 +10839,7 @@ class ExceededUsageLimitFault extends NSSoapFault {
 	);
 }}
 
-if (!class_exists("ExceededRecordCountFault")) {
+if (!class_exists(__NAMESPACE__ . "\\ExceededRecordCountFault")) {
 /**
  * ExceededRecordCountFault
  */
@@ -10849,7 +10849,7 @@ class ExceededRecordCountFault extends NSSoapFault {
 	);
 }}
 
-if (!class_exists("InvalidVersionFault")) {
+if (!class_exists(__NAMESPACE__ . "\\InvalidVersionFault")) {
 /**
  * InvalidVersionFault
  */
@@ -10859,7 +10859,7 @@ class InvalidVersionFault extends NSSoapFault {
 	);
 }}
 
-if (!class_exists("ExceededRequestSizeFault")) {
+if (!class_exists(__NAMESPACE__ . "\\ExceededRequestSizeFault")) {
 /**
  * ExceededRequestSizeFault
  */
@@ -10869,7 +10869,7 @@ class ExceededRequestSizeFault extends NSSoapFault {
 	);
 }}
 
-if (!class_exists("AsyncFault")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncFault")) {
 /**
  * AsyncFault
  */
@@ -10879,7 +10879,7 @@ class AsyncFault extends NSSoapFault {
 	);
 }}
 
-if (!class_exists("UnexpectedErrorFault")) {
+if (!class_exists(__NAMESPACE__ . "\\UnexpectedErrorFault")) {
 /**
  * UnexpectedErrorFault
  */
@@ -10889,7 +10889,7 @@ class UnexpectedErrorFault extends NSSoapFault {
 	);
 }}
 
-if (!class_exists("ApplicationInfo")) {
+if (!class_exists(__NAMESPACE__ . "\\ApplicationInfo")) {
 /**
  * ApplicationInfo
  */
@@ -10905,7 +10905,7 @@ class ApplicationInfo {
 	);
 }}
 
-if (!class_exists("PartnerInfo")) {
+if (!class_exists(__NAMESPACE__ . "\\PartnerInfo")) {
 /**
  * PartnerInfo
  */
@@ -10921,7 +10921,7 @@ class PartnerInfo {
 	);
 }}
 
-if (!class_exists("DocumentInfo")) {
+if (!class_exists(__NAMESPACE__ . "\\DocumentInfo")) {
 /**
  * DocumentInfo
  */
@@ -10937,7 +10937,7 @@ class DocumentInfo {
 	);
 }}
 
-if (!class_exists("Preferences")) {
+if (!class_exists(__NAMESPACE__ . "\\Preferences")) {
 /**
  * Preferences
  */
@@ -10971,7 +10971,7 @@ class Preferences {
 	);
 }}
 
-if (!class_exists("SearchPreferences")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchPreferences")) {
 /**
  * SearchPreferences
  */
@@ -10999,7 +10999,7 @@ class SearchPreferences {
 	);
 }}
 
-if (!class_exists("SessionResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\SessionResponse")) {
 /**
  * SessionResponse
  */
@@ -11027,7 +11027,7 @@ class SessionResponse {
 	);
 }}
 
-if (!class_exists("WriteResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\WriteResponse")) {
 /**
  * WriteResponse
  */
@@ -11049,7 +11049,7 @@ class WriteResponse {
 	);
 }}
 
-if (!class_exists("ReadResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\ReadResponse")) {
 /**
  * ReadResponse
  */
@@ -11071,7 +11071,7 @@ class ReadResponse {
 	);
 }}
 
-if (!class_exists("WriteResponseList")) {
+if (!class_exists(__NAMESPACE__ . "\\WriteResponseList")) {
 /**
  * WriteResponseList
  */
@@ -11087,7 +11087,7 @@ class WriteResponseList {
 	);
 }}
 
-if (!class_exists("ReadResponseList")) {
+if (!class_exists(__NAMESPACE__ . "\\ReadResponseList")) {
 /**
  * ReadResponseList
  */
@@ -11103,7 +11103,7 @@ class ReadResponseList {
 	);
 }}
 
-if (!class_exists("LoginResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\LoginResponse")) {
 /**
  * LoginResponse
  */
@@ -11119,7 +11119,7 @@ class LoginResponse {
 	);
 }}
 
-if (!class_exists("SsoLoginResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\SsoLoginResponse")) {
 /**
  * SsoLoginResponse
  */
@@ -11135,7 +11135,7 @@ class SsoLoginResponse {
 	);
 }}
 
-if (!class_exists("MapSsoResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\MapSsoResponse")) {
 /**
  * MapSsoResponse
  */
@@ -11151,7 +11151,7 @@ class MapSsoResponse {
 	);
 }}
 
-if (!class_exists("ChangePasswordResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\ChangePasswordResponse")) {
 /**
  * ChangePasswordResponse
  */
@@ -11167,7 +11167,7 @@ class ChangePasswordResponse {
 	);
 }}
 
-if (!class_exists("ChangeEmailResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\ChangeEmailResponse")) {
 /**
  * ChangeEmailResponse
  */
@@ -11183,7 +11183,7 @@ class ChangeEmailResponse {
 	);
 }}
 
-if (!class_exists("LogoutResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\LogoutResponse")) {
 /**
  * LogoutResponse
  */
@@ -11199,7 +11199,7 @@ class LogoutResponse {
 	);
 }}
 
-if (!class_exists("AddResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\AddResponse")) {
 /**
  * AddResponse
  */
@@ -11215,7 +11215,7 @@ class AddResponse {
 	);
 }}
 
-if (!class_exists("AddListResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\AddListResponse")) {
 /**
  * AddListResponse
  */
@@ -11231,7 +11231,7 @@ class AddListResponse {
 	);
 }}
 
-if (!class_exists("UpdateResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\UpdateResponse")) {
 /**
  * UpdateResponse
  */
@@ -11247,7 +11247,7 @@ class UpdateResponse {
 	);
 }}
 
-if (!class_exists("UpdateListResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\UpdateListResponse")) {
 /**
  * UpdateListResponse
  */
@@ -11263,7 +11263,7 @@ class UpdateListResponse {
 	);
 }}
 
-if (!class_exists("UpsertResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\UpsertResponse")) {
 /**
  * UpsertResponse
  */
@@ -11279,7 +11279,7 @@ class UpsertResponse {
 	);
 }}
 
-if (!class_exists("UpsertListResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\UpsertListResponse")) {
 /**
  * UpsertListResponse
  */
@@ -11295,7 +11295,7 @@ class UpsertListResponse {
 	);
 }}
 
-if (!class_exists("DeleteResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\DeleteResponse")) {
 /**
  * DeleteResponse
  */
@@ -11311,7 +11311,7 @@ class DeleteResponse {
 	);
 }}
 
-if (!class_exists("DeleteListResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\DeleteListResponse")) {
 /**
  * DeleteListResponse
  */
@@ -11327,7 +11327,7 @@ class DeleteListResponse {
 	);
 }}
 
-if (!class_exists("SearchResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchResponse")) {
 /**
  * SearchResponse
  */
@@ -11343,7 +11343,7 @@ class SearchResponse {
 	);
 }}
 
-if (!class_exists("SearchMoreResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchMoreResponse")) {
 /**
  * SearchMoreResponse
  */
@@ -11359,7 +11359,7 @@ class SearchMoreResponse {
 	);
 }}
 
-if (!class_exists("SearchMoreWithIdResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchMoreWithIdResponse")) {
 /**
  * SearchMoreWithIdResponse
  */
@@ -11375,7 +11375,7 @@ class SearchMoreWithIdResponse {
 	);
 }}
 
-if (!class_exists("SearchNextResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchNextResponse")) {
 /**
  * SearchNextResponse
  */
@@ -11391,7 +11391,7 @@ class SearchNextResponse {
 	);
 }}
 
-if (!class_exists("GetResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\GetResponse")) {
 /**
  * GetResponse
  */
@@ -11407,7 +11407,7 @@ class GetResponse {
 	);
 }}
 
-if (!class_exists("GetListResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\GetListResponse")) {
 /**
  * GetListResponse
  */
@@ -11423,7 +11423,7 @@ class GetListResponse {
 	);
 }}
 
-if (!class_exists("GetAllResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\GetAllResponse")) {
 /**
  * GetAllResponse
  */
@@ -11439,7 +11439,7 @@ class GetAllResponse {
 	);
 }}
 
-if (!class_exists("GetSavedSearchResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\GetSavedSearchResponse")) {
 /**
  * GetSavedSearchResponse
  */
@@ -11455,7 +11455,7 @@ class GetSavedSearchResponse {
 	);
 }}
 
-if (!class_exists("GetCustomizationIdResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\GetCustomizationIdResponse")) {
 /**
  * GetCustomizationIdResponse
  */
@@ -11471,7 +11471,7 @@ class GetCustomizationIdResponse {
 	);
 }}
 
-if (!class_exists("InitializeResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\InitializeResponse")) {
 /**
  * InitializeResponse
  */
@@ -11487,7 +11487,7 @@ class InitializeResponse {
 	);
 }}
 
-if (!class_exists("InitializeListResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\InitializeListResponse")) {
 /**
  * InitializeListResponse
  */
@@ -11503,7 +11503,7 @@ class InitializeListResponse {
 	);
 }}
 
-if (!class_exists("getSelectValueResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\getSelectValueResponse")) {
 /**
  * getSelectValueResponse
  */
@@ -11519,7 +11519,7 @@ class getSelectValueResponse {
 	);
 }}
 
-if (!class_exists("GetItemAvailabilityResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\GetItemAvailabilityResponse")) {
 /**
  * GetItemAvailabilityResponse
  */
@@ -11535,7 +11535,7 @@ class GetItemAvailabilityResponse {
 	);
 }}
 
-if (!class_exists("GetBudgetExchangeRateResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\GetBudgetExchangeRateResponse")) {
 /**
  * GetBudgetExchangeRateResponse
  */
@@ -11551,7 +11551,7 @@ class GetBudgetExchangeRateResponse {
 	);
 }}
 
-if (!class_exists("GetConsolidatedExchangeRateResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\GetConsolidatedExchangeRateResponse")) {
 /**
  * GetConsolidatedExchangeRateResponse
  */
@@ -11567,7 +11567,7 @@ class GetConsolidatedExchangeRateResponse {
 	);
 }}
 
-if (!class_exists("GetCurrencyRateResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\GetCurrencyRateResponse")) {
 /**
  * GetCurrencyRateResponse
  */
@@ -11583,7 +11583,7 @@ class GetCurrencyRateResponse {
 	);
 }}
 
-if (!class_exists("GetDataCenterUrlsResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\GetDataCenterUrlsResponse")) {
 /**
  * GetDataCenterUrlsResponse
  */
@@ -11599,7 +11599,7 @@ class GetDataCenterUrlsResponse {
 	);
 }}
 
-if (!class_exists("GetPostingTransactionSummaryResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\GetPostingTransactionSummaryResponse")) {
 /**
  * GetPostingTransactionSummaryResponse
  */
@@ -11615,7 +11615,7 @@ class GetPostingTransactionSummaryResponse {
 	);
 }}
 
-if (!class_exists("GetServerTimeResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\GetServerTimeResponse")) {
 /**
  * GetServerTimeResponse
  */
@@ -11631,7 +11631,7 @@ class GetServerTimeResponse {
 	);
 }}
 
-if (!class_exists("AttachResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\AttachResponse")) {
 /**
  * AttachResponse
  */
@@ -11647,7 +11647,7 @@ class AttachResponse {
 	);
 }}
 
-if (!class_exists("DetachResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\DetachResponse")) {
 /**
  * DetachResponse
  */
@@ -11663,7 +11663,7 @@ class DetachResponse {
 	);
 }}
 
-if (!class_exists("UpdateInviteeStatusResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\UpdateInviteeStatusResponse")) {
 /**
  * UpdateInviteeStatusResponse
  */
@@ -11679,7 +11679,7 @@ class UpdateInviteeStatusResponse {
 	);
 }}
 
-if (!class_exists("UpdateInviteeStatusListResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\UpdateInviteeStatusListResponse")) {
 /**
  * UpdateInviteeStatusListResponse
  */
@@ -11695,7 +11695,7 @@ class UpdateInviteeStatusListResponse {
 	);
 }}
 
-if (!class_exists("AsyncStatusResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncStatusResponse")) {
 /**
  * AsyncStatusResponse
  */
@@ -11711,7 +11711,7 @@ class AsyncStatusResponse {
 	);
 }}
 
-if (!class_exists("GetAsyncResultResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\GetAsyncResultResponse")) {
 /**
  * GetAsyncResultResponse
  */
@@ -11727,7 +11727,7 @@ class GetAsyncResultResponse {
 	);
 }}
 
-if (!class_exists("AsyncResult")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncResult")) {
 /**
  * AsyncResult
  */
@@ -11737,7 +11737,7 @@ class AsyncResult {
 	);
 }}
 
-if (!class_exists("AsyncAddListResult")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncAddListResult")) {
 /**
  * AsyncAddListResult
  */
@@ -11753,7 +11753,7 @@ class AsyncAddListResult extends AsyncResult {
 	);
 }}
 
-if (!class_exists("AsyncUpdateListResult")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncUpdateListResult")) {
 /**
  * AsyncUpdateListResult
  */
@@ -11769,7 +11769,7 @@ class AsyncUpdateListResult extends AsyncResult {
 	);
 }}
 
-if (!class_exists("AsyncUpsertListResult")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncUpsertListResult")) {
 /**
  * AsyncUpsertListResult
  */
@@ -11785,7 +11785,7 @@ class AsyncUpsertListResult extends AsyncResult {
 	);
 }}
 
-if (!class_exists("AsyncDeleteListResult")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncDeleteListResult")) {
 /**
  * AsyncDeleteListResult
  */
@@ -11801,7 +11801,7 @@ class AsyncDeleteListResult extends AsyncResult {
 	);
 }}
 
-if (!class_exists("AsyncGetListResult")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncGetListResult")) {
 /**
  * AsyncGetListResult
  */
@@ -11817,7 +11817,7 @@ class AsyncGetListResult extends AsyncResult {
 	);
 }}
 
-if (!class_exists("AsyncSearchResult")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncSearchResult")) {
 /**
  * AsyncSearchResult
  */
@@ -11833,7 +11833,7 @@ class AsyncSearchResult extends AsyncResult {
 	);
 }}
 
-if (!class_exists("AsyncInitializeListResult")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncInitializeListResult")) {
 /**
  * AsyncInitializeListResult
  */
@@ -11849,7 +11849,7 @@ class AsyncInitializeListResult extends AsyncResult {
 	);
 }}
 
-if (!class_exists("GetDeletedResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\GetDeletedResponse")) {
 /**
  * GetDeletedResponse
  */
@@ -11865,7 +11865,7 @@ class GetDeletedResponse {
 	);
 }}
 
-if (!class_exists("LoginRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\LoginRequest")) {
 /**
  * LoginRequest
  */
@@ -11881,7 +11881,7 @@ class LoginRequest {
 	);
 }}
 
-if (!class_exists("SsoLoginRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\SsoLoginRequest")) {
 /**
  * SsoLoginRequest
  */
@@ -11897,7 +11897,7 @@ class SsoLoginRequest {
 	);
 }}
 
-if (!class_exists("MapSsoRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\MapSsoRequest")) {
 /**
  * MapSsoRequest
  */
@@ -11913,7 +11913,7 @@ class MapSsoRequest {
 	);
 }}
 
-if (!class_exists("ChangePasswordRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\ChangePasswordRequest")) {
 /**
  * ChangePasswordRequest
  */
@@ -11929,7 +11929,7 @@ class ChangePasswordRequest {
 	);
 }}
 
-if (!class_exists("ChangeEmailRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\ChangeEmailRequest")) {
 /**
  * ChangeEmailRequest
  */
@@ -11945,7 +11945,7 @@ class ChangeEmailRequest {
 	);
 }}
 
-if (!class_exists("LogoutRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\LogoutRequest")) {
 /**
  * LogoutRequest
  */
@@ -11955,7 +11955,7 @@ class LogoutRequest {
 	);
 }}
 
-if (!class_exists("AddRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\AddRequest")) {
 /**
  * AddRequest
  */
@@ -11971,7 +11971,7 @@ class AddRequest {
 	);
 }}
 
-if (!class_exists("DeleteRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\DeleteRequest")) {
 /**
  * DeleteRequest
  */
@@ -11987,7 +11987,7 @@ class DeleteRequest {
 	);
 }}
 
-if (!class_exists("SearchRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchRequest")) {
 /**
  * SearchRequest
  */
@@ -12003,7 +12003,7 @@ class SearchRequest {
 	);
 }}
 
-if (!class_exists("SearchMoreRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchMoreRequest")) {
 /**
  * SearchMoreRequest
  */
@@ -12019,7 +12019,7 @@ class SearchMoreRequest {
 	);
 }}
 
-if (!class_exists("SearchMoreWithIdRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchMoreWithIdRequest")) {
 /**
  * SearchMoreWithIdRequest
  */
@@ -12041,7 +12041,7 @@ class SearchMoreWithIdRequest {
 	);
 }}
 
-if (!class_exists("SearchNextRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\SearchNextRequest")) {
 /**
  * SearchNextRequest
  */
@@ -12051,7 +12051,7 @@ class SearchNextRequest {
 	);
 }}
 
-if (!class_exists("UpdateRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\UpdateRequest")) {
 /**
  * UpdateRequest
  */
@@ -12067,7 +12067,7 @@ class UpdateRequest {
 	);
 }}
 
-if (!class_exists("UpsertRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\UpsertRequest")) {
 /**
  * UpsertRequest
  */
@@ -12083,7 +12083,7 @@ class UpsertRequest {
 	);
 }}
 
-if (!class_exists("AddListRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\AddListRequest")) {
 /**
  * AddListRequest
  */
@@ -12099,7 +12099,7 @@ class AddListRequest {
 	);
 }}
 
-if (!class_exists("DeleteListRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\DeleteListRequest")) {
 /**
  * DeleteListRequest
  */
@@ -12115,7 +12115,7 @@ class DeleteListRequest {
 	);
 }}
 
-if (!class_exists("UpdateListRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\UpdateListRequest")) {
 /**
  * UpdateListRequest
  */
@@ -12131,7 +12131,7 @@ class UpdateListRequest {
 	);
 }}
 
-if (!class_exists("UpsertListRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\UpsertListRequest")) {
 /**
  * UpsertListRequest
  */
@@ -12147,7 +12147,7 @@ class UpsertListRequest {
 	);
 }}
 
-if (!class_exists("GetRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\GetRequest")) {
 /**
  * GetRequest
  */
@@ -12163,7 +12163,7 @@ class GetRequest {
 	);
 }}
 
-if (!class_exists("GetListRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\GetListRequest")) {
 /**
  * GetListRequest
  */
@@ -12179,7 +12179,7 @@ class GetListRequest {
 	);
 }}
 
-if (!class_exists("GetAllRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\GetAllRequest")) {
 /**
  * GetAllRequest
  */
@@ -12195,7 +12195,7 @@ class GetAllRequest {
 	);
 }}
 
-if (!class_exists("GetSavedSearchRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\GetSavedSearchRequest")) {
 /**
  * GetSavedSearchRequest
  */
@@ -12211,7 +12211,7 @@ class GetSavedSearchRequest {
 	);
 }}
 
-if (!class_exists("GetCustomizationIdRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\GetCustomizationIdRequest")) {
 /**
  * GetCustomizationIdRequest
  */
@@ -12233,7 +12233,7 @@ class GetCustomizationIdRequest {
 	);
 }}
 
-if (!class_exists("InitializeRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\InitializeRequest")) {
 /**
  * InitializeRequest
  */
@@ -12249,7 +12249,7 @@ class InitializeRequest {
 	);
 }}
 
-if (!class_exists("InitializeListRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\InitializeListRequest")) {
 /**
  * InitializeListRequest
  */
@@ -12265,7 +12265,7 @@ class InitializeListRequest {
 	);
 }}
 
-if (!class_exists("getSelectValueRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\getSelectValueRequest")) {
 /**
  * getSelectValueRequest
  */
@@ -12287,7 +12287,7 @@ class getSelectValueRequest {
 	);
 }}
 
-if (!class_exists("GetItemAvailabilityRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\GetItemAvailabilityRequest")) {
 /**
  * GetItemAvailabilityRequest
  */
@@ -12303,7 +12303,7 @@ class GetItemAvailabilityRequest {
 	);
 }}
 
-if (!class_exists("GetBudgetExchangeRateRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\GetBudgetExchangeRateRequest")) {
 /**
  * GetBudgetExchangeRateRequest
  */
@@ -12319,7 +12319,7 @@ class GetBudgetExchangeRateRequest {
 	);
 }}
 
-if (!class_exists("GetConsolidatedExchangeRateRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\GetConsolidatedExchangeRateRequest")) {
 /**
  * GetConsolidatedExchangeRateRequest
  */
@@ -12335,7 +12335,7 @@ class GetConsolidatedExchangeRateRequest {
 	);
 }}
 
-if (!class_exists("GetCurrencyRateRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\GetCurrencyRateRequest")) {
 /**
  * GetCurrencyRateRequest
  */
@@ -12351,7 +12351,7 @@ class GetCurrencyRateRequest {
 	);
 }}
 
-if (!class_exists("GetDataCenterUrlsRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\GetDataCenterUrlsRequest")) {
 /**
  * GetDataCenterUrlsRequest
  */
@@ -12367,7 +12367,7 @@ class GetDataCenterUrlsRequest {
 	);
 }}
 
-if (!class_exists("GetPostingTransactionSummaryRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\GetPostingTransactionSummaryRequest")) {
 /**
  * GetPostingTransactionSummaryRequest
  */
@@ -12395,7 +12395,7 @@ class GetPostingTransactionSummaryRequest {
 	);
 }}
 
-if (!class_exists("GetServerTimeRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\GetServerTimeRequest")) {
 /**
  * GetServerTimeRequest
  */
@@ -12405,7 +12405,7 @@ class GetServerTimeRequest {
 	);
 }}
 
-if (!class_exists("AttachRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\AttachRequest")) {
 /**
  * AttachRequest
  */
@@ -12421,7 +12421,7 @@ class AttachRequest {
 	);
 }}
 
-if (!class_exists("DetachRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\DetachRequest")) {
 /**
  * DetachRequest
  */
@@ -12437,7 +12437,7 @@ class DetachRequest {
 	);
 }}
 
-if (!class_exists("AsyncAddListRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncAddListRequest")) {
 /**
  * AsyncAddListRequest
  */
@@ -12453,7 +12453,7 @@ class AsyncAddListRequest {
 	);
 }}
 
-if (!class_exists("UpdateInviteeStatusRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\UpdateInviteeStatusRequest")) {
 /**
  * UpdateInviteeStatusRequest
  */
@@ -12469,7 +12469,7 @@ class UpdateInviteeStatusRequest {
 	);
 }}
 
-if (!class_exists("UpdateInviteeStatusListRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\UpdateInviteeStatusListRequest")) {
 /**
  * UpdateInviteeStatusListRequest
  */
@@ -12485,7 +12485,7 @@ class UpdateInviteeStatusListRequest {
 	);
 }}
 
-if (!class_exists("AsyncUpdateListRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncUpdateListRequest")) {
 /**
  * AsyncUpdateListRequest
  */
@@ -12501,7 +12501,7 @@ class AsyncUpdateListRequest {
 	);
 }}
 
-if (!class_exists("AsyncUpsertListRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncUpsertListRequest")) {
 /**
  * AsyncUpsertListRequest
  */
@@ -12517,7 +12517,7 @@ class AsyncUpsertListRequest {
 	);
 }}
 
-if (!class_exists("AsyncDeleteListRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncDeleteListRequest")) {
 /**
  * AsyncDeleteListRequest
  */
@@ -12533,7 +12533,7 @@ class AsyncDeleteListRequest {
 	);
 }}
 
-if (!class_exists("AsyncGetListRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncGetListRequest")) {
 /**
  * AsyncGetListRequest
  */
@@ -12549,7 +12549,7 @@ class AsyncGetListRequest {
 	);
 }}
 
-if (!class_exists("AsyncInitializeListRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncInitializeListRequest")) {
 /**
  * AsyncInitializeListRequest
  */
@@ -12565,7 +12565,7 @@ class AsyncInitializeListRequest {
 	);
 }}
 
-if (!class_exists("AsyncSearchRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\AsyncSearchRequest")) {
 /**
  * AsyncSearchRequest
  */
@@ -12581,7 +12581,7 @@ class AsyncSearchRequest {
 	);
 }}
 
-if (!class_exists("CheckAsyncStatusRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\CheckAsyncStatusRequest")) {
 /**
  * CheckAsyncStatusRequest
  */
@@ -12597,7 +12597,7 @@ class CheckAsyncStatusRequest {
 	);
 }}
 
-if (!class_exists("GetAsyncResultRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\GetAsyncResultRequest")) {
 /**
  * GetAsyncResultRequest
  */
@@ -12619,7 +12619,7 @@ class GetAsyncResultRequest {
 	);
 }}
 
-if (!class_exists("GetDeletedRequest")) {
+if (!class_exists(__NAMESPACE__ . "\\GetDeletedRequest")) {
 /**
  * GetDeletedRequest
  */
@@ -12635,7 +12635,7 @@ class GetDeletedRequest {
 	);
 }}
 
-if (!class_exists("Country")) {
+if (!class_exists(__NAMESPACE__ . "\\Country")) {
 /**
  * Country
  */
@@ -13645,7 +13645,7 @@ class Country {
 	const _zimbabwe = "_zimbabwe";
 }}
 
-if (!class_exists("Language")) {
+if (!class_exists(__NAMESPACE__ . "\\Language")) {
 /**
  * Language
  */
@@ -13823,7 +13823,7 @@ class Language {
 	const _vietnamese = "_vietnamese";
 }}
 
-if (!class_exists("AvsMatchCode")) {
+if (!class_exists(__NAMESPACE__ . "\\AvsMatchCode")) {
 /**
  * AvsMatchCode
  */
@@ -13845,7 +13845,7 @@ class AvsMatchCode {
 	const _y = "_y";
 }}
 
-if (!class_exists("CscMatchCode")) {
+if (!class_exists(__NAMESPACE__ . "\\CscMatchCode")) {
 /**
  * CscMatchCode
  */
@@ -13867,7 +13867,7 @@ class CscMatchCode {
 	const _y = "_y";
 }}
 
-if (!class_exists("CostingMethod")) {
+if (!class_exists(__NAMESPACE__ . "\\CostingMethod")) {
 /**
  * CostingMethod
  */
@@ -13897,7 +13897,7 @@ class CostingMethod {
 	const _serialized = "_serialized";
 }}
 
-if (!class_exists("VsoeSopGroup")) {
+if (!class_exists(__NAMESPACE__ . "\\VsoeSopGroup")) {
 /**
  * VsoeSopGroup
  */
@@ -13919,7 +13919,7 @@ class VsoeSopGroup {
 	const _software = "_software";
 }}
 
-if (!class_exists("VsoeDeferral")) {
+if (!class_exists(__NAMESPACE__ . "\\VsoeDeferral")) {
 /**
  * VsoeDeferral
  */
@@ -13937,7 +13937,7 @@ class VsoeDeferral {
 	const _deferUntilItemDelivered = "_deferUntilItemDelivered";
 }}
 
-if (!class_exists("VsoePermitDiscount")) {
+if (!class_exists(__NAMESPACE__ . "\\VsoePermitDiscount")) {
 /**
  * VsoePermitDiscount
  */
@@ -13955,7 +13955,7 @@ class VsoePermitDiscount {
 	const _never = "_never";
 }}
 
-if (!class_exists("RevenueStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\RevenueStatus")) {
 /**
  * RevenueStatus
  */
@@ -13981,7 +13981,7 @@ class RevenueStatus {
 	const _onRevCommitment = "_onRevCommitment";
 }}
 
-if (!class_exists("RevenueCommitStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\RevenueCommitStatus")) {
 /**
  * RevenueCommitStatus
  */
@@ -14003,7 +14003,7 @@ class RevenueCommitStatus {
 	const _pendingCommitment = "_pendingCommitment";
 }}
 
-if (!class_exists("PostingPeriodDate")) {
+if (!class_exists(__NAMESPACE__ . "\\PostingPeriodDate")) {
 /**
  * PostingPeriodDate
  */
@@ -14105,7 +14105,7 @@ class PostingPeriodDate {
 	const _thisQuarter = "_thisQuarter";
 }}
 
-if (!class_exists("PermissionLevel")) {
+if (!class_exists(__NAMESPACE__ . "\\PermissionLevel")) {
 /**
  * PermissionLevel
  */
@@ -14135,7 +14135,7 @@ class PermissionLevel {
 	const _view = "_view";
 }}
 
-if (!class_exists("Source")) {
+if (!class_exists(__NAMESPACE__ . "\\Source")) {
 /**
  * Source
  */
@@ -14201,7 +14201,7 @@ class Source {
 	const _yahoo = "_yahoo";
 }}
 
-if (!class_exists("GlobalSubscriptionStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\GlobalSubscriptionStatus")) {
 /**
  * GlobalSubscriptionStatus
  */
@@ -14227,7 +14227,7 @@ class GlobalSubscriptionStatus {
 	const _softOptOut = "_softOptOut";
 }}
 
-if (!class_exists("ItemCostEstimateType")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemCostEstimateType")) {
 /**
  * ItemCostEstimateType
  */
@@ -14269,7 +14269,7 @@ class ItemCostEstimateType {
 	const _purchasePrice = "_purchasePrice";
 }}
 
-if (!class_exists("PresentationItemType")) {
+if (!class_exists(__NAMESPACE__ . "\\PresentationItemType")) {
 /**
  * PresentationItemType
  */
@@ -14295,7 +14295,7 @@ class PresentationItemType {
 	const _presentationCategory = "_presentationCategory";
 }}
 
-if (!class_exists("LandedCostSource")) {
+if (!class_exists(__NAMESPACE__ . "\\LandedCostSource")) {
 /**
  * LandedCostSource
  */
@@ -14321,7 +14321,7 @@ class LandedCostSource {
 	const _thisTransaction = "_thisTransaction";
 }}
 
-if (!class_exists("LandedCostMethod")) {
+if (!class_exists(__NAMESPACE__ . "\\LandedCostMethod")) {
 /**
  * LandedCostMethod
  */
@@ -14343,7 +14343,7 @@ class LandedCostMethod {
 	const _weight = "_weight";
 }}
 
-if (!class_exists("SitemapPriority")) {
+if (!class_exists(__NAMESPACE__ . "\\SitemapPriority")) {
 /**
  * SitemapPriority
  */
@@ -14401,7 +14401,7 @@ class SitemapPriority {
 	const _auto = "_auto";
 }}
 
-if (!class_exists("TimeItemTimeType")) {
+if (!class_exists(__NAMESPACE__ . "\\TimeItemTimeType")) {
 /**
  * TimeItemTimeType
  */
@@ -14419,7 +14419,7 @@ class TimeItemTimeType {
 	const _plannedTime = "_plannedTime";
 }}
 
-if (!class_exists("PermissionCode")) {
+if (!class_exists(__NAMESPACE__ . "\\PermissionCode")) {
 /**
  * PermissionCode
  */
@@ -16181,7 +16181,7 @@ class PermissionCode {
 	const _workplaces = "_workplaces";
 }}
 
-if (!class_exists("IntercoStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\IntercoStatus")) {
 /**
  * IntercoStatus
  */
@@ -16203,7 +16203,7 @@ class IntercoStatus {
 	const _rejected = "_rejected";
 }}
 
-if (!class_exists("CurrencySymbolPlacement")) {
+if (!class_exists(__NAMESPACE__ . "\\CurrencySymbolPlacement")) {
 /**
  * CurrencySymbolPlacement
  */
@@ -16221,7 +16221,7 @@ class CurrencySymbolPlacement {
 	const _beforeNumber = "_beforeNumber";
 }}
 
-if (!class_exists("ShipAddress")) {
+if (!class_exists(__NAMESPACE__ . "\\ShipAddress")) {
 /**
  * ShipAddress
  */
@@ -16297,7 +16297,7 @@ class ShipAddress {
 	);
 }}
 
-if (!class_exists("BillAddress")) {
+if (!class_exists(__NAMESPACE__ . "\\BillAddress")) {
 /**
  * BillAddress
  */
@@ -16367,7 +16367,7 @@ class BillAddress {
 	);
 }}
 
-if (!class_exists("PresentationItem")) {
+if (!class_exists(__NAMESPACE__ . "\\PresentationItem")) {
 /**
  * PresentationItem
  */
@@ -16407,7 +16407,7 @@ class PresentationItem {
 	);
 }}
 
-if (!class_exists("Partners")) {
+if (!class_exists(__NAMESPACE__ . "\\Partners")) {
 /**
  * Partners
  */
@@ -16441,7 +16441,7 @@ class Partners {
 	);
 }}
 
-if (!class_exists("LandedCost")) {
+if (!class_exists(__NAMESPACE__ . "\\LandedCost")) {
 /**
  * LandedCost
  */
@@ -16475,7 +16475,7 @@ class LandedCost {
 	);
 }}
 
-if (!class_exists("CustomerSalesTeam")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerSalesTeam")) {
 /**
  * CustomerSalesTeam
  */
@@ -16509,7 +16509,7 @@ class CustomerSalesTeam {
 	);
 }}
 
-if (!class_exists("TimeItem")) {
+if (!class_exists(__NAMESPACE__ . "\\TimeItem")) {
 /**
  * TimeItem
  */
@@ -16639,7 +16639,7 @@ class TimeItem {
 	);
 }}
 
-if (!class_exists("InventoryDetail")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryDetail")) {
 /**
  * InventoryDetail
  */
@@ -16661,7 +16661,7 @@ class InventoryDetail extends Record {
 	);
 }}
 
-if (!class_exists("InventoryAssignmentList")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryAssignmentList")) {
 /**
  * InventoryAssignmentList
  */
@@ -16683,7 +16683,7 @@ class InventoryAssignmentList {
 	);
 }}
 
-if (!class_exists("InventoryAssignment")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryAssignment")) {
 /**
  * InventoryAssignment
  */
@@ -16741,7 +16741,7 @@ class InventoryAssignment {
 	);
 }}
 
-if (!class_exists("InventoryDetailSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryDetailSearchBasic")) {
 /**
  * InventoryDetailSearchBasic
  */
@@ -16793,7 +16793,7 @@ class InventoryDetailSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("InventoryDetailSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryDetailSearchRowBasic")) {
 /**
  * InventoryDetailSearchRowBasic
  */
@@ -16833,7 +16833,7 @@ class InventoryDetailSearchRowBasic {
 	);
 }}
 
-if (!class_exists("EntitySearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\EntitySearchBasic")) {
 /**
  * EntitySearchBasic
  */
@@ -17047,7 +17047,7 @@ class EntitySearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("EntitySearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\EntitySearchRowBasic")) {
 /**
  * EntitySearchRowBasic
  */
@@ -17441,7 +17441,7 @@ class EntitySearchRowBasic {
 	);
 }}
 
-if (!class_exists("ContactSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactSearchBasic")) {
 /**
  * ContactSearchBasic
  */
@@ -17739,7 +17739,7 @@ class ContactSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ContactSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactSearchRowBasic")) {
 /**
  * ContactSearchRowBasic
  */
@@ -18217,7 +18217,7 @@ class ContactSearchRowBasic {
 	);
 }}
 
-if (!class_exists("CustomerSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerSearchBasic")) {
 /**
  * CustomerSearchBasic
  */
@@ -19109,7 +19109,7 @@ class CustomerSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CustomerSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerSearchRowBasic")) {
 /**
  * CustomerSearchRowBasic
  */
@@ -20139,7 +20139,7 @@ class CustomerSearchRowBasic {
 	);
 }}
 
-if (!class_exists("CalendarEventSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventSearchBasic")) {
 /**
  * CalendarEventSearchBasic
  */
@@ -20275,7 +20275,7 @@ class CalendarEventSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CalendarEventSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventSearchRowBasic")) {
 /**
  * CalendarEventSearchRowBasic
  */
@@ -20435,7 +20435,7 @@ class CalendarEventSearchRowBasic {
 	);
 }}
 
-if (!class_exists("TaskSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\TaskSearchBasic")) {
 /**
  * TaskSearchBasic
  */
@@ -20607,7 +20607,7 @@ class TaskSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("TaskSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\TaskSearchRowBasic")) {
 /**
  * TaskSearchRowBasic
  */
@@ -20797,7 +20797,7 @@ class TaskSearchRowBasic {
 	);
 }}
 
-if (!class_exists("OpportunitySearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\OpportunitySearchBasic")) {
 /**
  * OpportunitySearchBasic
  */
@@ -21197,7 +21197,7 @@ class OpportunitySearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("OpportunitySearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\OpportunitySearchRowBasic")) {
 /**
  * OpportunitySearchRowBasic
  */
@@ -21585,7 +21585,7 @@ class OpportunitySearchRowBasic {
 	);
 }}
 
-if (!class_exists("EmployeeSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeSearchBasic")) {
 /**
  * EmployeeSearchBasic
  */
@@ -22213,7 +22213,7 @@ class EmployeeSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("EmployeeSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeSearchRowBasic")) {
 /**
  * EmployeeSearchRowBasic
  */
@@ -22997,7 +22997,7 @@ class EmployeeSearchRowBasic {
 	);
 }}
 
-if (!class_exists("PhoneCallSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\PhoneCallSearchBasic")) {
 /**
  * PhoneCallSearchBasic
  */
@@ -23121,7 +23121,7 @@ class PhoneCallSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PhoneCallSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\PhoneCallSearchRowBasic")) {
 /**
  * PhoneCallSearchRowBasic
  */
@@ -23257,7 +23257,7 @@ class PhoneCallSearchRowBasic {
 	);
 }}
 
-if (!class_exists("SupportCaseSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\SupportCaseSearchBasic")) {
 /**
  * SupportCaseSearchBasic
  */
@@ -23501,7 +23501,7 @@ class SupportCaseSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("SupportCaseSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\SupportCaseSearchRowBasic")) {
 /**
  * SupportCaseSearchRowBasic
  */
@@ -23715,7 +23715,7 @@ class SupportCaseSearchRowBasic {
 	);
 }}
 
-if (!class_exists("MessageSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\MessageSearchBasic")) {
 /**
  * MessageSearchBasic
  */
@@ -23821,7 +23821,7 @@ class MessageSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("MessageSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\MessageSearchRowBasic")) {
 /**
  * MessageSearchRowBasic
  */
@@ -23927,7 +23927,7 @@ class MessageSearchRowBasic {
 	);
 }}
 
-if (!class_exists("NoteSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\NoteSearchBasic")) {
 /**
  * NoteSearchBasic
  */
@@ -23997,7 +23997,7 @@ class NoteSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("NoteSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\NoteSearchRowBasic")) {
 /**
  * NoteSearchRowBasic
  */
@@ -24055,7 +24055,7 @@ class NoteSearchRowBasic {
 	);
 }}
 
-if (!class_exists("CustomRecordSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordSearchBasic")) {
 /**
  * CustomRecordSearchBasic
  */
@@ -24149,7 +24149,7 @@ class CustomRecordSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CustomRecordSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordSearchRowBasic")) {
 /**
  * CustomRecordSearchRowBasic
  */
@@ -24237,7 +24237,7 @@ class CustomRecordSearchRowBasic {
 	);
 }}
 
-if (!class_exists("AccountSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\AccountSearchBasic")) {
 /**
  * AccountSearchBasic
  */
@@ -24343,7 +24343,7 @@ class AccountSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("AccountSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\AccountSearchRowBasic")) {
 /**
  * AccountSearchRowBasic
  */
@@ -24431,7 +24431,7 @@ class AccountSearchRowBasic {
 	);
 }}
 
-if (!class_exists("RevRecScheduleSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecScheduleSearchBasic")) {
 /**
  * RevRecScheduleSearchBasic
  */
@@ -24525,7 +24525,7 @@ class RevRecScheduleSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("RevRecScheduleSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecScheduleSearchRowBasic")) {
 /**
  * RevRecScheduleSearchRowBasic
  */
@@ -24613,7 +24613,7 @@ class RevRecScheduleSearchRowBasic {
 	);
 }}
 
-if (!class_exists("RevRecTemplateSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecTemplateSearchBasic")) {
 /**
  * RevRecTemplateSearchBasic
  */
@@ -24719,7 +24719,7 @@ class RevRecTemplateSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("RevRecTemplateSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecTemplateSearchRowBasic")) {
 /**
  * RevRecTemplateSearchRowBasic
  */
@@ -24813,7 +24813,7 @@ class RevRecTemplateSearchRowBasic {
 	);
 }}
 
-if (!class_exists("BinSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\BinSearchBasic")) {
 /**
  * BinSearchBasic
  */
@@ -24865,7 +24865,7 @@ class BinSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("BinSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\BinSearchRowBasic")) {
 /**
  * BinSearchRowBasic
  */
@@ -24911,7 +24911,7 @@ class BinSearchRowBasic {
 	);
 }}
 
-if (!class_exists("DepartmentSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\DepartmentSearchBasic")) {
 /**
  * DepartmentSearchBasic
  */
@@ -24975,7 +24975,7 @@ class DepartmentSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("DepartmentSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\DepartmentSearchRowBasic")) {
 /**
  * DepartmentSearchRowBasic
  */
@@ -25027,7 +25027,7 @@ class DepartmentSearchRowBasic {
 	);
 }}
 
-if (!class_exists("LocationSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\LocationSearchBasic")) {
 /**
  * LocationSearchBasic
  */
@@ -25157,7 +25157,7 @@ class LocationSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("LocationSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\LocationSearchRowBasic")) {
 /**
  * LocationSearchRowBasic
  */
@@ -25281,7 +25281,7 @@ class LocationSearchRowBasic {
 	);
 }}
 
-if (!class_exists("ClassificationSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ClassificationSearchBasic")) {
 /**
  * ClassificationSearchBasic
  */
@@ -25345,7 +25345,7 @@ class ClassificationSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ClassificationSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ClassificationSearchRowBasic")) {
 /**
  * ClassificationSearchRowBasic
  */
@@ -25397,7 +25397,7 @@ class ClassificationSearchRowBasic {
 	);
 }}
 
-if (!class_exists("TransactionSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionSearchBasic")) {
 /**
  * TransactionSearchBasic
  */
@@ -27177,7 +27177,7 @@ class TransactionSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("TransactionSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionSearchRowBasic")) {
 /**
  * TransactionSearchRowBasic
  */
@@ -29017,7 +29017,7 @@ class TransactionSearchRowBasic {
 	);
 }}
 
-if (!class_exists("ItemSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemSearchBasic")) {
 /**
  * ItemSearchBasic
  */
@@ -30383,7 +30383,7 @@ class ItemSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ItemSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemSearchRowBasic")) {
 /**
  * ItemSearchRowBasic
  */
@@ -31893,7 +31893,7 @@ class ItemSearchRowBasic {
 	);
 }}
 
-if (!class_exists("PartnerSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\PartnerSearchBasic")) {
 /**
  * PartnerSearchBasic
  */
@@ -32239,7 +32239,7 @@ class PartnerSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PartnerSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\PartnerSearchRowBasic")) {
 /**
  * PartnerSearchRowBasic
  */
@@ -32771,7 +32771,7 @@ class PartnerSearchRowBasic {
 	);
 }}
 
-if (!class_exists("VendorSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorSearchBasic")) {
 /**
  * VendorSearchBasic
  */
@@ -33195,7 +33195,7 @@ class VendorSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("VendorSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorSearchRowBasic")) {
 /**
  * VendorSearchRowBasic
  */
@@ -33829,7 +33829,7 @@ class VendorSearchRowBasic {
 	);
 }}
 
-if (!class_exists("SiteCategorySearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\SiteCategorySearchBasic")) {
 /**
  * SiteCategorySearchBasic
  */
@@ -33893,7 +33893,7 @@ class SiteCategorySearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("SiteCategorySearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\SiteCategorySearchRowBasic")) {
 /**
  * SiteCategorySearchRowBasic
  */
@@ -33981,7 +33981,7 @@ class SiteCategorySearchRowBasic {
 	);
 }}
 
-if (!class_exists("TimeBillSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\TimeBillSearchBasic")) {
 /**
  * TimeBillSearchBasic
  */
@@ -34165,7 +34165,7 @@ class TimeBillSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("TimeBillSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\TimeBillSearchRowBasic")) {
 /**
  * TimeBillSearchRowBasic
  */
@@ -34367,7 +34367,7 @@ class TimeBillSearchRowBasic {
 	);
 }}
 
-if (!class_exists("SolutionSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\SolutionSearchBasic")) {
 /**
  * SolutionSearchBasic
  */
@@ -34491,7 +34491,7 @@ class SolutionSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("SolutionSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\SolutionSearchRowBasic")) {
 /**
  * SolutionSearchRowBasic
  */
@@ -34591,7 +34591,7 @@ class SolutionSearchRowBasic {
 	);
 }}
 
-if (!class_exists("TopicSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\TopicSearchBasic")) {
 /**
  * TopicSearchBasic
  */
@@ -34643,7 +34643,7 @@ class TopicSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("TopicSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\TopicSearchRowBasic")) {
 /**
  * TopicSearchRowBasic
  */
@@ -34683,7 +34683,7 @@ class TopicSearchRowBasic {
 	);
 }}
 
-if (!class_exists("SubsidiarySearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\SubsidiarySearchBasic")) {
 /**
  * SubsidiarySearchBasic
  */
@@ -34825,7 +34825,7 @@ class SubsidiarySearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("SubsidiarySearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\SubsidiarySearchRowBasic")) {
 /**
  * SubsidiarySearchRowBasic
  */
@@ -35033,7 +35033,7 @@ class SubsidiarySearchRowBasic {
 	);
 }}
 
-if (!class_exists("GiftCertificateSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\GiftCertificateSearchBasic")) {
 /**
  * GiftCertificateSearchBasic
  */
@@ -35151,7 +35151,7 @@ class GiftCertificateSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("GiftCertificateSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\GiftCertificateSearchRowBasic")) {
 /**
  * GiftCertificateSearchRowBasic
  */
@@ -35263,7 +35263,7 @@ class GiftCertificateSearchRowBasic {
 	);
 }}
 
-if (!class_exists("FolderSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\FolderSearchBasic")) {
 /**
  * FolderSearchBasic
  */
@@ -35393,7 +35393,7 @@ class FolderSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("FolderSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\FolderSearchRowBasic")) {
 /**
  * FolderSearchRowBasic
  */
@@ -35493,7 +35493,7 @@ class FolderSearchRowBasic {
 	);
 }}
 
-if (!class_exists("FileSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\FileSearchBasic")) {
 /**
  * FileSearchBasic
  */
@@ -35605,7 +35605,7 @@ class FileSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("FileSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\FileSearchRowBasic")) {
 /**
  * FileSearchRowBasic
  */
@@ -35711,7 +35711,7 @@ class FileSearchRowBasic {
 	);
 }}
 
-if (!class_exists("JobSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\JobSearchBasic")) {
 /**
  * JobSearchBasic
  */
@@ -36189,7 +36189,7 @@ class JobSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("JobSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\JobSearchRowBasic")) {
 /**
  * JobSearchRowBasic
  */
@@ -36853,7 +36853,7 @@ class JobSearchRowBasic {
 	);
 }}
 
-if (!class_exists("IssueSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\IssueSearchBasic")) {
 /**
  * IssueSearchBasic
  */
@@ -37205,7 +37205,7 @@ class IssueSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("IssueSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\IssueSearchRowBasic")) {
 /**
  * IssueSearchRowBasic
  */
@@ -37503,7 +37503,7 @@ class IssueSearchRowBasic {
 	);
 }}
 
-if (!class_exists("GroupMemberSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\GroupMemberSearchBasic")) {
 /**
  * GroupMemberSearchBasic
  */
@@ -37519,7 +37519,7 @@ class GroupMemberSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CampaignSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignSearchBasic")) {
 /**
  * CampaignSearchBasic
  */
@@ -37781,7 +37781,7 @@ class CampaignSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CampaignSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignSearchRowBasic")) {
 /**
  * CampaignSearchRowBasic
  */
@@ -38037,7 +38037,7 @@ class CampaignSearchRowBasic {
 	);
 }}
 
-if (!class_exists("EntityGroupSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\EntityGroupSearchBasic")) {
 /**
  * EntityGroupSearchBasic
  */
@@ -38125,7 +38125,7 @@ class EntityGroupSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("EntityGroupSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\EntityGroupSearchRowBasic")) {
 /**
  * EntityGroupSearchRowBasic
  */
@@ -38213,7 +38213,7 @@ class EntityGroupSearchRowBasic {
 	);
 }}
 
-if (!class_exists("PromotionCodeSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\PromotionCodeSearchBasic")) {
 /**
  * PromotionCodeSearchBasic
  */
@@ -38331,7 +38331,7 @@ class PromotionCodeSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PromotionCodeSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\PromotionCodeSearchRowBasic")) {
 /**
  * PromotionCodeSearchRowBasic
  */
@@ -38413,7 +38413,7 @@ class PromotionCodeSearchRowBasic {
 	);
 }}
 
-if (!class_exists("BudgetSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\BudgetSearchBasic")) {
 /**
  * BudgetSearchBasic
  */
@@ -38513,7 +38513,7 @@ class BudgetSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("BudgetSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\BudgetSearchRowBasic")) {
 /**
  * BudgetSearchRowBasic
  */
@@ -38631,7 +38631,7 @@ class BudgetSearchRowBasic {
 	);
 }}
 
-if (!class_exists("ProjectTaskSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ProjectTaskSearchBasic")) {
 /**
  * ProjectTaskSearchBasic
  */
@@ -38887,7 +38887,7 @@ class ProjectTaskSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ProjectTaskSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ProjectTaskSearchRowBasic")) {
 /**
  * ProjectTaskSearchRowBasic
  */
@@ -39143,7 +39143,7 @@ class ProjectTaskSearchRowBasic {
 	);
 }}
 
-if (!class_exists("ProjectTaskAssignmentSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ProjectTaskAssignmentSearchBasic")) {
 /**
  * ProjectTaskAssignmentSearchBasic
  */
@@ -39285,7 +39285,7 @@ class ProjectTaskAssignmentSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ProjectTaskAssignmentSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ProjectTaskAssignmentSearchRowBasic")) {
 /**
  * ProjectTaskAssignmentSearchRowBasic
  */
@@ -39421,7 +39421,7 @@ class ProjectTaskAssignmentSearchRowBasic {
 	);
 }}
 
-if (!class_exists("AccountingPeriodSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\AccountingPeriodSearchBasic")) {
 /**
  * AccountingPeriodSearchBasic
  */
@@ -39533,7 +39533,7 @@ class AccountingPeriodSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("AccountingPeriodSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\AccountingPeriodSearchRowBasic")) {
 /**
  * AccountingPeriodSearchRowBasic
  */
@@ -39639,7 +39639,7 @@ class AccountingPeriodSearchRowBasic {
 	);
 }}
 
-if (!class_exists("ContactCategorySearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactCategorySearchBasic")) {
 /**
  * ContactCategorySearchBasic
  */
@@ -39697,7 +39697,7 @@ class ContactCategorySearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ContactCategorySearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactCategorySearchRowBasic")) {
 /**
  * ContactCategorySearchRowBasic
  */
@@ -39743,7 +39743,7 @@ class ContactCategorySearchRowBasic {
 	);
 }}
 
-if (!class_exists("ContactRoleSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactRoleSearchBasic")) {
 /**
  * ContactRoleSearchBasic
  */
@@ -39795,7 +39795,7 @@ class ContactRoleSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ContactRoleSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactRoleSearchRowBasic")) {
 /**
  * ContactRoleSearchRowBasic
  */
@@ -39835,7 +39835,7 @@ class ContactRoleSearchRowBasic {
 	);
 }}
 
-if (!class_exists("CustomerCategorySearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerCategorySearchBasic")) {
 /**
  * CustomerCategorySearchBasic
  */
@@ -39881,7 +39881,7 @@ class CustomerCategorySearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CustomerCategorySearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerCategorySearchRowBasic")) {
 /**
  * CustomerCategorySearchRowBasic
  */
@@ -39915,7 +39915,7 @@ class CustomerCategorySearchRowBasic {
 	);
 }}
 
-if (!class_exists("CustomerStatusSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerStatusSearchBasic")) {
 /**
  * CustomerStatusSearchBasic
  */
@@ -39979,7 +39979,7 @@ class CustomerStatusSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CustomerStatusSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerStatusSearchRowBasic")) {
 /**
  * CustomerStatusSearchRowBasic
  */
@@ -40031,7 +40031,7 @@ class CustomerStatusSearchRowBasic {
 	);
 }}
 
-if (!class_exists("ExpenseCategorySearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ExpenseCategorySearchBasic")) {
 /**
  * ExpenseCategorySearchBasic
  */
@@ -40095,7 +40095,7 @@ class ExpenseCategorySearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ExpenseCategorySearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ExpenseCategorySearchRowBasic")) {
 /**
  * ExpenseCategorySearchRowBasic
  */
@@ -40147,7 +40147,7 @@ class ExpenseCategorySearchRowBasic {
 	);
 }}
 
-if (!class_exists("JobStatusSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\JobStatusSearchBasic")) {
 /**
  * JobStatusSearchBasic
  */
@@ -40199,7 +40199,7 @@ class JobStatusSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("JobStatusSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\JobStatusSearchRowBasic")) {
 /**
  * JobStatusSearchRowBasic
  */
@@ -40239,7 +40239,7 @@ class JobStatusSearchRowBasic {
 	);
 }}
 
-if (!class_exists("JobTypeSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\JobTypeSearchBasic")) {
 /**
  * JobTypeSearchBasic
  */
@@ -40291,7 +40291,7 @@ class JobTypeSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("JobTypeSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\JobTypeSearchRowBasic")) {
 /**
  * JobTypeSearchRowBasic
  */
@@ -40331,7 +40331,7 @@ class JobTypeSearchRowBasic {
 	);
 }}
 
-if (!class_exists("NoteTypeSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\NoteTypeSearchBasic")) {
 /**
  * NoteTypeSearchBasic
  */
@@ -40383,7 +40383,7 @@ class NoteTypeSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("NoteTypeSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\NoteTypeSearchRowBasic")) {
 /**
  * NoteTypeSearchRowBasic
  */
@@ -40423,7 +40423,7 @@ class NoteTypeSearchRowBasic {
 	);
 }}
 
-if (!class_exists("PartnerCategorySearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\PartnerCategorySearchBasic")) {
 /**
  * PartnerCategorySearchBasic
  */
@@ -40475,7 +40475,7 @@ class PartnerCategorySearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PartnerCategorySearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\PartnerCategorySearchRowBasic")) {
 /**
  * PartnerCategorySearchRowBasic
  */
@@ -40515,7 +40515,7 @@ class PartnerCategorySearchRowBasic {
 	);
 }}
 
-if (!class_exists("PaymentMethodSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\PaymentMethodSearchBasic")) {
 /**
  * PaymentMethodSearchBasic
  */
@@ -40579,7 +40579,7 @@ class PaymentMethodSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PaymentMethodSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\PaymentMethodSearchRowBasic")) {
 /**
  * PaymentMethodSearchRowBasic
  */
@@ -40631,7 +40631,7 @@ class PaymentMethodSearchRowBasic {
 	);
 }}
 
-if (!class_exists("PriceLevelSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\PriceLevelSearchBasic")) {
 /**
  * PriceLevelSearchBasic
  */
@@ -40689,7 +40689,7 @@ class PriceLevelSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PriceLevelSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\PriceLevelSearchRowBasic")) {
 /**
  * PriceLevelSearchRowBasic
  */
@@ -40735,7 +40735,7 @@ class PriceLevelSearchRowBasic {
 	);
 }}
 
-if (!class_exists("SalesRoleSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesRoleSearchBasic")) {
 /**
  * SalesRoleSearchBasic
  */
@@ -40787,7 +40787,7 @@ class SalesRoleSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("SalesRoleSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesRoleSearchRowBasic")) {
 /**
  * SalesRoleSearchRowBasic
  */
@@ -40827,7 +40827,7 @@ class SalesRoleSearchRowBasic {
 	);
 }}
 
-if (!class_exists("TermSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\TermSearchBasic")) {
 /**
  * TermSearchBasic
  */
@@ -40927,7 +40927,7 @@ class TermSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("TermSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\TermSearchRowBasic")) {
 /**
  * TermSearchRowBasic
  */
@@ -41015,7 +41015,7 @@ class TermSearchRowBasic {
 	);
 }}
 
-if (!class_exists("VendorCategorySearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorCategorySearchBasic")) {
 /**
  * VendorCategorySearchBasic
  */
@@ -41067,7 +41067,7 @@ class VendorCategorySearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("VendorCategorySearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorCategorySearchRowBasic")) {
 /**
  * VendorCategorySearchRowBasic
  */
@@ -41107,7 +41107,7 @@ class VendorCategorySearchRowBasic {
 	);
 }}
 
-if (!class_exists("WinLossReasonSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\WinLossReasonSearchBasic")) {
 /**
  * WinLossReasonSearchBasic
  */
@@ -41153,7 +41153,7 @@ class WinLossReasonSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("WinLossReasonSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\WinLossReasonSearchRowBasic")) {
 /**
  * WinLossReasonSearchRowBasic
  */
@@ -41187,7 +41187,7 @@ class WinLossReasonSearchRowBasic {
 	);
 }}
 
-if (!class_exists("OriginatingLeadSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\OriginatingLeadSearchBasic")) {
 /**
  * OriginatingLeadSearchBasic
  */
@@ -41773,7 +41773,7 @@ class OriginatingLeadSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("OriginatingLeadSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\OriginatingLeadSearchRowBasic")) {
 /**
  * OriginatingLeadSearchRowBasic
  */
@@ -42323,7 +42323,7 @@ class OriginatingLeadSearchRowBasic {
 	);
 }}
 
-if (!class_exists("UnitsTypeSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\UnitsTypeSearchBasic")) {
 /**
  * UnitsTypeSearchBasic
  */
@@ -42405,7 +42405,7 @@ class UnitsTypeSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("UnitsTypeSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\UnitsTypeSearchRowBasic")) {
 /**
  * UnitsTypeSearchRowBasic
  */
@@ -42475,7 +42475,7 @@ class UnitsTypeSearchRowBasic {
 	);
 }}
 
-if (!class_exists("CustomListSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomListSearchBasic")) {
 /**
  * CustomListSearchBasic
  */
@@ -42533,7 +42533,7 @@ class CustomListSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CustomListSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomListSearchRowBasic")) {
 /**
  * CustomListSearchRowBasic
  */
@@ -42585,7 +42585,7 @@ class CustomListSearchRowBasic {
 	);
 }}
 
-if (!class_exists("PricingGroupSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\PricingGroupSearchBasic")) {
 /**
  * PricingGroupSearchBasic
  */
@@ -42631,7 +42631,7 @@ class PricingGroupSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PricingGroupSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\PricingGroupSearchRowBasic")) {
 /**
  * PricingGroupSearchRowBasic
  */
@@ -42665,7 +42665,7 @@ class PricingGroupSearchRowBasic {
 	);
 }}
 
-if (!class_exists("InventoryNumberSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryNumberSearchBasic")) {
 /**
  * InventoryNumberSearchBasic
  */
@@ -42765,7 +42765,7 @@ class InventoryNumberSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("InventoryNumberSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryNumberSearchRowBasic")) {
 /**
  * InventoryNumberSearchRowBasic
  */
@@ -42853,7 +42853,7 @@ class InventoryNumberSearchRowBasic {
 	);
 }}
 
-if (!class_exists("AppDefinitionSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\AppDefinitionSearchBasic")) {
 /**
  * AppDefinitionSearchBasic
  */
@@ -42899,7 +42899,7 @@ class AppDefinitionSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("AppDefinitionSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\AppDefinitionSearchRowBasic")) {
 /**
  * AppDefinitionSearchRowBasic
  */
@@ -42933,7 +42933,7 @@ class AppDefinitionSearchRowBasic {
 	);
 }}
 
-if (!class_exists("AppPackageSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\AppPackageSearchBasic")) {
 /**
  * AppPackageSearchBasic
  */
@@ -42985,7 +42985,7 @@ class AppPackageSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("AppPackageSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\AppPackageSearchRowBasic")) {
 /**
  * AppPackageSearchRowBasic
  */
@@ -43037,7 +43037,7 @@ class AppPackageSearchRowBasic {
 	);
 }}
 
-if (!class_exists("NexusSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\NexusSearchBasic")) {
 /**
  * NexusSearchBasic
  */
@@ -43089,7 +43089,7 @@ class NexusSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("NexusSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\NexusSearchRowBasic")) {
 /**
  * NexusSearchRowBasic
  */
@@ -43129,7 +43129,7 @@ class NexusSearchRowBasic {
 	);
 }}
 
-if (!class_exists("OtherNameCategorySearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\OtherNameCategorySearchBasic")) {
 /**
  * OtherNameCategorySearchBasic
  */
@@ -43175,7 +43175,7 @@ class OtherNameCategorySearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("OtherNameCategorySearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\OtherNameCategorySearchRowBasic")) {
 /**
  * OtherNameCategorySearchRowBasic
  */
@@ -43209,7 +43209,7 @@ class OtherNameCategorySearchRowBasic {
 	);
 }}
 
-if (!class_exists("CustomerMessageSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerMessageSearchBasic")) {
 /**
  * CustomerMessageSearchBasic
  */
@@ -43267,7 +43267,7 @@ class CustomerMessageSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CustomerMessageSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerMessageSearchRowBasic")) {
 /**
  * CustomerMessageSearchRowBasic
  */
@@ -43313,7 +43313,7 @@ class CustomerMessageSearchRowBasic {
 	);
 }}
 
-if (!class_exists("ItemDemandPlanSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemDemandPlanSearchBasic")) {
 /**
  * ItemDemandPlanSearchBasic
  */
@@ -43437,7 +43437,7 @@ class ItemDemandPlanSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ItemDemandPlanSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemDemandPlanSearchRowBasic")) {
 /**
  * ItemDemandPlanSearchRowBasic
  */
@@ -43555,7 +43555,7 @@ class ItemDemandPlanSearchRowBasic {
 	);
 }}
 
-if (!class_exists("ItemSupplyPlanSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemSupplyPlanSearchBasic")) {
 /**
  * ItemSupplyPlanSearchBasic
  */
@@ -43661,7 +43661,7 @@ class ItemSupplyPlanSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ItemSupplyPlanSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemSupplyPlanSearchRowBasic")) {
 /**
  * ItemSupplyPlanSearchRowBasic
  */
@@ -43761,7 +43761,7 @@ class ItemSupplyPlanSearchRowBasic {
 	);
 }}
 
-if (!class_exists("CurrencyRateSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CurrencyRateSearchBasic")) {
 /**
  * CurrencyRateSearchBasic
  */
@@ -43807,7 +43807,7 @@ class CurrencyRateSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CurrencyRateSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CurrencyRateSearchRowBasic")) {
 /**
  * CurrencyRateSearchRowBasic
  */
@@ -43847,7 +43847,7 @@ class CurrencyRateSearchRowBasic {
 	);
 }}
 
-if (!class_exists("ItemRevisionSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemRevisionSearchBasic")) {
 /**
  * ItemRevisionSearchBasic
  */
@@ -43893,7 +43893,7 @@ class ItemRevisionSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ItemRevisionSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemRevisionSearchRowBasic")) {
 /**
  * ItemRevisionSearchRowBasic
  */
@@ -43951,7 +43951,7 @@ class ItemRevisionSearchRowBasic {
 	);
 }}
 
-if (!class_exists("CouponCodeSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CouponCodeSearchBasic")) {
 /**
  * CouponCodeSearchBasic
  */
@@ -44015,7 +44015,7 @@ class CouponCodeSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CouponCodeSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\CouponCodeSearchRowBasic")) {
 /**
  * CouponCodeSearchRowBasic
  */
@@ -44073,7 +44073,7 @@ class CouponCodeSearchRowBasic {
 	);
 }}
 
-if (!class_exists("PayrollItemSearchBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\PayrollItemSearchBasic")) {
 /**
  * PayrollItemSearchBasic
  */
@@ -44149,7 +44149,7 @@ class PayrollItemSearchBasic extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PayrollItemSearchRowBasic")) {
+if (!class_exists(__NAMESPACE__ . "\\PayrollItemSearchRowBasic")) {
 /**
  * PayrollItemSearchRowBasic
  */
@@ -44213,7 +44213,7 @@ class PayrollItemSearchRowBasic {
 	);
 }}
 
-if (!class_exists("CalendarEventAccessLevel")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventAccessLevel")) {
 /**
  * CalendarEventAccessLevel
  */
@@ -44235,7 +44235,7 @@ class CalendarEventAccessLevel {
 	const _showAsBusy = "_showAsBusy";
 }}
 
-if (!class_exists("CalendarEventAttendeeAttendance")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventAttendeeAttendance")) {
 /**
  * CalendarEventAttendeeAttendance
  */
@@ -44253,7 +44253,7 @@ class CalendarEventAttendeeAttendance {
 	const _required = "_required";
 }}
 
-if (!class_exists("CalendarEventFrequency")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventFrequency")) {
 /**
  * CalendarEventFrequency
  */
@@ -44283,7 +44283,7 @@ class CalendarEventFrequency {
 	const _year = "_year";
 }}
 
-if (!class_exists("CalendarEventDow")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventDow")) {
 /**
  * CalendarEventDow
  */
@@ -44321,7 +44321,7 @@ class CalendarEventDow {
 	const _saturday = "_saturday";
 }}
 
-if (!class_exists("CalendarEventDowim")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventDowim")) {
 /**
  * CalendarEventDowim
  */
@@ -44351,7 +44351,7 @@ class CalendarEventDowim {
 	const _last = "_last";
 }}
 
-if (!class_exists("CalendarEventReminderMinutes")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventReminderMinutes")) {
 /**
  * CalendarEventReminderMinutes
  */
@@ -44429,7 +44429,7 @@ class CalendarEventReminderMinutes {
 	const _8hours = "_8hours";
 }}
 
-if (!class_exists("CalendarEventReminderType")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventReminderType")) {
 /**
  * CalendarEventReminderType
  */
@@ -44451,7 +44451,7 @@ class CalendarEventReminderType {
 	const _popupWindow = "_popupWindow";
 }}
 
-if (!class_exists("CalendarEventStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventStatus")) {
 /**
  * CalendarEventStatus
  */
@@ -44477,7 +44477,7 @@ class CalendarEventStatus {
 	const _tentative = "_tentative";
 }}
 
-if (!class_exists("TaskPriority")) {
+if (!class_exists(__NAMESPACE__ . "\\TaskPriority")) {
 /**
  * TaskPriority
  */
@@ -44499,7 +44499,7 @@ class TaskPriority {
 	const _medium = "_medium";
 }}
 
-if (!class_exists("TaskReminderMinutes")) {
+if (!class_exists(__NAMESPACE__ . "\\TaskReminderMinutes")) {
 /**
  * TaskReminderMinutes
  */
@@ -44573,7 +44573,7 @@ class TaskReminderMinutes {
 	const _8hours = "_8hours";
 }}
 
-if (!class_exists("TaskReminderType")) {
+if (!class_exists(__NAMESPACE__ . "\\TaskReminderType")) {
 /**
  * TaskReminderType
  */
@@ -44591,7 +44591,7 @@ class TaskReminderType {
 	const _popupWindow = "_popupWindow";
 }}
 
-if (!class_exists("TaskStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\TaskStatus")) {
 /**
  * TaskStatus
  */
@@ -44613,7 +44613,7 @@ class TaskStatus {
 	const _notStarted = "_notStarted";
 }}
 
-if (!class_exists("PhoneCallPriority")) {
+if (!class_exists(__NAMESPACE__ . "\\PhoneCallPriority")) {
 /**
  * PhoneCallPriority
  */
@@ -44635,7 +44635,7 @@ class PhoneCallPriority {
 	const _medium = "_medium";
 }}
 
-if (!class_exists("PhoneCallReminderMinutes")) {
+if (!class_exists(__NAMESPACE__ . "\\PhoneCallReminderMinutes")) {
 /**
  * PhoneCallReminderMinutes
  */
@@ -44709,7 +44709,7 @@ class PhoneCallReminderMinutes {
 	const _8hours = "_8hours";
 }}
 
-if (!class_exists("PhoneCallReminderType")) {
+if (!class_exists(__NAMESPACE__ . "\\PhoneCallReminderType")) {
 /**
  * PhoneCallReminderType
  */
@@ -44727,7 +44727,7 @@ class PhoneCallReminderType {
 	const _popupWindow = "_popupWindow";
 }}
 
-if (!class_exists("PhoneCallStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\PhoneCallStatus")) {
 /**
  * PhoneCallStatus
  */
@@ -44745,7 +44745,7 @@ class PhoneCallStatus {
 	const _scheduled = "_scheduled";
 }}
 
-if (!class_exists("ProjectTaskPriority")) {
+if (!class_exists(__NAMESPACE__ . "\\ProjectTaskPriority")) {
 /**
  * ProjectTaskPriority
  */
@@ -44767,7 +44767,7 @@ class ProjectTaskPriority {
 	const _medium = "_medium";
 }}
 
-if (!class_exists("ProjectTaskStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\ProjectTaskStatus")) {
 /**
  * ProjectTaskStatus
  */
@@ -44789,7 +44789,7 @@ class ProjectTaskStatus {
 	const _notStarted = "_notStarted";
 }}
 
-if (!class_exists("ProjectTaskConstraintType")) {
+if (!class_exists(__NAMESPACE__ . "\\ProjectTaskConstraintType")) {
 /**
  * ProjectTaskConstraintType
  */
@@ -44807,7 +44807,7 @@ class ProjectTaskConstraintType {
 	const _fixedStart = "_fixedStart";
 }}
 
-if (!class_exists("ProjectTaskPredecessorPredecessorType")) {
+if (!class_exists(__NAMESPACE__ . "\\ProjectTaskPredecessorPredecessorType")) {
 /**
  * ProjectTaskPredecessorPredecessorType
  */
@@ -44825,7 +44825,7 @@ class ProjectTaskPredecessorPredecessorType {
 	const _startToStart = "_startToStart";
 }}
 
-if (!class_exists("CalendarEvent")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEvent")) {
 /**
  * CalendarEvent
  */
@@ -45057,7 +45057,7 @@ class CalendarEvent extends Record {
 	);
 }}
 
-if (!class_exists("ExclusionDateList")) {
+if (!class_exists(__NAMESPACE__ . "\\ExclusionDateList")) {
 /**
  * ExclusionDateList
  */
@@ -45073,7 +45073,7 @@ class ExclusionDateList {
 	);
 }}
 
-if (!class_exists("RecurrenceDowMaskList")) {
+if (!class_exists(__NAMESPACE__ . "\\RecurrenceDowMaskList")) {
 /**
  * RecurrenceDowMaskList
  */
@@ -45089,7 +45089,7 @@ class RecurrenceDowMaskList {
 	);
 }}
 
-if (!class_exists("CalendarEventAttendee")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventAttendee")) {
 /**
  * CalendarEventAttendee
  */
@@ -45123,7 +45123,7 @@ class CalendarEventAttendee {
 	);
 }}
 
-if (!class_exists("CalendarEventAttendeeList")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventAttendeeList")) {
 /**
  * CalendarEventAttendeeList
  */
@@ -45145,7 +45145,7 @@ class CalendarEventAttendeeList {
 	);
 }}
 
-if (!class_exists("CalendarEventResource")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventResource")) {
 /**
  * CalendarEventResource
  */
@@ -45167,7 +45167,7 @@ class CalendarEventResource {
 	);
 }}
 
-if (!class_exists("CalendarEventResourceList")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventResourceList")) {
 /**
  * CalendarEventResourceList
  */
@@ -45189,7 +45189,7 @@ class CalendarEventResourceList {
 	);
 }}
 
-if (!class_exists("CalendarEventSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventSearch")) {
 /**
  * CalendarEventSearch
  */
@@ -45265,7 +45265,7 @@ class CalendarEventSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CalendarEventSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventSearchAdvanced")) {
 /**
  * CalendarEventSearchAdvanced
  */
@@ -45299,7 +45299,7 @@ class CalendarEventSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CalendarEventSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventSearchRow")) {
 /**
  * CalendarEventSearchRow
  */
@@ -45375,7 +45375,7 @@ class CalendarEventSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("Task")) {
+if (!class_exists(__NAMESPACE__ . "\\Task")) {
 /**
  * Task
  */
@@ -45595,7 +45595,7 @@ class Task extends Record {
 	);
 }}
 
-if (!class_exists("TaskContact")) {
+if (!class_exists(__NAMESPACE__ . "\\TaskContact")) {
 /**
  * TaskContact
  */
@@ -45617,7 +45617,7 @@ class TaskContact {
 	);
 }}
 
-if (!class_exists("TaskContactList")) {
+if (!class_exists(__NAMESPACE__ . "\\TaskContactList")) {
 /**
  * TaskContactList
  */
@@ -45639,7 +45639,7 @@ class TaskContactList {
 	);
 }}
 
-if (!class_exists("TaskSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\TaskSearch")) {
 /**
  * TaskSearch
  */
@@ -45727,7 +45727,7 @@ class TaskSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("TaskSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\TaskSearchAdvanced")) {
 /**
  * TaskSearchAdvanced
  */
@@ -45761,7 +45761,7 @@ class TaskSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("TaskSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\TaskSearchRow")) {
 /**
  * TaskSearchRow
  */
@@ -45849,7 +45849,7 @@ class TaskSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("PhoneCall")) {
+if (!class_exists(__NAMESPACE__ . "\\PhoneCall")) {
 /**
  * PhoneCall
  */
@@ -46027,7 +46027,7 @@ class PhoneCall extends Record {
 	);
 }}
 
-if (!class_exists("PhoneCallContact")) {
+if (!class_exists(__NAMESPACE__ . "\\PhoneCallContact")) {
 /**
  * PhoneCallContact
  */
@@ -46061,7 +46061,7 @@ class PhoneCallContact {
 	);
 }}
 
-if (!class_exists("PhoneCallContactList")) {
+if (!class_exists(__NAMESPACE__ . "\\PhoneCallContactList")) {
 /**
  * PhoneCallContactList
  */
@@ -46083,7 +46083,7 @@ class PhoneCallContactList {
 	);
 }}
 
-if (!class_exists("PhoneCallSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\PhoneCallSearch")) {
 /**
  * PhoneCallSearch
  */
@@ -46159,7 +46159,7 @@ class PhoneCallSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PhoneCallSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\PhoneCallSearchAdvanced")) {
 /**
  * PhoneCallSearchAdvanced
  */
@@ -46193,7 +46193,7 @@ class PhoneCallSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PhoneCallSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\PhoneCallSearchRow")) {
 /**
  * PhoneCallSearchRow
  */
@@ -46269,7 +46269,7 @@ class PhoneCallSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("ProjectTask")) {
+if (!class_exists(__NAMESPACE__ . "\\ProjectTask")) {
 /**
  * ProjectTask
  */
@@ -46441,7 +46441,7 @@ class ProjectTask extends Record {
 	);
 }}
 
-if (!class_exists("ProjectTaskPredecessor")) {
+if (!class_exists(__NAMESPACE__ . "\\ProjectTaskPredecessor")) {
 /**
  * ProjectTaskPredecessor
  */
@@ -46475,7 +46475,7 @@ class ProjectTaskPredecessor {
 	);
 }}
 
-if (!class_exists("ProjectTaskPredecessorList")) {
+if (!class_exists(__NAMESPACE__ . "\\ProjectTaskPredecessorList")) {
 /**
  * ProjectTaskPredecessorList
  */
@@ -46497,7 +46497,7 @@ class ProjectTaskPredecessorList {
 	);
 }}
 
-if (!class_exists("ProjectTaskAssignee")) {
+if (!class_exists(__NAMESPACE__ . "\\ProjectTaskAssignee")) {
 /**
  * ProjectTaskAssignee
  */
@@ -46555,7 +46555,7 @@ class ProjectTaskAssignee {
 	);
 }}
 
-if (!class_exists("ProjectTaskAssigneeList")) {
+if (!class_exists(__NAMESPACE__ . "\\ProjectTaskAssigneeList")) {
 /**
  * ProjectTaskAssigneeList
  */
@@ -46577,7 +46577,7 @@ class ProjectTaskAssigneeList {
 	);
 }}
 
-if (!class_exists("ProjectTaskSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\ProjectTaskSearch")) {
 /**
  * ProjectTaskSearch
  */
@@ -46635,7 +46635,7 @@ class ProjectTaskSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ProjectTaskSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\ProjectTaskSearchAdvanced")) {
 /**
  * ProjectTaskSearchAdvanced
  */
@@ -46669,7 +46669,7 @@ class ProjectTaskSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ProjectTaskSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\ProjectTaskSearchRow")) {
 /**
  * ProjectTaskSearchRow
  */
@@ -46727,7 +46727,7 @@ class ProjectTaskSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("PhoneCallTimeItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\PhoneCallTimeItemList")) {
 /**
  * PhoneCallTimeItemList
  */
@@ -46749,7 +46749,7 @@ class PhoneCallTimeItemList {
 	);
 }}
 
-if (!class_exists("CalendarEventTimeItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\CalendarEventTimeItemList")) {
 /**
  * CalendarEventTimeItemList
  */
@@ -46771,7 +46771,7 @@ class CalendarEventTimeItemList {
 	);
 }}
 
-if (!class_exists("TaskTimeItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\TaskTimeItemList")) {
 /**
  * TaskTimeItemList
  */
@@ -46793,7 +46793,7 @@ class TaskTimeItemList {
 	);
 }}
 
-if (!class_exists("ProjectTaskTimeItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\ProjectTaskTimeItemList")) {
 /**
  * ProjectTaskTimeItemList
  */
@@ -46815,7 +46815,7 @@ class ProjectTaskTimeItemList {
 	);
 }}
 
-if (!class_exists("NoteDirection")) {
+if (!class_exists(__NAMESPACE__ . "\\NoteDirection")) {
 /**
  * NoteDirection
  */
@@ -46833,7 +46833,7 @@ class NoteDirection {
 	const _outgoing = "_outgoing";
 }}
 
-if (!class_exists("MessageMessageType")) {
+if (!class_exists(__NAMESPACE__ . "\\MessageMessageType")) {
 /**
  * MessageMessageType
  */
@@ -46863,7 +46863,7 @@ class MessageMessageType {
 	const _print = "_print";
 }}
 
-if (!class_exists("File")) {
+if (!class_exists(__NAMESPACE__ . "\\File")) {
 /**
  * File
  */
@@ -47059,7 +47059,7 @@ class File extends Record {
 	);
 }}
 
-if (!class_exists("FileSiteCategory")) {
+if (!class_exists(__NAMESPACE__ . "\\FileSiteCategory")) {
 /**
  * FileSiteCategory
  */
@@ -47093,7 +47093,7 @@ class FileSiteCategory {
 	);
 }}
 
-if (!class_exists("FileSiteCategoryList")) {
+if (!class_exists(__NAMESPACE__ . "\\FileSiteCategoryList")) {
 /**
  * FileSiteCategoryList
  */
@@ -47115,7 +47115,7 @@ class FileSiteCategoryList {
 	);
 }}
 
-if (!class_exists("FileSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\FileSearch")) {
 /**
  * FileSearch
  */
@@ -47143,7 +47143,7 @@ class FileSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("FileSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\FileSearchAdvanced")) {
 /**
  * FileSearchAdvanced
  */
@@ -47177,7 +47177,7 @@ class FileSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("FileSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\FileSearchRow")) {
 /**
  * FileSearchRow
  */
@@ -47205,7 +47205,7 @@ class FileSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("Folder")) {
+if (!class_exists(__NAMESPACE__ . "\\Folder")) {
 /**
  * Folder
  */
@@ -47305,7 +47305,7 @@ class Folder extends Record {
 	);
 }}
 
-if (!class_exists("FolderSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\FolderSearch")) {
 /**
  * FolderSearch
  */
@@ -47333,7 +47333,7 @@ class FolderSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("FolderSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\FolderSearchAdvanced")) {
 /**
  * FolderSearchAdvanced
  */
@@ -47367,7 +47367,7 @@ class FolderSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("FolderSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\FolderSearchRow")) {
 /**
  * FolderSearchRow
  */
@@ -47395,7 +47395,7 @@ class FolderSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("Note")) {
+if (!class_exists(__NAMESPACE__ . "\\Note")) {
 /**
  * Note
  */
@@ -47513,7 +47513,7 @@ class Note extends Record {
 	);
 }}
 
-if (!class_exists("NoteSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\NoteSearch")) {
 /**
  * NoteSearch
  */
@@ -47643,7 +47643,7 @@ class NoteSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("NoteSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\NoteSearchAdvanced")) {
 /**
  * NoteSearchAdvanced
  */
@@ -47677,7 +47677,7 @@ class NoteSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("NoteSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\NoteSearchRow")) {
 /**
  * NoteSearchRow
  */
@@ -47807,7 +47807,7 @@ class NoteSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("Message")) {
+if (!class_exists(__NAMESPACE__ . "\\Message")) {
 /**
  * Message
  */
@@ -47931,7 +47931,7 @@ class Message extends Record {
 	);
 }}
 
-if (!class_exists("MessageMediaItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\MessageMediaItemList")) {
 /**
  * MessageMediaItemList
  */
@@ -47953,7 +47953,7 @@ class MessageMediaItemList {
 	);
 }}
 
-if (!class_exists("MessageSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\MessageSearch")) {
 /**
  * MessageSearch
  */
@@ -48059,7 +48059,7 @@ class MessageSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("MessageSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\MessageSearchAdvanced")) {
 /**
  * MessageSearchAdvanced
  */
@@ -48093,7 +48093,7 @@ class MessageSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("MessageSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\MessageSearchRow")) {
 /**
  * MessageSearchRow
  */
@@ -48199,7 +48199,7 @@ class MessageSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("EntityType")) {
+if (!class_exists(__NAMESPACE__ . "\\EntityType")) {
 /**
  * EntityType
  */
@@ -48249,7 +48249,7 @@ class EntityType {
 	const _vendor = "_vendor";
 }}
 
-if (!class_exists("CustomerStatusStage")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerStatusStage")) {
 /**
  * CustomerStatusStage
  */
@@ -48271,7 +48271,7 @@ class CustomerStatusStage {
 	const _prospect = "_prospect";
 }}
 
-if (!class_exists("ContactType")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactType")) {
 /**
  * ContactType
  */
@@ -48301,7 +48301,7 @@ class ContactType {
 	const _vendor = "_vendor";
 }}
 
-if (!class_exists("CustomerStage")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerStage")) {
 /**
  * CustomerStage
  */
@@ -48323,7 +48323,7 @@ class CustomerStage {
 	const _prospect = "_prospect";
 }}
 
-if (!class_exists("CustomerCreditHoldOverride")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerCreditHoldOverride")) {
 /**
  * CustomerCreditHoldOverride
  */
@@ -48345,7 +48345,7 @@ class CustomerCreditHoldOverride {
 	const _off = "_off";
 }}
 
-if (!class_exists("CustomerMonthlyClosing")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerMonthlyClosing")) {
 /**
  * CustomerMonthlyClosing
  */
@@ -48383,7 +48383,7 @@ class CustomerMonthlyClosing {
 	const _endOfTheMonth = "_endOfTheMonth";
 }}
 
-if (!class_exists("EmailPreference")) {
+if (!class_exists(__NAMESPACE__ . "\\EmailPreference")) {
 /**
  * EmailPreference
  */
@@ -48405,7 +48405,7 @@ class EmailPreference {
 	const _pDF = "_pDF";
 }}
 
-if (!class_exists("EntityGroupType")) {
+if (!class_exists(__NAMESPACE__ . "\\EntityGroupType")) {
 /**
  * EntityGroupType
  */
@@ -48435,7 +48435,7 @@ class EntityGroupType {
 	const _vendor = "_vendor";
 }}
 
-if (!class_exists("EntityGroupDailyTime")) {
+if (!class_exists(__NAMESPACE__ . "\\EntityGroupDailyTime")) {
 /**
  * EntityGroupDailyTime
  */
@@ -48637,7 +48637,7 @@ class EntityGroupDailyTime {
 	const _1130pm = "_1130pm";
 }}
 
-if (!class_exists("EntityGroupDefView")) {
+if (!class_exists(__NAMESPACE__ . "\\EntityGroupDefView")) {
 /**
  * EntityGroupDefView
  */
@@ -48659,7 +48659,7 @@ class EntityGroupDefView {
 	const _monthly = "_monthly";
 }}
 
-if (!class_exists("EntityGroupPeriodSize")) {
+if (!class_exists(__NAMESPACE__ . "\\EntityGroupPeriodSize")) {
 /**
  * EntityGroupPeriodSize
  */
@@ -48689,7 +48689,7 @@ class EntityGroupPeriodSize {
 	const _oneHour = "_oneHour";
 }}
 
-if (!class_exists("TaxFractionUnit")) {
+if (!class_exists(__NAMESPACE__ . "\\TaxFractionUnit")) {
 /**
  * TaxFractionUnit
  */
@@ -48719,7 +48719,7 @@ class TaxFractionUnit {
 	const _1andBelow = "_1andBelow";
 }}
 
-if (!class_exists("TaxRounding")) {
+if (!class_exists(__NAMESPACE__ . "\\TaxRounding")) {
 /**
  * TaxRounding
  */
@@ -48741,7 +48741,7 @@ class TaxRounding {
 	const _roundUp = "_roundUp";
 }}
 
-if (!class_exists("JobBillingType")) {
+if (!class_exists(__NAMESPACE__ . "\\JobBillingType")) {
 /**
  * JobBillingType
  */
@@ -48767,7 +48767,7 @@ class JobBillingType {
 	const _timeAndMaterials = "_timeAndMaterials";
 }}
 
-if (!class_exists("PartnerOtherRelationships")) {
+if (!class_exists(__NAMESPACE__ . "\\PartnerOtherRelationships")) {
 /**
  * PartnerOtherRelationships
  */
@@ -48789,7 +48789,7 @@ class PartnerOtherRelationships {
 	const _vendor = "_vendor";
 }}
 
-if (!class_exists("CustomerOtherRelationships")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerOtherRelationships")) {
 /**
  * CustomerOtherRelationships
  */
@@ -48811,7 +48811,7 @@ class CustomerOtherRelationships {
 	const _vendor = "_vendor";
 }}
 
-if (!class_exists("VendorOtherRelationships")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorOtherRelationships")) {
 /**
  * VendorOtherRelationships
  */
@@ -48833,7 +48833,7 @@ class VendorOtherRelationships {
 	const _partner = "_partner";
 }}
 
-if (!class_exists("CustomerNegativeNumberFormat")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerNegativeNumberFormat")) {
 /**
  * CustomerNegativeNumberFormat
  */
@@ -48851,7 +48851,7 @@ class CustomerNegativeNumberFormat {
 	const _minusSigned = "_minusSigned";
 }}
 
-if (!class_exists("CustomerNumberFormat")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerNumberFormat")) {
 /**
  * CustomerNumberFormat
  */
@@ -48885,7 +48885,7 @@ class CustomerNumberFormat {
 	const _apostropheAsDigitGroupSeparatorAndDecimalPoint = "_apostropheAsDigitGroupSeparatorAndDecimalPoint";
 }}
 
-if (!class_exists("Subscriptions")) {
+if (!class_exists(__NAMESPACE__ . "\\Subscriptions")) {
 /**
  * Subscriptions
  */
@@ -48913,7 +48913,7 @@ class Subscriptions {
 	);
 }}
 
-if (!class_exists("SubscriptionsList")) {
+if (!class_exists(__NAMESPACE__ . "\\SubscriptionsList")) {
 /**
  * SubscriptionsList
  */
@@ -48935,7 +48935,7 @@ class SubscriptionsList {
 	);
 }}
 
-if (!class_exists("Contact")) {
+if (!class_exists(__NAMESPACE__ . "\\Contact")) {
 /**
  * Contact
  */
@@ -49161,7 +49161,7 @@ class Contact extends Record {
 	);
 }}
 
-if (!class_exists("CategoryList")) {
+if (!class_exists(__NAMESPACE__ . "\\CategoryList")) {
 /**
  * CategoryList
  */
@@ -49177,7 +49177,7 @@ class CategoryList {
 	);
 }}
 
-if (!class_exists("ContactAddressbook")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactAddressbook")) {
 /**
  * ContactAddressbook
  */
@@ -49283,7 +49283,7 @@ class ContactAddressbook {
 	);
 }}
 
-if (!class_exists("ContactAddressbookList")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactAddressbookList")) {
 /**
  * ContactAddressbookList
  */
@@ -49305,7 +49305,7 @@ class ContactAddressbookList {
 	);
 }}
 
-if (!class_exists("ContactSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactSearch")) {
 /**
  * ContactSearch
  */
@@ -49447,7 +49447,7 @@ class ContactSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ContactSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactSearchAdvanced")) {
 /**
  * ContactSearchAdvanced
  */
@@ -49481,7 +49481,7 @@ class ContactSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ContactSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactSearchRow")) {
 /**
  * ContactSearchRow
  */
@@ -49623,7 +49623,7 @@ class ContactSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("Customer")) {
+if (!class_exists(__NAMESPACE__ . "\\Customer")) {
 /**
  * Customer
  */
@@ -50365,7 +50365,7 @@ class Customer extends Record {
 	);
 }}
 
-if (!class_exists("CustomerDownload")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerDownload")) {
 /**
  * CustomerDownload
  */
@@ -50399,7 +50399,7 @@ class CustomerDownload {
 	);
 }}
 
-if (!class_exists("CustomerDownloadList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerDownloadList")) {
 /**
  * CustomerDownloadList
  */
@@ -50421,7 +50421,7 @@ class CustomerDownloadList {
 	);
 }}
 
-if (!class_exists("ContactAccessRoles")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactAccessRoles")) {
 /**
  * ContactAccessRoles
  */
@@ -50473,7 +50473,7 @@ class ContactAccessRoles {
 	);
 }}
 
-if (!class_exists("ContactAccessRolesList")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactAccessRolesList")) {
 /**
  * ContactAccessRolesList
  */
@@ -50495,7 +50495,7 @@ class ContactAccessRolesList {
 	);
 }}
 
-if (!class_exists("CustomerSalesTeamList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerSalesTeamList")) {
 /**
  * CustomerSalesTeamList
  */
@@ -50517,7 +50517,7 @@ class CustomerSalesTeamList {
 	);
 }}
 
-if (!class_exists("CustomerAddressbook")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerAddressbook")) {
 /**
  * CustomerAddressbook
  */
@@ -50629,7 +50629,7 @@ class CustomerAddressbook {
 	);
 }}
 
-if (!class_exists("CustomerAddressbookList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerAddressbookList")) {
 /**
  * CustomerAddressbookList
  */
@@ -50651,7 +50651,7 @@ class CustomerAddressbookList {
 	);
 }}
 
-if (!class_exists("CustomerCreditCards")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerCreditCards")) {
 /**
  * CustomerCreditCards
  */
@@ -50715,7 +50715,7 @@ class CustomerCreditCards {
 	);
 }}
 
-if (!class_exists("CustomerCreditCardsList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerCreditCardsList")) {
 /**
  * CustomerCreditCardsList
  */
@@ -50737,7 +50737,7 @@ class CustomerCreditCardsList {
 	);
 }}
 
-if (!class_exists("CustomerGroupPricing")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerGroupPricing")) {
 /**
  * CustomerGroupPricing
  */
@@ -50759,7 +50759,7 @@ class CustomerGroupPricing {
 	);
 }}
 
-if (!class_exists("CustomerGroupPricingList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerGroupPricingList")) {
 /**
  * CustomerGroupPricingList
  */
@@ -50781,7 +50781,7 @@ class CustomerGroupPricingList {
 	);
 }}
 
-if (!class_exists("CustomerItemPricing")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerItemPricing")) {
 /**
  * CustomerItemPricing
  */
@@ -50815,7 +50815,7 @@ class CustomerItemPricing {
 	);
 }}
 
-if (!class_exists("CustomerItemPricingList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerItemPricingList")) {
 /**
  * CustomerItemPricingList
  */
@@ -50837,7 +50837,7 @@ class CustomerItemPricingList {
 	);
 }}
 
-if (!class_exists("CustomerPartnersList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerPartnersList")) {
 /**
  * CustomerPartnersList
  */
@@ -50859,7 +50859,7 @@ class CustomerPartnersList {
 	);
 }}
 
-if (!class_exists("CustomerSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerSearch")) {
 /**
  * CustomerSearch
  */
@@ -51037,7 +51037,7 @@ class CustomerSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CustomerSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerSearchAdvanced")) {
 /**
  * CustomerSearchAdvanced
  */
@@ -51071,7 +51071,7 @@ class CustomerSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CustomerSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerSearchRow")) {
 /**
  * CustomerSearchRow
  */
@@ -51249,7 +51249,7 @@ class CustomerSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("CustomerStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerStatus")) {
 /**
  * CustomerStatus
  */
@@ -51307,7 +51307,7 @@ class CustomerStatus extends Record {
 	);
 }}
 
-if (!class_exists("Partner")) {
+if (!class_exists(__NAMESPACE__ . "\\Partner")) {
 /**
  * Partner
  */
@@ -51659,7 +51659,7 @@ class Partner extends Record {
 	);
 }}
 
-if (!class_exists("PartnerPromoCode")) {
+if (!class_exists(__NAMESPACE__ . "\\PartnerPromoCode")) {
 /**
  * PartnerPromoCode
  */
@@ -51687,7 +51687,7 @@ class PartnerPromoCode {
 	);
 }}
 
-if (!class_exists("PartnerPromoCodeList")) {
+if (!class_exists(__NAMESPACE__ . "\\PartnerPromoCodeList")) {
 /**
  * PartnerPromoCodeList
  */
@@ -51709,7 +51709,7 @@ class PartnerPromoCodeList {
 	);
 }}
 
-if (!class_exists("PartnerAddressbook")) {
+if (!class_exists(__NAMESPACE__ . "\\PartnerAddressbook")) {
 /**
  * PartnerAddressbook
  */
@@ -51815,7 +51815,7 @@ class PartnerAddressbook {
 	);
 }}
 
-if (!class_exists("PartnerAddressbookList")) {
+if (!class_exists(__NAMESPACE__ . "\\PartnerAddressbookList")) {
 /**
  * PartnerAddressbookList
  */
@@ -51837,7 +51837,7 @@ class PartnerAddressbookList {
 	);
 }}
 
-if (!class_exists("PartnerSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\PartnerSearch")) {
 /**
  * PartnerSearch
  */
@@ -51925,7 +51925,7 @@ class PartnerSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PartnerSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\PartnerSearchAdvanced")) {
 /**
  * PartnerSearchAdvanced
  */
@@ -51959,7 +51959,7 @@ class PartnerSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PartnerSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\PartnerSearchRow")) {
 /**
  * PartnerSearchRow
  */
@@ -52047,7 +52047,7 @@ class PartnerSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("Vendor")) {
+if (!class_exists(__NAMESPACE__ . "\\Vendor")) {
 /**
  * Vendor
  */
@@ -52489,7 +52489,7 @@ class Vendor extends Record {
 	);
 }}
 
-if (!class_exists("VendorPricingSchedule")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorPricingSchedule")) {
 /**
  * VendorPricingSchedule
  */
@@ -52511,7 +52511,7 @@ class VendorPricingSchedule {
 	);
 }}
 
-if (!class_exists("VendorPricingScheduleList")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorPricingScheduleList")) {
 /**
  * VendorPricingScheduleList
  */
@@ -52533,7 +52533,7 @@ class VendorPricingScheduleList {
 	);
 }}
 
-if (!class_exists("VendorAddressbook")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorAddressbook")) {
 /**
  * VendorAddressbook
  */
@@ -52639,7 +52639,7 @@ class VendorAddressbook {
 	);
 }}
 
-if (!class_exists("VendorAddressbookList")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorAddressbookList")) {
 /**
  * VendorAddressbookList
  */
@@ -52661,7 +52661,7 @@ class VendorAddressbookList {
 	);
 }}
 
-if (!class_exists("VendorRoles")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorRoles")) {
 /**
  * VendorRoles
  */
@@ -52677,7 +52677,7 @@ class VendorRoles {
 	);
 }}
 
-if (!class_exists("VendorRolesList")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorRolesList")) {
 /**
  * VendorRolesList
  */
@@ -52699,7 +52699,7 @@ class VendorRolesList {
 	);
 }}
 
-if (!class_exists("VendorSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorSearch")) {
 /**
  * VendorSearch
  */
@@ -52775,7 +52775,7 @@ class VendorSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("VendorSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorSearchAdvanced")) {
 /**
  * VendorSearchAdvanced
  */
@@ -52809,7 +52809,7 @@ class VendorSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("VendorSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorSearchRow")) {
 /**
  * VendorSearchRow
  */
@@ -52885,7 +52885,7 @@ class VendorSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("EntityGroup")) {
+if (!class_exists(__NAMESPACE__ . "\\EntityGroup")) {
 /**
  * EntityGroup
  */
@@ -53045,7 +53045,7 @@ class EntityGroup extends Record {
 	);
 }}
 
-if (!class_exists("EntityGroupSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\EntityGroupSearch")) {
 /**
  * EntityGroupSearch
  */
@@ -53073,7 +53073,7 @@ class EntityGroupSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("EntityGroupSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\EntityGroupSearchAdvanced")) {
 /**
  * EntityGroupSearchAdvanced
  */
@@ -53107,7 +53107,7 @@ class EntityGroupSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("EntityGroupSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\EntityGroupSearchRow")) {
 /**
  * EntityGroupSearchRow
  */
@@ -53135,7 +53135,7 @@ class EntityGroupSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("Job")) {
+if (!class_exists(__NAMESPACE__ . "\\Job")) {
 /**
  * Job
  */
@@ -53583,7 +53583,7 @@ class Job extends Record {
 	);
 }}
 
-if (!class_exists("JobAddressbook")) {
+if (!class_exists(__NAMESPACE__ . "\\JobAddressbook")) {
 /**
  * JobAddressbook
  */
@@ -53695,7 +53695,7 @@ class JobAddressbook {
 	);
 }}
 
-if (!class_exists("JobAddressbookList")) {
+if (!class_exists(__NAMESPACE__ . "\\JobAddressbookList")) {
 /**
  * JobAddressbookList
  */
@@ -53717,7 +53717,7 @@ class JobAddressbookList {
 	);
 }}
 
-if (!class_exists("JobResources")) {
+if (!class_exists(__NAMESPACE__ . "\\JobResources")) {
 /**
  * JobResources
  */
@@ -53745,7 +53745,7 @@ class JobResources {
 	);
 }}
 
-if (!class_exists("JobResourcesList")) {
+if (!class_exists(__NAMESPACE__ . "\\JobResourcesList")) {
 /**
  * JobResourcesList
  */
@@ -53767,7 +53767,7 @@ class JobResourcesList {
 	);
 }}
 
-if (!class_exists("JobMilestones")) {
+if (!class_exists(__NAMESPACE__ . "\\JobMilestones")) {
 /**
  * JobMilestones
  */
@@ -53807,7 +53807,7 @@ class JobMilestones {
 	);
 }}
 
-if (!class_exists("JobMilestonesList")) {
+if (!class_exists(__NAMESPACE__ . "\\JobMilestonesList")) {
 /**
  * JobMilestonesList
  */
@@ -53829,7 +53829,7 @@ class JobMilestonesList {
 	);
 }}
 
-if (!class_exists("JobCreditCards")) {
+if (!class_exists(__NAMESPACE__ . "\\JobCreditCards")) {
 /**
  * JobCreditCards
  */
@@ -53893,7 +53893,7 @@ class JobCreditCards {
 	);
 }}
 
-if (!class_exists("JobCreditCardsList")) {
+if (!class_exists(__NAMESPACE__ . "\\JobCreditCardsList")) {
 /**
  * JobCreditCardsList
  */
@@ -53915,7 +53915,7 @@ class JobCreditCardsList {
 	);
 }}
 
-if (!class_exists("JobSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\JobSearch")) {
 /**
  * JobSearch
  */
@@ -53961,7 +53961,7 @@ class JobSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("JobSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\JobSearchAdvanced")) {
 /**
  * JobSearchAdvanced
  */
@@ -53995,7 +53995,7 @@ class JobSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("JobSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\JobSearchRow")) {
 /**
  * JobSearchRow
  */
@@ -54041,7 +54041,7 @@ class JobSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("JobType")) {
+if (!class_exists(__NAMESPACE__ . "\\JobType")) {
 /**
  * JobType
  */
@@ -54081,7 +54081,7 @@ class JobType extends Record {
 	);
 }}
 
-if (!class_exists("JobStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\JobStatus")) {
 /**
  * JobStatus
  */
@@ -54121,7 +54121,7 @@ class JobStatus extends Record {
 	);
 }}
 
-if (!class_exists("CustomerStatusSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerStatusSearch")) {
 /**
  * CustomerStatusSearch
  */
@@ -54143,7 +54143,7 @@ class CustomerStatusSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CustomerStatusSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerStatusSearchAdvanced")) {
 /**
  * CustomerStatusSearchAdvanced
  */
@@ -54177,7 +54177,7 @@ class CustomerStatusSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CustomerStatusSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerStatusSearchRow")) {
 /**
  * CustomerStatusSearchRow
  */
@@ -54199,7 +54199,7 @@ class CustomerStatusSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("JobStatusSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\JobStatusSearch")) {
 /**
  * JobStatusSearch
  */
@@ -54221,7 +54221,7 @@ class JobStatusSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("JobStatusSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\JobStatusSearchAdvanced")) {
 /**
  * JobStatusSearchAdvanced
  */
@@ -54255,7 +54255,7 @@ class JobStatusSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("JobStatusSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\JobStatusSearchRow")) {
 /**
  * JobStatusSearchRow
  */
@@ -54277,7 +54277,7 @@ class JobStatusSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("JobTypeSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\JobTypeSearch")) {
 /**
  * JobTypeSearch
  */
@@ -54299,7 +54299,7 @@ class JobTypeSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("JobTypeSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\JobTypeSearchAdvanced")) {
 /**
  * JobTypeSearchAdvanced
  */
@@ -54333,7 +54333,7 @@ class JobTypeSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("JobTypeSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\JobTypeSearchRow")) {
 /**
  * JobTypeSearchRow
  */
@@ -54355,7 +54355,7 @@ class JobTypeSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("OriginatingLeadSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\OriginatingLeadSearch")) {
 /**
  * OriginatingLeadSearch
  */
@@ -54371,7 +54371,7 @@ class OriginatingLeadSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("OriginatingLeadSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\OriginatingLeadSearchRow")) {
 /**
  * OriginatingLeadSearchRow
  */
@@ -54387,7 +54387,7 @@ class OriginatingLeadSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("CustomerCurrency")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerCurrency")) {
 /**
  * CustomerCurrency
  */
@@ -54469,7 +54469,7 @@ class CustomerCurrency {
 	);
 }}
 
-if (!class_exists("CustomerCurrencyList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerCurrencyList")) {
 /**
  * CustomerCurrencyList
  */
@@ -54491,7 +54491,7 @@ class CustomerCurrencyList {
 	);
 }}
 
-if (!class_exists("VendorCurrency")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorCurrency")) {
 /**
  * VendorCurrency
  */
@@ -54519,7 +54519,7 @@ class VendorCurrency {
 	);
 }}
 
-if (!class_exists("VendorCurrencyList")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorCurrencyList")) {
 /**
  * VendorCurrencyList
  */
@@ -54541,7 +54541,7 @@ class VendorCurrencyList {
 	);
 }}
 
-if (!class_exists("SupportCaseStatusStage")) {
+if (!class_exists(__NAMESPACE__ . "\\SupportCaseStatusStage")) {
 /**
  * SupportCaseStatusStage
  */
@@ -54563,7 +54563,7 @@ class SupportCaseStatusStage {
 	const _open = "_open";
 }}
 
-if (!class_exists("SupportCaseStage")) {
+if (!class_exists(__NAMESPACE__ . "\\SupportCaseStage")) {
 /**
  * SupportCaseStage
  */
@@ -54585,7 +54585,7 @@ class SupportCaseStage {
 	const _open = "_open";
 }}
 
-if (!class_exists("SolutionStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\SolutionStatus")) {
 /**
  * SolutionStatus
  */
@@ -54603,7 +54603,7 @@ class SolutionStatus {
 	const _unapproved = "_unapproved";
 }}
 
-if (!class_exists("IssueEventStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\IssueEventStatus")) {
 /**
  * IssueEventStatus
  */
@@ -54629,7 +54629,7 @@ class IssueEventStatus {
 	const _resolved = "_resolved";
 }}
 
-if (!class_exists("IssueTrackCode")) {
+if (!class_exists(__NAMESPACE__ . "\\IssueTrackCode")) {
 /**
  * IssueTrackCode
  */
@@ -54663,7 +54663,7 @@ class IssueTrackCode {
 	const _whenBaseStatusIsResolved = "_whenBaseStatusIsResolved";
 }}
 
-if (!class_exists("SupportCase")) {
+if (!class_exists(__NAMESPACE__ . "\\SupportCase")) {
 /**
  * SupportCase
  */
@@ -54925,7 +54925,7 @@ class SupportCase extends Record {
 	);
 }}
 
-if (!class_exists("EmailEmployeesList")) {
+if (!class_exists(__NAMESPACE__ . "\\EmailEmployeesList")) {
 /**
  * EmailEmployeesList
  */
@@ -54941,7 +54941,7 @@ class EmailEmployeesList {
 	);
 }}
 
-if (!class_exists("SupportCaseEscalateTo")) {
+if (!class_exists(__NAMESPACE__ . "\\SupportCaseEscalateTo")) {
 /**
  * SupportCaseEscalateTo
  */
@@ -54969,7 +54969,7 @@ class SupportCaseEscalateTo {
 	);
 }}
 
-if (!class_exists("SupportCaseEscalateToList")) {
+if (!class_exists(__NAMESPACE__ . "\\SupportCaseEscalateToList")) {
 /**
  * SupportCaseEscalateToList
  */
@@ -54991,7 +54991,7 @@ class SupportCaseEscalateToList {
 	);
 }}
 
-if (!class_exists("SupportCaseSolutions")) {
+if (!class_exists(__NAMESPACE__ . "\\SupportCaseSolutions")) {
 /**
  * SupportCaseSolutions
  */
@@ -55019,7 +55019,7 @@ class SupportCaseSolutions {
 	);
 }}
 
-if (!class_exists("SupportCaseSolutionsList")) {
+if (!class_exists(__NAMESPACE__ . "\\SupportCaseSolutionsList")) {
 /**
  * SupportCaseSolutionsList
  */
@@ -55041,7 +55041,7 @@ class SupportCaseSolutionsList {
 	);
 }}
 
-if (!class_exists("SupportCaseTimeItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\SupportCaseTimeItemList")) {
 /**
  * SupportCaseTimeItemList
  */
@@ -55063,7 +55063,7 @@ class SupportCaseTimeItemList {
 	);
 }}
 
-if (!class_exists("SupportCaseSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\SupportCaseSearch")) {
 /**
  * SupportCaseSearch
  */
@@ -55139,7 +55139,7 @@ class SupportCaseSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("SupportCaseSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\SupportCaseSearchAdvanced")) {
 /**
  * SupportCaseSearchAdvanced
  */
@@ -55173,7 +55173,7 @@ class SupportCaseSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("SupportCaseSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\SupportCaseSearchRow")) {
 /**
  * SupportCaseSearchRow
  */
@@ -55249,7 +55249,7 @@ class SupportCaseSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("SupportCaseStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\SupportCaseStatus")) {
 /**
  * SupportCaseStatus
  */
@@ -55313,7 +55313,7 @@ class SupportCaseStatus extends Record {
 	);
 }}
 
-if (!class_exists("SupportCaseType")) {
+if (!class_exists(__NAMESPACE__ . "\\SupportCaseType")) {
 /**
  * SupportCaseType
  */
@@ -55359,7 +55359,7 @@ class SupportCaseType extends Record {
 	);
 }}
 
-if (!class_exists("SupportCaseOrigin")) {
+if (!class_exists(__NAMESPACE__ . "\\SupportCaseOrigin")) {
 /**
  * SupportCaseOrigin
  */
@@ -55405,7 +55405,7 @@ class SupportCaseOrigin extends Record {
 	);
 }}
 
-if (!class_exists("SupportCaseIssue")) {
+if (!class_exists(__NAMESPACE__ . "\\SupportCaseIssue")) {
 /**
  * SupportCaseIssue
  */
@@ -55451,7 +55451,7 @@ class SupportCaseIssue extends Record {
 	);
 }}
 
-if (!class_exists("SupportCasePriority")) {
+if (!class_exists(__NAMESPACE__ . "\\SupportCasePriority")) {
 /**
  * SupportCasePriority
  */
@@ -55497,7 +55497,7 @@ class SupportCasePriority extends Record {
 	);
 }}
 
-if (!class_exists("Solution")) {
+if (!class_exists(__NAMESPACE__ . "\\Solution")) {
 /**
  * Solution
  */
@@ -55603,7 +55603,7 @@ class Solution extends Record {
 	);
 }}
 
-if (!class_exists("SolutionTopics")) {
+if (!class_exists(__NAMESPACE__ . "\\SolutionTopics")) {
 /**
  * SolutionTopics
  */
@@ -55619,7 +55619,7 @@ class SolutionTopics {
 	);
 }}
 
-if (!class_exists("SolutionTopicsList")) {
+if (!class_exists(__NAMESPACE__ . "\\SolutionTopicsList")) {
 /**
  * SolutionTopicsList
  */
@@ -55641,7 +55641,7 @@ class SolutionTopicsList {
 	);
 }}
 
-if (!class_exists("Solutions")) {
+if (!class_exists(__NAMESPACE__ . "\\Solutions")) {
 /**
  * Solutions
  */
@@ -55663,7 +55663,7 @@ class Solutions {
 	);
 }}
 
-if (!class_exists("SolutionsList")) {
+if (!class_exists(__NAMESPACE__ . "\\SolutionsList")) {
 /**
  * SolutionsList
  */
@@ -55685,7 +55685,7 @@ class SolutionsList {
 	);
 }}
 
-if (!class_exists("SolutionSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\SolutionSearch")) {
 /**
  * SolutionSearch
  */
@@ -55731,7 +55731,7 @@ class SolutionSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("SolutionSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\SolutionSearchAdvanced")) {
 /**
  * SolutionSearchAdvanced
  */
@@ -55765,7 +55765,7 @@ class SolutionSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("SolutionSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\SolutionSearchRow")) {
 /**
  * SolutionSearchRow
  */
@@ -55811,7 +55811,7 @@ class SolutionSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("Topic")) {
+if (!class_exists(__NAMESPACE__ . "\\Topic")) {
 /**
  * Topic
  */
@@ -55869,7 +55869,7 @@ class Topic extends Record {
 	);
 }}
 
-if (!class_exists("TopicSolution")) {
+if (!class_exists(__NAMESPACE__ . "\\TopicSolution")) {
 /**
  * TopicSolution
  */
@@ -55891,7 +55891,7 @@ class TopicSolution {
 	);
 }}
 
-if (!class_exists("TopicSolutionList")) {
+if (!class_exists(__NAMESPACE__ . "\\TopicSolutionList")) {
 /**
  * TopicSolutionList
  */
@@ -55913,7 +55913,7 @@ class TopicSolutionList {
 	);
 }}
 
-if (!class_exists("TopicSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\TopicSearch")) {
 /**
  * TopicSearch
  */
@@ -55941,7 +55941,7 @@ class TopicSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("TopicSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\TopicSearchAdvanced")) {
 /**
  * TopicSearchAdvanced
  */
@@ -55975,7 +55975,7 @@ class TopicSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("TopicSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\TopicSearchRow")) {
 /**
  * TopicSearchRow
  */
@@ -56003,7 +56003,7 @@ class TopicSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("Issue")) {
+if (!class_exists(__NAMESPACE__ . "\\Issue")) {
 /**
  * Issue
  */
@@ -56229,7 +56229,7 @@ class Issue extends Record {
 	);
 }}
 
-if (!class_exists("IssueVersion")) {
+if (!class_exists(__NAMESPACE__ . "\\IssueVersion")) {
 /**
  * IssueVersion
  */
@@ -56257,7 +56257,7 @@ class IssueVersion {
 	);
 }}
 
-if (!class_exists("IssueVersionList")) {
+if (!class_exists(__NAMESPACE__ . "\\IssueVersionList")) {
 /**
  * IssueVersionList
  */
@@ -56279,7 +56279,7 @@ class IssueVersionList {
 	);
 }}
 
-if (!class_exists("IssueSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\IssueSearch")) {
 /**
  * IssueSearch
  */
@@ -56325,7 +56325,7 @@ class IssueSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("IssueSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\IssueSearchAdvanced")) {
 /**
  * IssueSearchAdvanced
  */
@@ -56359,7 +56359,7 @@ class IssueSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("IssueSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\IssueSearchRow")) {
 /**
  * IssueSearchRow
  */
@@ -56405,7 +56405,7 @@ class IssueSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("CurrencyLocale")) {
+if (!class_exists(__NAMESPACE__ . "\\CurrencyLocale")) {
 /**
  * CurrencyLocale
  */
@@ -57391,7 +57391,7 @@ class CurrencyLocale {
 	const _zambiaEnglish = "_zambiaEnglish";
 }}
 
-if (!class_exists("AccountType")) {
+if (!class_exists(__NAMESPACE__ . "\\AccountType")) {
 /**
  * AccountType
  */
@@ -57477,7 +57477,7 @@ class AccountType {
 	const _unbilledReceivable = "_unbilledReceivable";
 }}
 
-if (!class_exists("ItemCostingMethod")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemCostingMethod")) {
 /**
  * ItemCostingMethod
  */
@@ -57503,7 +57503,7 @@ class ItemCostingMethod {
 	const _standard = "_standard";
 }}
 
-if (!class_exists("ItemProductFeed")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemProductFeed")) {
 /**
  * ItemProductFeed
  */
@@ -57533,7 +57533,7 @@ class ItemProductFeed {
 	const _yahooShopping = "_yahooShopping";
 }}
 
-if (!class_exists("ItemType")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemType")) {
 /**
  * ItemType
  */
@@ -57599,7 +57599,7 @@ class ItemType {
 	const _subtotal = "_subtotal";
 }}
 
-if (!class_exists("ItemWeightUnit")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemWeightUnit")) {
 /**
  * ItemWeightUnit
  */
@@ -57625,7 +57625,7 @@ class ItemWeightUnit {
 	const _oz = "_oz";
 }}
 
-if (!class_exists("ItemPreferenceCriterion")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemPreferenceCriterion")) {
 /**
  * ItemPreferenceCriterion
  */
@@ -57659,7 +57659,7 @@ class ItemPreferenceCriterion {
 	const _F = "_F";
 }}
 
-if (!class_exists("ItemOverallQuantityPricingType")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemOverallQuantityPricingType")) {
 /**
  * ItemOverallQuantityPricingType
  */
@@ -57685,7 +57685,7 @@ class ItemOverallQuantityPricingType {
 	const _byOverallScheduleQuantity = "_byOverallScheduleQuantity";
 }}
 
-if (!class_exists("ScheduleBCode")) {
+if (!class_exists(__NAMESPACE__ . "\\ScheduleBCode")) {
 /**
  * ScheduleBCode
  */
@@ -57827,7 +57827,7 @@ class ScheduleBCode {
 	const _ton = "_ton";
 }}
 
-if (!class_exists("ItemSubType")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemSubType")) {
 /**
  * ItemSubType
  */
@@ -57849,7 +57849,7 @@ class ItemSubType {
 	const _forSale = "_forSale";
 }}
 
-if (!class_exists("CurrencyCurrencyPrecision")) {
+if (!class_exists(__NAMESPACE__ . "\\CurrencyCurrencyPrecision")) {
 /**
  * CurrencyCurrencyPrecision
  */
@@ -57871,7 +57871,7 @@ class CurrencyCurrencyPrecision {
 	const _zero = "_zero";
 }}
 
-if (!class_exists("CurrencyFxRateUpdateTimezone")) {
+if (!class_exists(__NAMESPACE__ . "\\CurrencyFxRateUpdateTimezone")) {
 /**
  * CurrencyFxRateUpdateTimezone
  */
@@ -57897,7 +57897,7 @@ class CurrencyFxRateUpdateTimezone {
 	const _europeParis = "_europeParis";
 }}
 
-if (!class_exists("SalesTaxItemAvailable")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesTaxItemAvailable")) {
 /**
  * SalesTaxItemAvailable
  */
@@ -57919,7 +57919,7 @@ class SalesTaxItemAvailable {
 	const _sale = "_sale";
 }}
 
-if (!class_exists("ItemEbayAuctionDuration")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemEbayAuctionDuration")) {
 /**
  * ItemEbayAuctionDuration
  */
@@ -57969,7 +57969,7 @@ class ItemEbayAuctionDuration {
 	const _goodUntilCancelled = "_goodUntilCancelled";
 }}
 
-if (!class_exists("ItemOutOfStockBehavior")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemOutOfStockBehavior")) {
 /**
  * ItemOutOfStockBehavior
  */
@@ -57999,7 +57999,7 @@ class ItemOutOfStockBehavior {
 	const _removeItemWhenOutOfStock = "_removeItemWhenOutOfStock";
 }}
 
-if (!class_exists("ItemEbayRelistingOption")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemEbayRelistingOption")) {
 /**
  * ItemEbayRelistingOption
  */
@@ -58025,7 +58025,7 @@ class ItemEbayRelistingOption {
 	const _relistWhenItemIsSoldExpires = "_relistWhenItemIsSoldExpires";
 }}
 
-if (!class_exists("ConsolidatedRate")) {
+if (!class_exists(__NAMESPACE__ . "\\ConsolidatedRate")) {
 /**
  * ConsolidatedRate
  */
@@ -58047,7 +58047,7 @@ class ConsolidatedRate {
 	const _historical = "_historical";
 }}
 
-if (!class_exists("CashFlowRateType")) {
+if (!class_exists(__NAMESPACE__ . "\\CashFlowRateType")) {
 /**
  * CashFlowRateType
  */
@@ -58069,7 +58069,7 @@ class CashFlowRateType {
 	const _historical = "_historical";
 }}
 
-if (!class_exists("GeneralRateType")) {
+if (!class_exists(__NAMESPACE__ . "\\GeneralRateType")) {
 /**
  * GeneralRateType
  */
@@ -58091,7 +58091,7 @@ class GeneralRateType {
 	const _historical = "_historical";
 }}
 
-if (!class_exists("ItemMatrixType")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemMatrixType")) {
 /**
  * ItemMatrixType
  */
@@ -58109,7 +58109,7 @@ class ItemMatrixType {
 	const _child = "_child";
 }}
 
-if (!class_exists("ItemDemandSource")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemDemandSource")) {
 /**
  * ItemDemandSource
  */
@@ -58127,7 +58127,7 @@ class ItemDemandSource {
 	const _forecastFromDemandPlan = "_forecastFromDemandPlan";
 }}
 
-if (!class_exists("ItemSupplyLotSizingMethod")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemSupplyLotSizingMethod")) {
 /**
  * ItemSupplyLotSizingMethod
  */
@@ -58145,7 +58145,7 @@ class ItemSupplyLotSizingMethod {
 	const _lotForLot = "_lotForLot";
 }}
 
-if (!class_exists("ItemSupplyType")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemSupplyType")) {
 /**
  * ItemSupplyType
  */
@@ -58163,7 +58163,7 @@ class ItemSupplyType {
 	const _purchase = "_purchase";
 }}
 
-if (!class_exists("ItemSupplyReplenishmentMethod")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemSupplyReplenishmentMethod")) {
 /**
  * ItemSupplyReplenishmentMethod
  */
@@ -58181,7 +58181,7 @@ class ItemSupplyReplenishmentMethod {
 	const _timePhased = "_timePhased";
 }}
 
-if (!class_exists("RevRecScheduleRecogIntervalSrc")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecScheduleRecogIntervalSrc")) {
 /**
  * RevRecScheduleRecogIntervalSrc
  */
@@ -58207,7 +58207,7 @@ class RevRecScheduleRecogIntervalSrc {
 	const _revRecDatesSpecifiedOnSalesOrder = "_revRecDatesSpecifiedOnSalesOrder";
 }}
 
-if (!class_exists("RevRecScheduleRecurrenceType")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecScheduleRecurrenceType")) {
 /**
  * RevRecScheduleRecurrenceType
  */
@@ -58237,7 +58237,7 @@ class RevRecScheduleRecurrenceType {
 	const _straightLineUsingExactDays = "_straightLineUsingExactDays";
 }}
 
-if (!class_exists("RevRecScheduleAmortizationType")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecScheduleAmortizationType")) {
 /**
  * RevRecScheduleAmortizationType
  */
@@ -58255,7 +58255,7 @@ class RevRecScheduleAmortizationType {
 	const _variable = "_variable";
 }}
 
-if (!class_exists("CostCategoryItemCostType")) {
+if (!class_exists(__NAMESPACE__ . "\\CostCategoryItemCostType")) {
 /**
  * CostCategoryItemCostType
  */
@@ -58277,7 +58277,7 @@ class CostCategoryItemCostType {
 	const _service = "_service";
 }}
 
-if (!class_exists("ItemAtpMethod")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemAtpMethod")) {
 /**
  * ItemAtpMethod
  */
@@ -58295,7 +58295,7 @@ class ItemAtpMethod {
 	const _discreteAtp = "_discreteAtp";
 }}
 
-if (!class_exists("AssemblyItemEffectiveBomControl")) {
+if (!class_exists(__NAMESPACE__ . "\\AssemblyItemEffectiveBomControl")) {
 /**
  * AssemblyItemEffectiveBomControl
  */
@@ -58313,7 +58313,7 @@ class AssemblyItemEffectiveBomControl {
 	const _revisionControl = "_revisionControl";
 }}
 
-if (!class_exists("ItemInvtClassification")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemInvtClassification")) {
 /**
  * ItemInvtClassification
  */
@@ -58335,7 +58335,7 @@ class ItemInvtClassification {
 	const _c = "_c";
 }}
 
-if (!class_exists("ClassTranslation")) {
+if (!class_exists(__NAMESPACE__ . "\\ClassTranslation")) {
 /**
  * ClassTranslation
  */
@@ -58363,7 +58363,7 @@ class ClassTranslation {
 	);
 }}
 
-if (!class_exists("ClassTranslationList")) {
+if (!class_exists(__NAMESPACE__ . "\\ClassTranslationList")) {
 /**
  * ClassTranslationList
  */
@@ -58385,7 +58385,7 @@ class ClassTranslationList {
 	);
 }}
 
-if (!class_exists("ContactCategory")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactCategory")) {
 /**
  * ContactCategory
  */
@@ -58431,7 +58431,7 @@ class ContactCategory extends Record {
 	);
 }}
 
-if (!class_exists("CustomerCategory")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerCategory")) {
 /**
  * CustomerCategory
  */
@@ -58465,7 +58465,7 @@ class CustomerCategory extends Record {
 	);
 }}
 
-if (!class_exists("SalesRole")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesRole")) {
 /**
  * SalesRole
  */
@@ -58511,7 +58511,7 @@ class SalesRole extends Record {
 	);
 }}
 
-if (!class_exists("PriceLevel")) {
+if (!class_exists(__NAMESPACE__ . "\\PriceLevel")) {
 /**
  * PriceLevel
  */
@@ -58563,7 +58563,7 @@ class PriceLevel extends Record {
 	);
 }}
 
-if (!class_exists("WinLossReason")) {
+if (!class_exists(__NAMESPACE__ . "\\WinLossReason")) {
 /**
  * WinLossReason
  */
@@ -58597,7 +58597,7 @@ class WinLossReason extends Record {
 	);
 }}
 
-if (!class_exists("Term")) {
+if (!class_exists(__NAMESPACE__ . "\\Term")) {
 /**
  * Term
  */
@@ -58685,7 +58685,7 @@ class Term extends Record {
 	);
 }}
 
-if (!class_exists("NoteType")) {
+if (!class_exists(__NAMESPACE__ . "\\NoteType")) {
 /**
  * NoteType
  */
@@ -58725,7 +58725,7 @@ class NoteType extends Record {
 	);
 }}
 
-if (!class_exists("PaymentMethod")) {
+if (!class_exists(__NAMESPACE__ . "\\PaymentMethod")) {
 /**
  * PaymentMethod
  */
@@ -58813,7 +58813,7 @@ class PaymentMethod extends Record {
 	);
 }}
 
-if (!class_exists("LeadSource")) {
+if (!class_exists(__NAMESPACE__ . "\\LeadSource")) {
 /**
  * LeadSource
  */
@@ -58853,7 +58853,7 @@ class LeadSource extends Record {
 	);
 }}
 
-if (!class_exists("Price")) {
+if (!class_exists(__NAMESPACE__ . "\\Price")) {
 /**
  * Price
  */
@@ -58875,7 +58875,7 @@ class Price {
 	);
 }}
 
-if (!class_exists("PriceList")) {
+if (!class_exists(__NAMESPACE__ . "\\PriceList")) {
 /**
  * PriceList
  */
@@ -58891,7 +58891,7 @@ class PriceList {
 	);
 }}
 
-if (!class_exists("Pricing")) {
+if (!class_exists(__NAMESPACE__ . "\\Pricing")) {
 /**
  * Pricing
  */
@@ -58925,7 +58925,7 @@ class Pricing {
 	);
 }}
 
-if (!class_exists("PricingMatrix")) {
+if (!class_exists(__NAMESPACE__ . "\\PricingMatrix")) {
 /**
  * PricingMatrix
  */
@@ -58947,7 +58947,7 @@ class PricingMatrix {
 	);
 }}
 
-if (!class_exists("Rate")) {
+if (!class_exists(__NAMESPACE__ . "\\Rate")) {
 /**
  * Rate
  */
@@ -58969,7 +58969,7 @@ class Rate {
 	);
 }}
 
-if (!class_exists("RateList")) {
+if (!class_exists(__NAMESPACE__ . "\\RateList")) {
 /**
  * RateList
  */
@@ -58985,7 +58985,7 @@ class RateList {
 	);
 }}
 
-if (!class_exists("BillingRates")) {
+if (!class_exists(__NAMESPACE__ . "\\BillingRates")) {
 /**
  * BillingRates
  */
@@ -59013,7 +59013,7 @@ class BillingRates {
 	);
 }}
 
-if (!class_exists("BillingRatesMatrix")) {
+if (!class_exists(__NAMESPACE__ . "\\BillingRatesMatrix")) {
 /**
  * BillingRatesMatrix
  */
@@ -59035,7 +59035,7 @@ class BillingRatesMatrix {
 	);
 }}
 
-if (!class_exists("Translation")) {
+if (!class_exists(__NAMESPACE__ . "\\Translation")) {
 /**
  * Translation
  */
@@ -59123,7 +59123,7 @@ class Translation {
 	);
 }}
 
-if (!class_exists("TranslationList")) {
+if (!class_exists(__NAMESPACE__ . "\\TranslationList")) {
 /**
  * TranslationList
  */
@@ -59145,7 +59145,7 @@ class TranslationList {
 	);
 }}
 
-if (!class_exists("ItemOptionsList")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemOptionsList")) {
 /**
  * ItemOptionsList
  */
@@ -59161,7 +59161,7 @@ class ItemOptionsList {
 	);
 }}
 
-if (!class_exists("ItemVendor")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemVendor")) {
 /**
  * ItemVendor
  */
@@ -59219,7 +59219,7 @@ class ItemVendor {
 	);
 }}
 
-if (!class_exists("ItemVendorList")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemVendorList")) {
 /**
  * ItemVendorList
  */
@@ -59241,7 +59241,7 @@ class ItemVendorList {
 	);
 }}
 
-if (!class_exists("SiteCategory")) {
+if (!class_exists(__NAMESPACE__ . "\\SiteCategory")) {
 /**
  * SiteCategory
  */
@@ -59389,7 +59389,7 @@ class SiteCategory extends Record {
 	);
 }}
 
-if (!class_exists("SiteCategoryList")) {
+if (!class_exists(__NAMESPACE__ . "\\SiteCategoryList")) {
 /**
  * SiteCategoryList
  */
@@ -59411,7 +59411,7 @@ class SiteCategoryList {
 	);
 }}
 
-if (!class_exists("ProductFeedList")) {
+if (!class_exists(__NAMESPACE__ . "\\ProductFeedList")) {
 /**
  * ProductFeedList
  */
@@ -59427,7 +59427,7 @@ class ProductFeedList {
 	);
 }}
 
-if (!class_exists("ItemMember")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemMember")) {
 /**
  * ItemMember
  */
@@ -59521,7 +59521,7 @@ class ItemMember {
 	);
 }}
 
-if (!class_exists("ItemMemberList")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemMemberList")) {
 /**
  * ItemMemberList
  */
@@ -59543,7 +59543,7 @@ class ItemMemberList {
 	);
 }}
 
-if (!class_exists("InventoryItem")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryItem")) {
 /**
  * InventoryItem
  */
@@ -60651,7 +60651,7 @@ class InventoryItem extends Record {
 	);
 }}
 
-if (!class_exists("MatrixOptionList")) {
+if (!class_exists(__NAMESPACE__ . "\\MatrixOptionList")) {
 /**
  * MatrixOptionList
  */
@@ -60667,7 +60667,7 @@ class MatrixOptionList {
 	);
 }}
 
-if (!class_exists("InventoryItemBinNumber")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryItemBinNumber")) {
 /**
  * InventoryItemBinNumber
  */
@@ -60707,7 +60707,7 @@ class InventoryItemBinNumber {
 	);
 }}
 
-if (!class_exists("InventoryItemBinNumberList")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryItemBinNumberList")) {
 /**
  * InventoryItemBinNumberList
  */
@@ -60729,7 +60729,7 @@ class InventoryItemBinNumberList {
 	);
 }}
 
-if (!class_exists("InventoryItemLocations")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryItemLocations")) {
 /**
  * InventoryItemLocations
  */
@@ -60907,7 +60907,7 @@ class InventoryItemLocations {
 	);
 }}
 
-if (!class_exists("InventoryItemLocationsList")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryItemLocationsList")) {
 /**
  * InventoryItemLocationsList
  */
@@ -60929,7 +60929,7 @@ class InventoryItemLocationsList {
 	);
 }}
 
-if (!class_exists("PresentationItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\PresentationItemList")) {
 /**
  * PresentationItemList
  */
@@ -60951,7 +60951,7 @@ class PresentationItemList {
 	);
 }}
 
-if (!class_exists("DescriptionItem")) {
+if (!class_exists(__NAMESPACE__ . "\\DescriptionItem")) {
 /**
  * DescriptionItem
  */
@@ -61063,7 +61063,7 @@ class DescriptionItem extends Record {
 	);
 }}
 
-if (!class_exists("DiscountItem")) {
+if (!class_exists(__NAMESPACE__ . "\\DiscountItem")) {
 /**
  * DiscountItem
  */
@@ -61259,7 +61259,7 @@ class DiscountItem extends Record {
 	);
 }}
 
-if (!class_exists("DownloadItem")) {
+if (!class_exists(__NAMESPACE__ . "\\DownloadItem")) {
 /**
  * DownloadItem
  */
@@ -61677,7 +61677,7 @@ class DownloadItem extends Record {
 	);
 }}
 
-if (!class_exists("MarkupItem")) {
+if (!class_exists(__NAMESPACE__ . "\\MarkupItem")) {
 /**
  * MarkupItem
  */
@@ -61873,7 +61873,7 @@ class MarkupItem extends Record {
 	);
 }}
 
-if (!class_exists("PaymentItem")) {
+if (!class_exists(__NAMESPACE__ . "\\PaymentItem")) {
 /**
  * PaymentItem
  */
@@ -62009,7 +62009,7 @@ class PaymentItem extends Record {
 	);
 }}
 
-if (!class_exists("SubtotalItem")) {
+if (!class_exists(__NAMESPACE__ . "\\SubtotalItem")) {
 /**
  * SubtotalItem
  */
@@ -62127,7 +62127,7 @@ class SubtotalItem extends Record {
 	);
 }}
 
-if (!class_exists("NonInventoryPurchaseItem")) {
+if (!class_exists(__NAMESPACE__ . "\\NonInventoryPurchaseItem")) {
 /**
  * NonInventoryPurchaseItem
  */
@@ -62389,7 +62389,7 @@ class NonInventoryPurchaseItem extends Record {
 	);
 }}
 
-if (!class_exists("NonInventorySaleItem")) {
+if (!class_exists(__NAMESPACE__ . "\\NonInventorySaleItem")) {
 /**
  * NonInventorySaleItem
  */
@@ -63065,7 +63065,7 @@ class NonInventorySaleItem extends Record {
 	);
 }}
 
-if (!class_exists("NonInventoryResaleItem")) {
+if (!class_exists(__NAMESPACE__ . "\\NonInventoryResaleItem")) {
 /**
  * NonInventoryResaleItem
  */
@@ -63843,7 +63843,7 @@ class NonInventoryResaleItem extends Record {
 	);
 }}
 
-if (!class_exists("OtherChargeResaleItem")) {
+if (!class_exists(__NAMESPACE__ . "\\OtherChargeResaleItem")) {
 /**
  * OtherChargeResaleItem
  */
@@ -64273,7 +64273,7 @@ class OtherChargeResaleItem extends Record {
 	);
 }}
 
-if (!class_exists("OtherChargePurchaseItem")) {
+if (!class_exists(__NAMESPACE__ . "\\OtherChargePurchaseItem")) {
 /**
  * OtherChargePurchaseItem
  */
@@ -64535,7 +64535,7 @@ class OtherChargePurchaseItem extends Record {
 	);
 }}
 
-if (!class_exists("ServiceResaleItem")) {
+if (!class_exists(__NAMESPACE__ . "\\ServiceResaleItem")) {
 /**
  * ServiceResaleItem
  */
@@ -65133,7 +65133,7 @@ class ServiceResaleItem extends Record {
 	);
 }}
 
-if (!class_exists("ServicePurchaseItem")) {
+if (!class_exists(__NAMESPACE__ . "\\ServicePurchaseItem")) {
 /**
  * ServicePurchaseItem
  */
@@ -65395,7 +65395,7 @@ class ServicePurchaseItem extends Record {
 	);
 }}
 
-if (!class_exists("ServiceSaleItem")) {
+if (!class_exists(__NAMESPACE__ . "\\ServiceSaleItem")) {
 /**
  * ServiceSaleItem
  */
@@ -65915,7 +65915,7 @@ class ServiceSaleItem extends Record {
 	);
 }}
 
-if (!class_exists("OtherChargeSaleItem")) {
+if (!class_exists(__NAMESPACE__ . "\\OtherChargeSaleItem")) {
 /**
  * OtherChargeSaleItem
  */
@@ -66267,7 +66267,7 @@ class OtherChargeSaleItem extends Record {
 	);
 }}
 
-if (!class_exists("Currency")) {
+if (!class_exists(__NAMESPACE__ . "\\Currency")) {
 /**
  * Currency
  */
@@ -66367,7 +66367,7 @@ class Currency extends Record {
 	);
 }}
 
-if (!class_exists("ExpenseCategory")) {
+if (!class_exists(__NAMESPACE__ . "\\ExpenseCategory")) {
 /**
  * ExpenseCategory
  */
@@ -66431,7 +66431,7 @@ class ExpenseCategory extends Record {
 	);
 }}
 
-if (!class_exists("Account")) {
+if (!class_exists(__NAMESPACE__ . "\\Account")) {
 /**
  * Account
  */
@@ -66609,7 +66609,7 @@ class Account extends Record {
 	);
 }}
 
-if (!class_exists("AccountTranslationList")) {
+if (!class_exists(__NAMESPACE__ . "\\AccountTranslationList")) {
 /**
  * AccountTranslationList
  */
@@ -66631,7 +66631,7 @@ class AccountTranslationList {
 	);
 }}
 
-if (!class_exists("AccountSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\AccountSearch")) {
 /**
  * AccountSearch
  */
@@ -66653,7 +66653,7 @@ class AccountSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("AccountSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\AccountSearchAdvanced")) {
 /**
  * AccountSearchAdvanced
  */
@@ -66687,7 +66687,7 @@ class AccountSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("AccountSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\AccountSearchRow")) {
 /**
  * AccountSearchRow
  */
@@ -66709,7 +66709,7 @@ class AccountSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("Department")) {
+if (!class_exists(__NAMESPACE__ . "\\Department")) {
 /**
  * Department
  */
@@ -66773,7 +66773,7 @@ class Department extends Record {
 	);
 }}
 
-if (!class_exists("DepartmentSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\DepartmentSearch")) {
 /**
  * DepartmentSearch
  */
@@ -66795,7 +66795,7 @@ class DepartmentSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("DepartmentSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\DepartmentSearchAdvanced")) {
 /**
  * DepartmentSearchAdvanced
  */
@@ -66829,7 +66829,7 @@ class DepartmentSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("DepartmentSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\DepartmentSearchRow")) {
 /**
  * DepartmentSearchRow
  */
@@ -66851,7 +66851,7 @@ class DepartmentSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("Classification")) {
+if (!class_exists(__NAMESPACE__ . "\\Classification")) {
 /**
  * Classification
  */
@@ -66915,7 +66915,7 @@ class Classification extends Record {
 	);
 }}
 
-if (!class_exists("ClassificationSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\ClassificationSearch")) {
 /**
  * ClassificationSearch
  */
@@ -66937,7 +66937,7 @@ class ClassificationSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ClassificationSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\ClassificationSearchAdvanced")) {
 /**
  * ClassificationSearchAdvanced
  */
@@ -66971,7 +66971,7 @@ class ClassificationSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ClassificationSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\ClassificationSearchRow")) {
 /**
  * ClassificationSearchRow
  */
@@ -66993,7 +66993,7 @@ class ClassificationSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("Location")) {
+if (!class_exists(__NAMESPACE__ . "\\Location")) {
 /**
  * Location
  */
@@ -67153,7 +67153,7 @@ class Location extends Record {
 	);
 }}
 
-if (!class_exists("LocationSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\LocationSearch")) {
 /**
  * LocationSearch
  */
@@ -67175,7 +67175,7 @@ class LocationSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("LocationSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\LocationSearchAdvanced")) {
 /**
  * LocationSearchAdvanced
  */
@@ -67209,7 +67209,7 @@ class LocationSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("LocationSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\LocationSearchRow")) {
 /**
  * LocationSearchRow
  */
@@ -67231,7 +67231,7 @@ class LocationSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("UnitsType")) {
+if (!class_exists(__NAMESPACE__ . "\\UnitsType")) {
 /**
  * UnitsType
  */
@@ -67271,7 +67271,7 @@ class UnitsType extends Record {
 	);
 }}
 
-if (!class_exists("UnitsTypeUom")) {
+if (!class_exists(__NAMESPACE__ . "\\UnitsTypeUom")) {
 /**
  * UnitsTypeUom
  */
@@ -67323,7 +67323,7 @@ class UnitsTypeUom {
 	);
 }}
 
-if (!class_exists("UnitsTypeUomList")) {
+if (!class_exists(__NAMESPACE__ . "\\UnitsTypeUomList")) {
 /**
  * UnitsTypeUomList
  */
@@ -67345,7 +67345,7 @@ class UnitsTypeUomList {
 	);
 }}
 
-if (!class_exists("ItemSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemSearch")) {
 /**
  * ItemSearch
  */
@@ -67463,7 +67463,7 @@ class ItemSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ItemSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemSearchAdvanced")) {
 /**
  * ItemSearchAdvanced
  */
@@ -67497,7 +67497,7 @@ class ItemSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ItemSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemSearchRow")) {
 /**
  * ItemSearchRow
  */
@@ -67615,7 +67615,7 @@ class ItemSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("ContactRole")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactRole")) {
 /**
  * ContactRole
  */
@@ -67655,7 +67655,7 @@ class ContactRole extends Record {
 	);
 }}
 
-if (!class_exists("Bin")) {
+if (!class_exists(__NAMESPACE__ . "\\Bin")) {
 /**
  * Bin
  */
@@ -67707,7 +67707,7 @@ class Bin extends Record {
 	);
 }}
 
-if (!class_exists("BinSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\BinSearch")) {
 /**
  * BinSearch
  */
@@ -67729,7 +67729,7 @@ class BinSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("BinSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\BinSearchAdvanced")) {
 /**
  * BinSearchAdvanced
  */
@@ -67763,7 +67763,7 @@ class BinSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("BinSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\BinSearchRow")) {
 /**
  * BinSearchRow
  */
@@ -67785,7 +67785,7 @@ class BinSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("SalesTaxItem")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesTaxItem")) {
 /**
  * SalesTaxItem
  */
@@ -67957,7 +67957,7 @@ class SalesTaxItem extends Record {
 	);
 }}
 
-if (!class_exists("TaxGroup")) {
+if (!class_exists(__NAMESPACE__ . "\\TaxGroup")) {
 /**
  * TaxGroup
  */
@@ -68087,7 +68087,7 @@ class TaxGroup extends Record {
 	);
 }}
 
-if (!class_exists("TaxGroupTaxItem")) {
+if (!class_exists(__NAMESPACE__ . "\\TaxGroupTaxItem")) {
 /**
  * TaxGroupTaxItem
  */
@@ -68121,7 +68121,7 @@ class TaxGroupTaxItem {
 	);
 }}
 
-if (!class_exists("TaxGroupTaxItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\TaxGroupTaxItemList")) {
 /**
  * TaxGroupTaxItemList
  */
@@ -68143,7 +68143,7 @@ class TaxGroupTaxItemList {
 	);
 }}
 
-if (!class_exists("TaxType")) {
+if (!class_exists(__NAMESPACE__ . "\\TaxType")) {
 /**
  * TaxType
  */
@@ -68183,7 +68183,7 @@ class TaxType extends Record {
 	);
 }}
 
-if (!class_exists("TaxTypeNexusesTax")) {
+if (!class_exists(__NAMESPACE__ . "\\TaxTypeNexusesTax")) {
 /**
  * TaxTypeNexusesTax
  */
@@ -68217,7 +68217,7 @@ class TaxTypeNexusesTax {
 	);
 }}
 
-if (!class_exists("TaxTypeNexusesTaxList")) {
+if (!class_exists(__NAMESPACE__ . "\\TaxTypeNexusesTaxList")) {
 /**
  * TaxTypeNexusesTaxList
  */
@@ -68239,7 +68239,7 @@ class TaxTypeNexusesTaxList {
 	);
 }}
 
-if (!class_exists("SerializedInventoryItem")) {
+if (!class_exists(__NAMESPACE__ . "\\SerializedInventoryItem")) {
 /**
  * SerializedInventoryItem
  */
@@ -69311,7 +69311,7 @@ class SerializedInventoryItem extends Record {
 	);
 }}
 
-if (!class_exists("SerializedInventoryItemLocations")) {
+if (!class_exists(__NAMESPACE__ . "\\SerializedInventoryItemLocations")) {
 /**
  * SerializedInventoryItemLocations
  */
@@ -69495,7 +69495,7 @@ class SerializedInventoryItemLocations {
 	);
 }}
 
-if (!class_exists("SerializedInventoryItemLocationsList")) {
+if (!class_exists(__NAMESPACE__ . "\\SerializedInventoryItemLocationsList")) {
 /**
  * SerializedInventoryItemLocationsList
  */
@@ -69517,7 +69517,7 @@ class SerializedInventoryItemLocationsList {
 	);
 }}
 
-if (!class_exists("SerializedInventoryItemNumbers")) {
+if (!class_exists(__NAMESPACE__ . "\\SerializedInventoryItemNumbers")) {
 /**
  * SerializedInventoryItemNumbers
  */
@@ -69533,7 +69533,7 @@ class SerializedInventoryItemNumbers {
 	);
 }}
 
-if (!class_exists("SerializedInventoryItemNumbersList")) {
+if (!class_exists(__NAMESPACE__ . "\\SerializedInventoryItemNumbersList")) {
 /**
  * SerializedInventoryItemNumbersList
  */
@@ -69555,7 +69555,7 @@ class SerializedInventoryItemNumbersList {
 	);
 }}
 
-if (!class_exists("LotNumberedInventoryItem")) {
+if (!class_exists(__NAMESPACE__ . "\\LotNumberedInventoryItem")) {
 /**
  * LotNumberedInventoryItem
  */
@@ -70633,7 +70633,7 @@ class LotNumberedInventoryItem extends Record {
 	);
 }}
 
-if (!class_exists("LotNumberedInventoryItemLocations")) {
+if (!class_exists(__NAMESPACE__ . "\\LotNumberedInventoryItemLocations")) {
 /**
  * LotNumberedInventoryItemLocations
  */
@@ -70835,7 +70835,7 @@ class LotNumberedInventoryItemLocations {
 	);
 }}
 
-if (!class_exists("LotNumberedInventoryItemLocationsList")) {
+if (!class_exists(__NAMESPACE__ . "\\LotNumberedInventoryItemLocationsList")) {
 /**
  * LotNumberedInventoryItemLocationsList
  */
@@ -70857,7 +70857,7 @@ class LotNumberedInventoryItemLocationsList {
 	);
 }}
 
-if (!class_exists("LotNumberedInventoryItemNumbers")) {
+if (!class_exists(__NAMESPACE__ . "\\LotNumberedInventoryItemNumbers")) {
 /**
  * LotNumberedInventoryItemNumbers
  */
@@ -70885,7 +70885,7 @@ class LotNumberedInventoryItemNumbers {
 	);
 }}
 
-if (!class_exists("LotNumberedInventoryItemNumbersList")) {
+if (!class_exists(__NAMESPACE__ . "\\LotNumberedInventoryItemNumbersList")) {
 /**
  * LotNumberedInventoryItemNumbersList
  */
@@ -70907,7 +70907,7 @@ class LotNumberedInventoryItemNumbersList {
 	);
 }}
 
-if (!class_exists("GiftCertificateItem")) {
+if (!class_exists(__NAMESPACE__ . "\\GiftCertificateItem")) {
 /**
  * GiftCertificateItem
  */
@@ -71295,7 +71295,7 @@ class GiftCertificateItem extends Record {
 	);
 }}
 
-if (!class_exists("GiftCertificateItemAuthCodes")) {
+if (!class_exists(__NAMESPACE__ . "\\GiftCertificateItemAuthCodes")) {
 /**
  * GiftCertificateItemAuthCodes
  */
@@ -71317,7 +71317,7 @@ class GiftCertificateItemAuthCodes {
 	);
 }}
 
-if (!class_exists("GiftCertificateItemAuthCodesList")) {
+if (!class_exists(__NAMESPACE__ . "\\GiftCertificateItemAuthCodesList")) {
 /**
  * GiftCertificateItemAuthCodesList
  */
@@ -71339,7 +71339,7 @@ class GiftCertificateItemAuthCodesList {
 	);
 }}
 
-if (!class_exists("Subsidiary")) {
+if (!class_exists(__NAMESPACE__ . "\\Subsidiary")) {
 /**
  * Subsidiary
  */
@@ -71751,7 +71751,7 @@ class Subsidiary extends Record {
 	);
 }}
 
-if (!class_exists("SubsidiaryNexus")) {
+if (!class_exists(__NAMESPACE__ . "\\SubsidiaryNexus")) {
 /**
  * SubsidiaryNexus
  */
@@ -71773,7 +71773,7 @@ class SubsidiaryNexus {
 	);
 }}
 
-if (!class_exists("SubsidiaryNexusList")) {
+if (!class_exists(__NAMESPACE__ . "\\SubsidiaryNexusList")) {
 /**
  * SubsidiaryNexusList
  */
@@ -71795,7 +71795,7 @@ class SubsidiaryNexusList {
 	);
 }}
 
-if (!class_exists("SubsidiarySearch")) {
+if (!class_exists(__NAMESPACE__ . "\\SubsidiarySearch")) {
 /**
  * SubsidiarySearch
  */
@@ -71817,7 +71817,7 @@ class SubsidiarySearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("SubsidiarySearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\SubsidiarySearchAdvanced")) {
 /**
  * SubsidiarySearchAdvanced
  */
@@ -71851,7 +71851,7 @@ class SubsidiarySearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("SubsidiarySearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\SubsidiarySearchRow")) {
 /**
  * SubsidiarySearchRow
  */
@@ -71873,7 +71873,7 @@ class SubsidiarySearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("GiftCertificate")) {
+if (!class_exists(__NAMESPACE__ . "\\GiftCertificate")) {
 /**
  * GiftCertificate
  */
@@ -71949,7 +71949,7 @@ class GiftCertificate extends Record {
 	);
 }}
 
-if (!class_exists("GiftCertificateSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\GiftCertificateSearch")) {
 /**
  * GiftCertificateSearch
  */
@@ -71971,7 +71971,7 @@ class GiftCertificateSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("GiftCertificateSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\GiftCertificateSearchAdvanced")) {
 /**
  * GiftCertificateSearchAdvanced
  */
@@ -72005,7 +72005,7 @@ class GiftCertificateSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("GiftCertificateSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\GiftCertificateSearchRow")) {
 /**
  * GiftCertificateSearchRow
  */
@@ -72027,7 +72027,7 @@ class GiftCertificateSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("PartnerCategory")) {
+if (!class_exists(__NAMESPACE__ . "\\PartnerCategory")) {
 /**
  * PartnerCategory
  */
@@ -72067,7 +72067,7 @@ class PartnerCategory extends Record {
 	);
 }}
 
-if (!class_exists("VendorCategory")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorCategory")) {
 /**
  * VendorCategory
  */
@@ -72107,7 +72107,7 @@ class VendorCategory extends Record {
 	);
 }}
 
-if (!class_exists("KitItem")) {
+if (!class_exists(__NAMESPACE__ . "\\KitItem")) {
 /**
  * KitItem
  */
@@ -72729,7 +72729,7 @@ class KitItem extends Record {
 	);
 }}
 
-if (!class_exists("AssemblyItem")) {
+if (!class_exists(__NAMESPACE__ . "\\AssemblyItem")) {
 /**
  * AssemblyItem
  */
@@ -73747,7 +73747,7 @@ class AssemblyItem extends Record {
 	);
 }}
 
-if (!class_exists("SerializedAssemblyItem")) {
+if (!class_exists(__NAMESPACE__ . "\\SerializedAssemblyItem")) {
 /**
  * SerializedAssemblyItem
  */
@@ -74819,7 +74819,7 @@ class SerializedAssemblyItem extends Record {
 	);
 }}
 
-if (!class_exists("LotNumberedAssemblyItem")) {
+if (!class_exists(__NAMESPACE__ . "\\LotNumberedAssemblyItem")) {
 /**
  * LotNumberedAssemblyItem
  */
@@ -75843,7 +75843,7 @@ class LotNumberedAssemblyItem extends Record {
 	);
 }}
 
-if (!class_exists("ServiceItemTaskTemplates")) {
+if (!class_exists(__NAMESPACE__ . "\\ServiceItemTaskTemplates")) {
 /**
  * ServiceItemTaskTemplates
  */
@@ -75871,7 +75871,7 @@ class ServiceItemTaskTemplates {
 	);
 }}
 
-if (!class_exists("ServiceItemTaskTemplatesList")) {
+if (!class_exists(__NAMESPACE__ . "\\ServiceItemTaskTemplatesList")) {
 /**
  * ServiceItemTaskTemplatesList
  */
@@ -75893,7 +75893,7 @@ class ServiceItemTaskTemplatesList {
 	);
 }}
 
-if (!class_exists("State")) {
+if (!class_exists(__NAMESPACE__ . "\\State")) {
 /**
  * State
  */
@@ -75927,7 +75927,7 @@ class State extends Record {
 	);
 }}
 
-if (!class_exists("AccountingPeriod")) {
+if (!class_exists(__NAMESPACE__ . "\\AccountingPeriod")) {
 /**
  * AccountingPeriod
  */
@@ -76039,7 +76039,7 @@ class AccountingPeriod extends Record {
 	);
 }}
 
-if (!class_exists("BudgetCategory")) {
+if (!class_exists(__NAMESPACE__ . "\\BudgetCategory")) {
 /**
  * BudgetCategory
  */
@@ -76073,7 +76073,7 @@ class BudgetCategory extends Record {
 	);
 }}
 
-if (!class_exists("AccountingPeriodSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\AccountingPeriodSearch")) {
 /**
  * AccountingPeriodSearch
  */
@@ -76101,7 +76101,7 @@ class AccountingPeriodSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("AccountingPeriodSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\AccountingPeriodSearchAdvanced")) {
 /**
  * AccountingPeriodSearchAdvanced
  */
@@ -76135,7 +76135,7 @@ class AccountingPeriodSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("AccountingPeriodSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\AccountingPeriodSearchRow")) {
 /**
  * AccountingPeriodSearchRow
  */
@@ -76163,7 +76163,7 @@ class AccountingPeriodSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("ContactCategorySearch")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactCategorySearch")) {
 /**
  * ContactCategorySearch
  */
@@ -76185,7 +76185,7 @@ class ContactCategorySearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ContactCategorySearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactCategorySearchAdvanced")) {
 /**
  * ContactCategorySearchAdvanced
  */
@@ -76219,7 +76219,7 @@ class ContactCategorySearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ContactCategorySearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactCategorySearchRow")) {
 /**
  * ContactCategorySearchRow
  */
@@ -76241,7 +76241,7 @@ class ContactCategorySearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("ContactRoleSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactRoleSearch")) {
 /**
  * ContactRoleSearch
  */
@@ -76263,7 +76263,7 @@ class ContactRoleSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ContactRoleSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactRoleSearchAdvanced")) {
 /**
  * ContactRoleSearchAdvanced
  */
@@ -76297,7 +76297,7 @@ class ContactRoleSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ContactRoleSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\ContactRoleSearchRow")) {
 /**
  * ContactRoleSearchRow
  */
@@ -76319,7 +76319,7 @@ class ContactRoleSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("CustomerCategorySearch")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerCategorySearch")) {
 /**
  * CustomerCategorySearch
  */
@@ -76341,7 +76341,7 @@ class CustomerCategorySearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CustomerCategorySearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerCategorySearchAdvanced")) {
 /**
  * CustomerCategorySearchAdvanced
  */
@@ -76375,7 +76375,7 @@ class CustomerCategorySearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CustomerCategorySearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerCategorySearchRow")) {
 /**
  * CustomerCategorySearchRow
  */
@@ -76397,7 +76397,7 @@ class CustomerCategorySearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("ExpenseCategorySearch")) {
+if (!class_exists(__NAMESPACE__ . "\\ExpenseCategorySearch")) {
 /**
  * ExpenseCategorySearch
  */
@@ -76419,7 +76419,7 @@ class ExpenseCategorySearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ExpenseCategorySearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\ExpenseCategorySearchAdvanced")) {
 /**
  * ExpenseCategorySearchAdvanced
  */
@@ -76453,7 +76453,7 @@ class ExpenseCategorySearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ExpenseCategorySearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\ExpenseCategorySearchRow")) {
 /**
  * ExpenseCategorySearchRow
  */
@@ -76475,7 +76475,7 @@ class ExpenseCategorySearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("NoteTypeSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\NoteTypeSearch")) {
 /**
  * NoteTypeSearch
  */
@@ -76497,7 +76497,7 @@ class NoteTypeSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("NoteTypeSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\NoteTypeSearchAdvanced")) {
 /**
  * NoteTypeSearchAdvanced
  */
@@ -76531,7 +76531,7 @@ class NoteTypeSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("NoteTypeSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\NoteTypeSearchRow")) {
 /**
  * NoteTypeSearchRow
  */
@@ -76553,7 +76553,7 @@ class NoteTypeSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("PartnerCategorySearch")) {
+if (!class_exists(__NAMESPACE__ . "\\PartnerCategorySearch")) {
 /**
  * PartnerCategorySearch
  */
@@ -76575,7 +76575,7 @@ class PartnerCategorySearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PartnerCategorySearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\PartnerCategorySearchAdvanced")) {
 /**
  * PartnerCategorySearchAdvanced
  */
@@ -76609,7 +76609,7 @@ class PartnerCategorySearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PartnerCategorySearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\PartnerCategorySearchRow")) {
 /**
  * PartnerCategorySearchRow
  */
@@ -76631,7 +76631,7 @@ class PartnerCategorySearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("PaymentMethodSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\PaymentMethodSearch")) {
 /**
  * PaymentMethodSearch
  */
@@ -76653,7 +76653,7 @@ class PaymentMethodSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PaymentMethodSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\PaymentMethodSearchAdvanced")) {
 /**
  * PaymentMethodSearchAdvanced
  */
@@ -76687,7 +76687,7 @@ class PaymentMethodSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PaymentMethodSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\PaymentMethodSearchRow")) {
 /**
  * PaymentMethodSearchRow
  */
@@ -76709,7 +76709,7 @@ class PaymentMethodSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("PriceLevelSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\PriceLevelSearch")) {
 /**
  * PriceLevelSearch
  */
@@ -76731,7 +76731,7 @@ class PriceLevelSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PriceLevelSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\PriceLevelSearchAdvanced")) {
 /**
  * PriceLevelSearchAdvanced
  */
@@ -76765,7 +76765,7 @@ class PriceLevelSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PriceLevelSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\PriceLevelSearchRow")) {
 /**
  * PriceLevelSearchRow
  */
@@ -76787,7 +76787,7 @@ class PriceLevelSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("SalesRoleSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesRoleSearch")) {
 /**
  * SalesRoleSearch
  */
@@ -76809,7 +76809,7 @@ class SalesRoleSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("SalesRoleSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesRoleSearchAdvanced")) {
 /**
  * SalesRoleSearchAdvanced
  */
@@ -76843,7 +76843,7 @@ class SalesRoleSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("SalesRoleSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesRoleSearchRow")) {
 /**
  * SalesRoleSearchRow
  */
@@ -76865,7 +76865,7 @@ class SalesRoleSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("TermSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\TermSearch")) {
 /**
  * TermSearch
  */
@@ -76887,7 +76887,7 @@ class TermSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("TermSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\TermSearchAdvanced")) {
 /**
  * TermSearchAdvanced
  */
@@ -76921,7 +76921,7 @@ class TermSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("TermSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\TermSearchRow")) {
 /**
  * TermSearchRow
  */
@@ -76943,7 +76943,7 @@ class TermSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("VendorCategorySearch")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorCategorySearch")) {
 /**
  * VendorCategorySearch
  */
@@ -76965,7 +76965,7 @@ class VendorCategorySearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("VendorCategorySearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorCategorySearchAdvanced")) {
 /**
  * VendorCategorySearchAdvanced
  */
@@ -76999,7 +76999,7 @@ class VendorCategorySearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("VendorCategorySearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorCategorySearchRow")) {
 /**
  * VendorCategorySearchRow
  */
@@ -77021,7 +77021,7 @@ class VendorCategorySearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("WinLossReasonSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\WinLossReasonSearch")) {
 /**
  * WinLossReasonSearch
  */
@@ -77043,7 +77043,7 @@ class WinLossReasonSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("WinLossReasonSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\WinLossReasonSearchAdvanced")) {
 /**
  * WinLossReasonSearchAdvanced
  */
@@ -77077,7 +77077,7 @@ class WinLossReasonSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("WinLossReasonSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\WinLossReasonSearchRow")) {
 /**
  * WinLossReasonSearchRow
  */
@@ -77099,7 +77099,7 @@ class WinLossReasonSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("UnitsTypeSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\UnitsTypeSearch")) {
 /**
  * UnitsTypeSearch
  */
@@ -77121,7 +77121,7 @@ class UnitsTypeSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("UnitsTypeSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\UnitsTypeSearchAdvanced")) {
 /**
  * UnitsTypeSearchAdvanced
  */
@@ -77155,7 +77155,7 @@ class UnitsTypeSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("UnitsTypeSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\UnitsTypeSearchRow")) {
 /**
  * UnitsTypeSearchRow
  */
@@ -77177,7 +77177,7 @@ class UnitsTypeSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("PricingGroup")) {
+if (!class_exists(__NAMESPACE__ . "\\PricingGroup")) {
 /**
  * PricingGroup
  */
@@ -77211,7 +77211,7 @@ class PricingGroup extends Record {
 	);
 }}
 
-if (!class_exists("PricingGroupSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\PricingGroupSearch")) {
 /**
  * PricingGroupSearch
  */
@@ -77233,7 +77233,7 @@ class PricingGroupSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PricingGroupSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\PricingGroupSearchAdvanced")) {
 /**
  * PricingGroupSearchAdvanced
  */
@@ -77267,7 +77267,7 @@ class PricingGroupSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PricingGroupSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\PricingGroupSearchRow")) {
 /**
  * PricingGroupSearchRow
  */
@@ -77289,7 +77289,7 @@ class PricingGroupSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("InventoryNumber")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryNumber")) {
 /**
  * InventoryNumber
  */
@@ -77359,7 +77359,7 @@ class InventoryNumber extends Record {
 	);
 }}
 
-if (!class_exists("InventoryNumberLocations")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryNumberLocations")) {
 /**
  * InventoryNumberLocations
  */
@@ -77399,7 +77399,7 @@ class InventoryNumberLocations {
 	);
 }}
 
-if (!class_exists("InventoryNumberLocationsList")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryNumberLocationsList")) {
 /**
  * InventoryNumberLocationsList
  */
@@ -77421,7 +77421,7 @@ class InventoryNumberLocationsList {
 	);
 }}
 
-if (!class_exists("InventoryNumberSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryNumberSearch")) {
 /**
  * InventoryNumberSearch
  */
@@ -77449,7 +77449,7 @@ class InventoryNumberSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("InventoryNumberSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryNumberSearchAdvanced")) {
 /**
  * InventoryNumberSearchAdvanced
  */
@@ -77483,7 +77483,7 @@ class InventoryNumberSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("InventoryNumberSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryNumberSearchRow")) {
 /**
  * InventoryNumberSearchRow
  */
@@ -77511,7 +77511,7 @@ class InventoryNumberSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("RevRecSchedule")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecSchedule")) {
 /**
  * RevRecSchedule
  */
@@ -77593,7 +77593,7 @@ class RevRecSchedule extends Record {
 	);
 }}
 
-if (!class_exists("RevRecScheduleRecurrence")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecScheduleRecurrence")) {
 /**
  * RevRecScheduleRecurrence
  */
@@ -77621,7 +77621,7 @@ class RevRecScheduleRecurrence {
 	);
 }}
 
-if (!class_exists("RevRecScheduleRecurrenceList")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecScheduleRecurrenceList")) {
 /**
  * RevRecScheduleRecurrenceList
  */
@@ -77643,7 +77643,7 @@ class RevRecScheduleRecurrenceList {
 	);
 }}
 
-if (!class_exists("RevRecTemplate")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecTemplate")) {
 /**
  * RevRecTemplate
  */
@@ -77725,7 +77725,7 @@ class RevRecTemplate extends Record {
 	);
 }}
 
-if (!class_exists("RevRecTemplateRecurrence")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecTemplateRecurrence")) {
 /**
  * RevRecTemplateRecurrence
  */
@@ -77753,7 +77753,7 @@ class RevRecTemplateRecurrence {
 	);
 }}
 
-if (!class_exists("RevRecTemplateRecurrenceList")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecTemplateRecurrenceList")) {
 /**
  * RevRecTemplateRecurrenceList
  */
@@ -77775,7 +77775,7 @@ class RevRecTemplateRecurrenceList {
 	);
 }}
 
-if (!class_exists("RevRecScheduleSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecScheduleSearch")) {
 /**
  * RevRecScheduleSearch
  */
@@ -77797,7 +77797,7 @@ class RevRecScheduleSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("RevRecScheduleSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecScheduleSearchAdvanced")) {
 /**
  * RevRecScheduleSearchAdvanced
  */
@@ -77831,7 +77831,7 @@ class RevRecScheduleSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("RevRecScheduleSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecScheduleSearchRow")) {
 /**
  * RevRecScheduleSearchRow
  */
@@ -77853,7 +77853,7 @@ class RevRecScheduleSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("RevRecTemplateSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecTemplateSearch")) {
 /**
  * RevRecTemplateSearch
  */
@@ -77875,7 +77875,7 @@ class RevRecTemplateSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("RevRecTemplateSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecTemplateSearchAdvanced")) {
 /**
  * RevRecTemplateSearchAdvanced
  */
@@ -77909,7 +77909,7 @@ class RevRecTemplateSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("RevRecTemplateSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\RevRecTemplateSearchRow")) {
 /**
  * RevRecTemplateSearchRow
  */
@@ -77931,7 +77931,7 @@ class RevRecTemplateSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("CostCategory")) {
+if (!class_exists(__NAMESPACE__ . "\\CostCategory")) {
 /**
  * CostCategory
  */
@@ -77977,7 +77977,7 @@ class CostCategory extends Record {
 	);
 }}
 
-if (!class_exists("Nexus")) {
+if (!class_exists(__NAMESPACE__ . "\\Nexus")) {
 /**
  * Nexus
  */
@@ -78035,7 +78035,7 @@ class Nexus extends Record {
 	);
 }}
 
-if (!class_exists("NexusSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\NexusSearch")) {
 /**
  * NexusSearch
  */
@@ -78057,7 +78057,7 @@ class NexusSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("NexusSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\NexusSearchAdvanced")) {
 /**
  * NexusSearchAdvanced
  */
@@ -78091,7 +78091,7 @@ class NexusSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("NexusSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\NexusSearchRow")) {
 /**
  * NexusSearchRow
  */
@@ -78113,7 +78113,7 @@ class NexusSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("CustomerMessage")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerMessage")) {
 /**
  * CustomerMessage
  */
@@ -78159,7 +78159,7 @@ class CustomerMessage extends Record {
 	);
 }}
 
-if (!class_exists("OtherNameCategory")) {
+if (!class_exists(__NAMESPACE__ . "\\OtherNameCategory")) {
 /**
  * OtherNameCategory
  */
@@ -78193,7 +78193,7 @@ class OtherNameCategory extends Record {
 	);
 }}
 
-if (!class_exists("OtherNameCategorySearch")) {
+if (!class_exists(__NAMESPACE__ . "\\OtherNameCategorySearch")) {
 /**
  * OtherNameCategorySearch
  */
@@ -78215,7 +78215,7 @@ class OtherNameCategorySearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("OtherNameCategorySearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\OtherNameCategorySearchAdvanced")) {
 /**
  * OtherNameCategorySearchAdvanced
  */
@@ -78249,7 +78249,7 @@ class OtherNameCategorySearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("OtherNameCategorySearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\OtherNameCategorySearchRow")) {
 /**
  * OtherNameCategorySearchRow
  */
@@ -78271,7 +78271,7 @@ class OtherNameCategorySearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("CustomerMessageSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerMessageSearch")) {
 /**
  * CustomerMessageSearch
  */
@@ -78293,7 +78293,7 @@ class CustomerMessageSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CustomerMessageSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerMessageSearchAdvanced")) {
 /**
  * CustomerMessageSearchAdvanced
  */
@@ -78327,7 +78327,7 @@ class CustomerMessageSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CustomerMessageSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerMessageSearchRow")) {
 /**
  * CustomerMessageSearchRow
  */
@@ -78349,7 +78349,7 @@ class CustomerMessageSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("ItemGroup")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemGroup")) {
 /**
  * ItemGroup
  */
@@ -78509,7 +78509,7 @@ class ItemGroup extends Record {
 	);
 }}
 
-if (!class_exists("CurrencyRateSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\CurrencyRateSearch")) {
 /**
  * CurrencyRateSearch
  */
@@ -78525,7 +78525,7 @@ class CurrencyRateSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CurrencyRateSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\CurrencyRateSearchAdvanced")) {
 /**
  * CurrencyRateSearchAdvanced
  */
@@ -78559,7 +78559,7 @@ class CurrencyRateSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CurrencyRateSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\CurrencyRateSearchRow")) {
 /**
  * CurrencyRateSearchRow
  */
@@ -78575,7 +78575,7 @@ class CurrencyRateSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("ItemRevision")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemRevision")) {
 /**
  * ItemRevision
  */
@@ -78633,7 +78633,7 @@ class ItemRevision extends Record {
 	);
 }}
 
-if (!class_exists("ItemRevisionSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemRevisionSearch")) {
 /**
  * ItemRevisionSearch
  */
@@ -78661,7 +78661,7 @@ class ItemRevisionSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ItemRevisionSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemRevisionSearchAdvanced")) {
 /**
  * ItemRevisionSearchAdvanced
  */
@@ -78695,7 +78695,7 @@ class ItemRevisionSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ItemRevisionSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemRevisionSearchRow")) {
 /**
  * ItemRevisionSearchRow
  */
@@ -78723,7 +78723,7 @@ class ItemRevisionSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("AccountingPeriodFiscalCalendars")) {
+if (!class_exists(__NAMESPACE__ . "\\AccountingPeriodFiscalCalendars")) {
 /**
  * AccountingPeriodFiscalCalendars
  */
@@ -78745,7 +78745,7 @@ class AccountingPeriodFiscalCalendars {
 	);
 }}
 
-if (!class_exists("AccountingPeriodFiscalCalendarsList")) {
+if (!class_exists(__NAMESPACE__ . "\\AccountingPeriodFiscalCalendarsList")) {
 /**
  * AccountingPeriodFiscalCalendarsList
  */
@@ -78767,7 +78767,7 @@ class AccountingPeriodFiscalCalendarsList {
 	);
 }}
 
-if (!class_exists("SalesOrderItemCommitInventory")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesOrderItemCommitInventory")) {
 /**
  * SalesOrderItemCommitInventory
  */
@@ -78789,7 +78789,7 @@ class SalesOrderItemCommitInventory {
 	const _doNotCommit = "_doNotCommit";
 }}
 
-if (!class_exists("SalesOrderItemCreatePo")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesOrderItemCreatePo")) {
 /**
  * SalesOrderItemCreatePo
  */
@@ -78807,7 +78807,7 @@ class SalesOrderItemCreatePo {
 	const _specialOrder = "_specialOrder";
 }}
 
-if (!class_exists("SalesOrderOrderStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesOrderOrderStatus")) {
 /**
  * SalesOrderOrderStatus
  */
@@ -78853,7 +78853,7 @@ class SalesOrderOrderStatus {
 	const _undefined = "_undefined";
 }}
 
-if (!class_exists("ItemFulfillmentExportTypeUps")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentExportTypeUps")) {
 /**
  * ItemFulfillmentExportTypeUps
  */
@@ -78875,7 +78875,7 @@ class ItemFulfillmentExportTypeUps {
 	const _foreignMilitarySales = "_foreignMilitarySales";
 }}
 
-if (!class_exists("ItemFulfillmentLicenseExceptionUps")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentLicenseExceptionUps")) {
 /**
  * ItemFulfillmentLicenseExceptionUps
  */
@@ -78957,7 +78957,7 @@ class ItemFulfillmentLicenseExceptionUps {
 	const _tsu = "_tsu";
 }}
 
-if (!class_exists("ItemFulfillmentMethodOfTransportUps")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentMethodOfTransportUps")) {
 /**
  * ItemFulfillmentMethodOfTransportUps
  */
@@ -79027,7 +79027,7 @@ class ItemFulfillmentMethodOfTransportUps {
 	const _truckContainerized = "_truckContainerized";
 }}
 
-if (!class_exists("ItemFulfillmentThirdPartyTypeUps")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentThirdPartyTypeUps")) {
 /**
  * ItemFulfillmentThirdPartyTypeUps
  */
@@ -79049,7 +79049,7 @@ class ItemFulfillmentThirdPartyTypeUps {
 	const _thirdPartyBilling = "_thirdPartyBilling";
 }}
 
-if (!class_exists("ItemFulfillmentPackageUpsCodMethodUps")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackageUpsCodMethodUps")) {
 /**
  * ItemFulfillmentPackageUpsCodMethodUps
  */
@@ -79067,7 +79067,7 @@ class ItemFulfillmentPackageUpsCodMethodUps {
 	const _checkCashiersCheckMoneyOrder = "_checkCashiersCheckMoneyOrder";
 }}
 
-if (!class_exists("ItemFulfillmentPackageUpsDeliveryConfUps")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackageUpsDeliveryConfUps")) {
 /**
  * ItemFulfillmentPackageUpsDeliveryConfUps
  */
@@ -79093,7 +79093,7 @@ class ItemFulfillmentPackageUpsDeliveryConfUps {
 	const _signatureRequired = "_signatureRequired";
 }}
 
-if (!class_exists("ItemFulfillmentPackageUpsPackagingUps")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackageUpsPackagingUps")) {
 /**
  * ItemFulfillmentPackageUpsPackagingUps
  */
@@ -79123,7 +79123,7 @@ class ItemFulfillmentPackageUpsPackagingUps {
 	const _yourPackaging = "_yourPackaging";
 }}
 
-if (!class_exists("ItemFulfillmentPackageUspsDeliveryConfUsps")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackageUspsDeliveryConfUsps")) {
 /**
  * ItemFulfillmentPackageUspsDeliveryConfUsps
  */
@@ -79141,7 +79141,7 @@ class ItemFulfillmentPackageUspsDeliveryConfUsps {
 	const _signatureConfirmation = "_signatureConfirmation";
 }}
 
-if (!class_exists("ItemFulfillmentPackageUspsPackagingUsps")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackageUspsPackagingUsps")) {
 /**
  * ItemFulfillmentPackageUspsPackagingUsps
  */
@@ -79187,7 +79187,7 @@ class ItemFulfillmentPackageUspsPackagingUsps {
 	const _oversizedPackage = "_oversizedPackage";
 }}
 
-if (!class_exists("ItemFulfillmentB13AFilingOptionFedEx")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentB13AFilingOptionFedEx")) {
 /**
  * ItemFulfillmentB13AFilingOptionFedEx
  */
@@ -79213,7 +79213,7 @@ class ItemFulfillmentB13AFilingOptionFedEx {
 	const _summaryReporting = "_summaryReporting";
 }}
 
-if (!class_exists("ItemFulfillmentHomeDeliveryTypeFedEx")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentHomeDeliveryTypeFedEx")) {
 /**
  * ItemFulfillmentHomeDeliveryTypeFedEx
  */
@@ -79235,7 +79235,7 @@ class ItemFulfillmentHomeDeliveryTypeFedEx {
 	const _evening = "_evening";
 }}
 
-if (!class_exists("ItemFulfillmentThirdPartyTypeFedEx")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentThirdPartyTypeFedEx")) {
 /**
  * ItemFulfillmentThirdPartyTypeFedEx
  */
@@ -79257,7 +79257,7 @@ class ItemFulfillmentThirdPartyTypeFedEx {
 	const _noneSelected = "_noneSelected";
 }}
 
-if (!class_exists("ItemFulfillmentPackageFedExAdmPackageTypeFedEx")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackageFedExAdmPackageTypeFedEx")) {
 /**
  * ItemFulfillmentPackageFedExAdmPackageTypeFedEx
  */
@@ -79383,7 +79383,7 @@ class ItemFulfillmentPackageFedExAdmPackageTypeFedEx {
 	const _unit = "_unit";
 }}
 
-if (!class_exists("ItemFulfillmentPackageFedExCodMethodFedEx")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackageFedExCodMethodFedEx")) {
 /**
  * ItemFulfillmentPackageFedExCodMethodFedEx
  */
@@ -79405,7 +79405,7 @@ class ItemFulfillmentPackageFedExCodMethodFedEx {
 	const _guaranteedFunds = "_guaranteedFunds";
 }}
 
-if (!class_exists("ItemFulfillmentPackageFedExDeliveryConfFedEx")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackageFedExDeliveryConfFedEx")) {
 /**
  * ItemFulfillmentPackageFedExDeliveryConfFedEx
  */
@@ -79419,7 +79419,7 @@ class ItemFulfillmentPackageFedExDeliveryConfFedEx {
 	const _signatureRequired = "_signatureRequired";
 }}
 
-if (!class_exists("ItemFulfillmentPackageFedExPackagingFedEx")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackageFedExPackagingFedEx")) {
 /**
  * ItemFulfillmentPackageFedExPackagingFedEx
  */
@@ -79457,7 +79457,7 @@ class ItemFulfillmentPackageFedExPackagingFedEx {
 	const _yourPackaging = "_yourPackaging";
 }}
 
-if (!class_exists("ItemFulfillmentPackageFedExSignatureOptionsFedEx")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackageFedExSignatureOptionsFedEx")) {
 /**
  * ItemFulfillmentPackageFedExSignatureOptionsFedEx
  */
@@ -79479,7 +79479,7 @@ class ItemFulfillmentPackageFedExSignatureOptionsFedEx {
 	const _indirect = "_indirect";
 }}
 
-if (!class_exists("ItemFulfillmentTermsOfSaleFedEx")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentTermsOfSaleFedEx")) {
 /**
  * ItemFulfillmentTermsOfSaleFedEx
  */
@@ -79501,7 +79501,7 @@ class ItemFulfillmentTermsOfSaleFedEx {
 	const _cif = "_cif";
 }}
 
-if (!class_exists("ItemFulfillmentShipStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentShipStatus")) {
 /**
  * ItemFulfillmentShipStatus
  */
@@ -79523,7 +79523,7 @@ class ItemFulfillmentShipStatus {
 	const _shipped = "_shipped";
 }}
 
-if (!class_exists("OpportunityStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\OpportunityStatus")) {
 /**
  * OpportunityStatus
  */
@@ -79549,7 +79549,7 @@ class OpportunityStatus {
 	const _issuedEstimate = "_issuedEstimate";
 }}
 
-if (!class_exists("TransactionType")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionType")) {
 /**
  * TransactionType
  */
@@ -79683,7 +79683,7 @@ class TransactionType {
 	const _workOrder = "_workOrder";
 }}
 
-if (!class_exists("TransactionStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionStatus")) {
 /**
  * TransactionStatus
  */
@@ -80153,7 +80153,7 @@ class TransactionStatus {
 	const _workOrderPendingBuild = "_workOrderPendingBuild";
 }}
 
-if (!class_exists("TransactionPaymentEventResult")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionPaymentEventResult")) {
 /**
  * TransactionPaymentEventResult
  */
@@ -80179,7 +80179,7 @@ class TransactionPaymentEventResult {
 	const _reject = "_reject";
 }}
 
-if (!class_exists("TransactionPaymentEventType")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionPaymentEventType")) {
 /**
  * TransactionPaymentEventType
  */
@@ -80213,7 +80213,7 @@ class TransactionPaymentEventType {
 	const _saleRequest = "_saleRequest";
 }}
 
-if (!class_exists("TransactionPaymentEventHoldReason")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionPaymentEventHoldReason")) {
 /**
  * TransactionPaymentEventHoldReason
  */
@@ -80259,7 +80259,7 @@ class TransactionPaymentEventHoldReason {
 	const _verificationRequired = "_verificationRequired";
 }}
 
-if (!class_exists("ItemFulfillmentPackageFedExCodFreightTypeFedEx")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackageFedExCodFreightTypeFedEx")) {
 /**
  * ItemFulfillmentPackageFedExCodFreightTypeFedEx
  */
@@ -80293,7 +80293,7 @@ class ItemFulfillmentPackageFedExCodFreightTypeFedEx {
 	const _totalCharge = "_totalCharge";
 }}
 
-if (!class_exists("TransactionLinkType")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionLinkType")) {
 /**
  * TransactionLinkType
  */
@@ -80423,7 +80423,7 @@ class TransactionLinkType {
 	const _workOrderBuild = "_workOrderBuild";
 }}
 
-if (!class_exists("ForecastType")) {
+if (!class_exists(__NAMESPACE__ . "\\ForecastType")) {
 /**
  * ForecastType
  */
@@ -80449,7 +80449,7 @@ class ForecastType {
 	const _upside = "_upside";
 }}
 
-if (!class_exists("TransactionLineType")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionLineType")) {
 /**
  * TransactionLineType
  */
@@ -80507,7 +80507,7 @@ class TransactionLineType {
 	const _unbuildVariance = "_unbuildVariance";
 }}
 
-if (!class_exists("TransactionApprovalStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionApprovalStatus")) {
 /**
  * TransactionApprovalStatus
  */
@@ -80529,7 +80529,7 @@ class TransactionApprovalStatus {
 	const _rejected = "_rejected";
 }}
 
-if (!class_exists("Opportunity")) {
+if (!class_exists(__NAMESPACE__ . "\\Opportunity")) {
 /**
  * Opportunity
  */
@@ -80923,7 +80923,7 @@ class Opportunity extends Record {
 	);
 }}
 
-if (!class_exists("OpportunitySalesTeam")) {
+if (!class_exists(__NAMESPACE__ . "\\OpportunitySalesTeam")) {
 /**
  * OpportunitySalesTeam
  */
@@ -80957,7 +80957,7 @@ class OpportunitySalesTeam {
 	);
 }}
 
-if (!class_exists("OpportunitySalesTeamList")) {
+if (!class_exists(__NAMESPACE__ . "\\OpportunitySalesTeamList")) {
 /**
  * OpportunitySalesTeamList
  */
@@ -80979,7 +80979,7 @@ class OpportunitySalesTeamList {
 	);
 }}
 
-if (!class_exists("OpportunityItem")) {
+if (!class_exists(__NAMESPACE__ . "\\OpportunityItem")) {
 /**
  * OpportunityItem
  */
@@ -81157,7 +81157,7 @@ class OpportunityItem {
 	);
 }}
 
-if (!class_exists("OpportunityItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\OpportunityItemList")) {
 /**
  * OpportunityItemList
  */
@@ -81179,7 +81179,7 @@ class OpportunityItemList {
 	);
 }}
 
-if (!class_exists("OpportunityCompetitors")) {
+if (!class_exists(__NAMESPACE__ . "\\OpportunityCompetitors")) {
 /**
  * OpportunityCompetitors
  */
@@ -81219,7 +81219,7 @@ class OpportunityCompetitors {
 	);
 }}
 
-if (!class_exists("OpportunityCompetitorsList")) {
+if (!class_exists(__NAMESPACE__ . "\\OpportunityCompetitorsList")) {
 /**
  * OpportunityCompetitorsList
  */
@@ -81241,7 +81241,7 @@ class OpportunityCompetitorsList {
 	);
 }}
 
-if (!class_exists("OpportunitySearch")) {
+if (!class_exists(__NAMESPACE__ . "\\OpportunitySearch")) {
 /**
  * OpportunitySearch
  */
@@ -81347,7 +81347,7 @@ class OpportunitySearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("OpportunitySearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\OpportunitySearchAdvanced")) {
 /**
  * OpportunitySearchAdvanced
  */
@@ -81381,7 +81381,7 @@ class OpportunitySearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("OpportunitySearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\OpportunitySearchRow")) {
 /**
  * OpportunitySearchRow
  */
@@ -81487,7 +81487,7 @@ class OpportunitySearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("OpportunityPartnersList")) {
+if (!class_exists(__NAMESPACE__ . "\\OpportunityPartnersList")) {
 /**
  * OpportunityPartnersList
  */
@@ -81509,7 +81509,7 @@ class OpportunityPartnersList {
 	);
 }}
 
-if (!class_exists("SalesOrder")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesOrder")) {
 /**
  * SalesOrder
  */
@@ -82335,7 +82335,7 @@ class SalesOrder extends Record {
 	);
 }}
 
-if (!class_exists("SalesOrderSalesTeam")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesOrderSalesTeam")) {
 /**
  * SalesOrderSalesTeam
  */
@@ -82369,7 +82369,7 @@ class SalesOrderSalesTeam {
 	);
 }}
 
-if (!class_exists("SalesOrderSalesTeamList")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesOrderSalesTeamList")) {
 /**
  * SalesOrderSalesTeamList
  */
@@ -82391,7 +82391,7 @@ class SalesOrderSalesTeamList {
 	);
 }}
 
-if (!class_exists("SalesOrderItem")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesOrderItem")) {
 /**
  * SalesOrderItem
  */
@@ -82815,7 +82815,7 @@ class SalesOrderItem {
 	);
 }}
 
-if (!class_exists("SalesOrderItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesOrderItemList")) {
 /**
  * SalesOrderItemList
  */
@@ -82837,7 +82837,7 @@ class SalesOrderItemList {
 	);
 }}
 
-if (!class_exists("SalesOrderPartnersList")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesOrderPartnersList")) {
 /**
  * SalesOrderPartnersList
  */
@@ -82859,7 +82859,7 @@ class SalesOrderPartnersList {
 	);
 }}
 
-if (!class_exists("SalesOrderShipGroupList")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesOrderShipGroupList")) {
 /**
  * SalesOrderShipGroupList
  */
@@ -82881,7 +82881,7 @@ class SalesOrderShipGroupList {
 	);
 }}
 
-if (!class_exists("TransactionSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionSearch")) {
 /**
  * TransactionSearch
  */
@@ -83161,7 +83161,7 @@ class TransactionSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("TransactionSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionSearchAdvanced")) {
 /**
  * TransactionSearchAdvanced
  */
@@ -83195,7 +83195,7 @@ class TransactionSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("TransactionSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionSearchRow")) {
 /**
  * TransactionSearchRow
  */
@@ -83475,7 +83475,7 @@ class TransactionSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("ItemFulfillment")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillment")) {
 /**
  * ItemFulfillment
  */
@@ -83941,7 +83941,7 @@ class ItemFulfillment extends Record {
 	);
 }}
 
-if (!class_exists("ItemFulfillmentItem")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentItem")) {
 /**
  * ItemFulfillmentItem
  */
@@ -84083,7 +84083,7 @@ class ItemFulfillmentItem {
 	);
 }}
 
-if (!class_exists("ItemFulfillmentItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentItemList")) {
 /**
  * ItemFulfillmentItemList
  */
@@ -84105,7 +84105,7 @@ class ItemFulfillmentItemList {
 	);
 }}
 
-if (!class_exists("ItemFulfillmentPackage")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackage")) {
 /**
  * ItemFulfillmentPackage
  */
@@ -84133,7 +84133,7 @@ class ItemFulfillmentPackage {
 	);
 }}
 
-if (!class_exists("ItemFulfillmentPackageList")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackageList")) {
 /**
  * ItemFulfillmentPackageList
  */
@@ -84155,7 +84155,7 @@ class ItemFulfillmentPackageList {
 	);
 }}
 
-if (!class_exists("ItemFulfillmentPackageUps")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackageUps")) {
 /**
  * ItemFulfillmentPackageUps
  */
@@ -84261,7 +84261,7 @@ class ItemFulfillmentPackageUps {
 	);
 }}
 
-if (!class_exists("ItemFulfillmentPackageUpsList")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackageUpsList")) {
 /**
  * ItemFulfillmentPackageUpsList
  */
@@ -84283,7 +84283,7 @@ class ItemFulfillmentPackageUpsList {
 	);
 }}
 
-if (!class_exists("ItemFulfillmentPackageUsps")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackageUsps")) {
 /**
  * ItemFulfillmentPackageUsps
  */
@@ -84365,7 +84365,7 @@ class ItemFulfillmentPackageUsps {
 	);
 }}
 
-if (!class_exists("ItemFulfillmentPackageUspsList")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackageUspsList")) {
 /**
  * ItemFulfillmentPackageUspsList
  */
@@ -84387,7 +84387,7 @@ class ItemFulfillmentPackageUspsList {
 	);
 }}
 
-if (!class_exists("ItemFulfillmentPackageFedEx")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackageFedEx")) {
 /**
  * ItemFulfillmentPackageFedEx
  */
@@ -84511,7 +84511,7 @@ class ItemFulfillmentPackageFedEx {
 	);
 }}
 
-if (!class_exists("ItemFulfillmentPackageFedExList")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentPackageFedExList")) {
 /**
  * ItemFulfillmentPackageFedExList
  */
@@ -84533,7 +84533,7 @@ class ItemFulfillmentPackageFedExList {
 	);
 }}
 
-if (!class_exists("ItemFulfillmentShipGroupList")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemFulfillmentShipGroupList")) {
 /**
  * ItemFulfillmentShipGroupList
  */
@@ -84555,7 +84555,7 @@ class ItemFulfillmentShipGroupList {
 	);
 }}
 
-if (!class_exists("Invoice")) {
+if (!class_exists(__NAMESPACE__ . "\\Invoice")) {
 /**
  * Invoice
  */
@@ -85363,7 +85363,7 @@ class Invoice extends Record {
 	);
 }}
 
-if (!class_exists("InvoiceSalesTeam")) {
+if (!class_exists(__NAMESPACE__ . "\\InvoiceSalesTeam")) {
 /**
  * InvoiceSalesTeam
  */
@@ -85397,7 +85397,7 @@ class InvoiceSalesTeam {
 	);
 }}
 
-if (!class_exists("InvoiceSalesTeamList")) {
+if (!class_exists(__NAMESPACE__ . "\\InvoiceSalesTeamList")) {
 /**
  * InvoiceSalesTeamList
  */
@@ -85419,7 +85419,7 @@ class InvoiceSalesTeamList {
 	);
 }}
 
-if (!class_exists("InvoiceItem")) {
+if (!class_exists(__NAMESPACE__ . "\\InvoiceItem")) {
 /**
  * InvoiceItem
  */
@@ -85765,7 +85765,7 @@ class InvoiceItem {
 	);
 }}
 
-if (!class_exists("InvoiceItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\InvoiceItemList")) {
 /**
  * InvoiceItemList
  */
@@ -85787,7 +85787,7 @@ class InvoiceItemList {
 	);
 }}
 
-if (!class_exists("InvoiceItemCost")) {
+if (!class_exists(__NAMESPACE__ . "\\InvoiceItemCost")) {
 /**
  * InvoiceItemCost
  */
@@ -85947,7 +85947,7 @@ class InvoiceItemCost {
 	);
 }}
 
-if (!class_exists("InvoiceItemCostList")) {
+if (!class_exists(__NAMESPACE__ . "\\InvoiceItemCostList")) {
 /**
  * InvoiceItemCostList
  */
@@ -85969,7 +85969,7 @@ class InvoiceItemCostList {
 	);
 }}
 
-if (!class_exists("InvoiceExpCost")) {
+if (!class_exists(__NAMESPACE__ . "\\InvoiceExpCost")) {
 /**
  * InvoiceExpCost
  */
@@ -86111,7 +86111,7 @@ class InvoiceExpCost {
 	);
 }}
 
-if (!class_exists("InvoiceExpCostList")) {
+if (!class_exists(__NAMESPACE__ . "\\InvoiceExpCostList")) {
 /**
  * InvoiceExpCostList
  */
@@ -86133,7 +86133,7 @@ class InvoiceExpCostList {
 	);
 }}
 
-if (!class_exists("InvoiceTime")) {
+if (!class_exists(__NAMESPACE__ . "\\InvoiceTime")) {
 /**
  * InvoiceTime
  */
@@ -86281,7 +86281,7 @@ class InvoiceTime {
 	);
 }}
 
-if (!class_exists("InvoiceTimeList")) {
+if (!class_exists(__NAMESPACE__ . "\\InvoiceTimeList")) {
 /**
  * InvoiceTimeList
  */
@@ -86303,7 +86303,7 @@ class InvoiceTimeList {
 	);
 }}
 
-if (!class_exists("InvoicePartnersList")) {
+if (!class_exists(__NAMESPACE__ . "\\InvoicePartnersList")) {
 /**
  * InvoicePartnersList
  */
@@ -86325,7 +86325,7 @@ class InvoicePartnersList {
 	);
 }}
 
-if (!class_exists("InvoiceShipGroupList")) {
+if (!class_exists(__NAMESPACE__ . "\\InvoiceShipGroupList")) {
 /**
  * InvoiceShipGroupList
  */
@@ -86347,7 +86347,7 @@ class InvoiceShipGroupList {
 	);
 }}
 
-if (!class_exists("CashSale")) {
+if (!class_exists(__NAMESPACE__ . "\\CashSale")) {
 /**
  * CashSale
  */
@@ -87269,7 +87269,7 @@ class CashSale extends Record {
 	);
 }}
 
-if (!class_exists("CashSaleSalesTeam")) {
+if (!class_exists(__NAMESPACE__ . "\\CashSaleSalesTeam")) {
 /**
  * CashSaleSalesTeam
  */
@@ -87303,7 +87303,7 @@ class CashSaleSalesTeam {
 	);
 }}
 
-if (!class_exists("CashSaleSalesTeamList")) {
+if (!class_exists(__NAMESPACE__ . "\\CashSaleSalesTeamList")) {
 /**
  * CashSaleSalesTeamList
  */
@@ -87325,7 +87325,7 @@ class CashSaleSalesTeamList {
 	);
 }}
 
-if (!class_exists("CashSaleItem")) {
+if (!class_exists(__NAMESPACE__ . "\\CashSaleItem")) {
 /**
  * CashSaleItem
  */
@@ -87671,7 +87671,7 @@ class CashSaleItem {
 	);
 }}
 
-if (!class_exists("CashSaleItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\CashSaleItemList")) {
 /**
  * CashSaleItemList
  */
@@ -87693,7 +87693,7 @@ class CashSaleItemList {
 	);
 }}
 
-if (!class_exists("CashSaleItemCost")) {
+if (!class_exists(__NAMESPACE__ . "\\CashSaleItemCost")) {
 /**
  * CashSaleItemCost
  */
@@ -87853,7 +87853,7 @@ class CashSaleItemCost {
 	);
 }}
 
-if (!class_exists("CashSaleItemCostList")) {
+if (!class_exists(__NAMESPACE__ . "\\CashSaleItemCostList")) {
 /**
  * CashSaleItemCostList
  */
@@ -87875,7 +87875,7 @@ class CashSaleItemCostList {
 	);
 }}
 
-if (!class_exists("CashSaleExpCost")) {
+if (!class_exists(__NAMESPACE__ . "\\CashSaleExpCost")) {
 /**
  * CashSaleExpCost
  */
@@ -88017,7 +88017,7 @@ class CashSaleExpCost {
 	);
 }}
 
-if (!class_exists("CashSaleExpCostList")) {
+if (!class_exists(__NAMESPACE__ . "\\CashSaleExpCostList")) {
 /**
  * CashSaleExpCostList
  */
@@ -88039,7 +88039,7 @@ class CashSaleExpCostList {
 	);
 }}
 
-if (!class_exists("CashSaleTime")) {
+if (!class_exists(__NAMESPACE__ . "\\CashSaleTime")) {
 /**
  * CashSaleTime
  */
@@ -88187,7 +88187,7 @@ class CashSaleTime {
 	);
 }}
 
-if (!class_exists("CashSaleTimeList")) {
+if (!class_exists(__NAMESPACE__ . "\\CashSaleTimeList")) {
 /**
  * CashSaleTimeList
  */
@@ -88209,7 +88209,7 @@ class CashSaleTimeList {
 	);
 }}
 
-if (!class_exists("CashSalePartnersList")) {
+if (!class_exists(__NAMESPACE__ . "\\CashSalePartnersList")) {
 /**
  * CashSalePartnersList
  */
@@ -88231,7 +88231,7 @@ class CashSalePartnersList {
 	);
 }}
 
-if (!class_exists("CashSaleShipGroupList")) {
+if (!class_exists(__NAMESPACE__ . "\\CashSaleShipGroupList")) {
 /**
  * CashSaleShipGroupList
  */
@@ -88253,7 +88253,7 @@ class CashSaleShipGroupList {
 	);
 }}
 
-if (!class_exists("Estimate")) {
+if (!class_exists(__NAMESPACE__ . "\\Estimate")) {
 /**
  * Estimate
  */
@@ -88803,7 +88803,7 @@ class Estimate extends Record {
 	);
 }}
 
-if (!class_exists("EstimateItem")) {
+if (!class_exists(__NAMESPACE__ . "\\EstimateItem")) {
 /**
  * EstimateItem
  */
@@ -89017,7 +89017,7 @@ class EstimateItem {
 	);
 }}
 
-if (!class_exists("EstimateItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\EstimateItemList")) {
 /**
  * EstimateItemList
  */
@@ -89039,7 +89039,7 @@ class EstimateItemList {
 	);
 }}
 
-if (!class_exists("EstimateSalesTeam")) {
+if (!class_exists(__NAMESPACE__ . "\\EstimateSalesTeam")) {
 /**
  * EstimateSalesTeam
  */
@@ -89073,7 +89073,7 @@ class EstimateSalesTeam {
 	);
 }}
 
-if (!class_exists("EstimateSalesTeamList")) {
+if (!class_exists(__NAMESPACE__ . "\\EstimateSalesTeamList")) {
 /**
  * EstimateSalesTeamList
  */
@@ -89095,7 +89095,7 @@ class EstimateSalesTeamList {
 	);
 }}
 
-if (!class_exists("EstimatePartnersList")) {
+if (!class_exists(__NAMESPACE__ . "\\EstimatePartnersList")) {
 /**
  * EstimatePartnersList
  */
@@ -89117,7 +89117,7 @@ class EstimatePartnersList {
 	);
 }}
 
-if (!class_exists("EstimateShipGroupList")) {
+if (!class_exists(__NAMESPACE__ . "\\EstimateShipGroupList")) {
 /**
  * EstimateShipGroupList
  */
@@ -89139,7 +89139,7 @@ class EstimateShipGroupList {
 	);
 }}
 
-if (!class_exists("GiftCertRedemption")) {
+if (!class_exists(__NAMESPACE__ . "\\GiftCertRedemption")) {
 /**
  * GiftCertRedemption
  */
@@ -89173,7 +89173,7 @@ class GiftCertRedemption {
 	);
 }}
 
-if (!class_exists("GiftCertRedemptionList")) {
+if (!class_exists(__NAMESPACE__ . "\\GiftCertRedemptionList")) {
 /**
  * GiftCertRedemptionList
  */
@@ -89195,7 +89195,7 @@ class GiftCertRedemptionList {
 	);
 }}
 
-if (!class_exists("TransactionShipGroup")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionShipGroup")) {
 /**
  * TransactionShipGroup
  */
@@ -89343,7 +89343,7 @@ class TransactionShipGroup {
 	);
 }}
 
-if (!class_exists("PurchaseOrderOrderStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\PurchaseOrderOrderStatus")) {
 /**
  * PurchaseOrderOrderStatus
  */
@@ -89385,7 +89385,7 @@ class PurchaseOrderOrderStatus {
 	const _rejectedBySupervisor = "_rejectedBySupervisor";
 }}
 
-if (!class_exists("TransactionBillVarianceStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionBillVarianceStatus")) {
 /**
  * TransactionBillVarianceStatus
  */
@@ -89407,7 +89407,7 @@ class TransactionBillVarianceStatus {
 	const _noVariances = "_noVariances";
 }}
 
-if (!class_exists("VendorReturnAuthorizationOrderStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorReturnAuthorizationOrderStatus")) {
 /**
  * VendorReturnAuthorizationOrderStatus
  */
@@ -89453,7 +89453,7 @@ class VendorReturnAuthorizationOrderStatus {
 	const _undefined = "_undefined";
 }}
 
-if (!class_exists("PurchLandedCostList")) {
+if (!class_exists(__NAMESPACE__ . "\\PurchLandedCostList")) {
 /**
  * PurchLandedCostList
  */
@@ -89475,7 +89475,7 @@ class PurchLandedCostList {
 	);
 }}
 
-if (!class_exists("VendorBill")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorBill")) {
 /**
  * VendorBill
  */
@@ -89701,7 +89701,7 @@ class VendorBill extends Record {
 	);
 }}
 
-if (!class_exists("VendorBillExpense")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorBillExpense")) {
 /**
  * VendorBillExpense
  */
@@ -89843,7 +89843,7 @@ class VendorBillExpense {
 	);
 }}
 
-if (!class_exists("VendorBillExpenseList")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorBillExpenseList")) {
 /**
  * VendorBillExpenseList
  */
@@ -89865,7 +89865,7 @@ class VendorBillExpenseList {
 	);
 }}
 
-if (!class_exists("VendorBillItem")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorBillItem")) {
 /**
  * VendorBillItem
  */
@@ -90073,7 +90073,7 @@ class VendorBillItem {
 	);
 }}
 
-if (!class_exists("VendorBillItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorBillItemList")) {
 /**
  * VendorBillItemList
  */
@@ -90095,7 +90095,7 @@ class VendorBillItemList {
 	);
 }}
 
-if (!class_exists("PurchaseOrder")) {
+if (!class_exists(__NAMESPACE__ . "\\PurchaseOrder")) {
 /**
  * PurchaseOrder
  */
@@ -90435,7 +90435,7 @@ class PurchaseOrder extends Record {
 	);
 }}
 
-if (!class_exists("PurchaseOrderExpense")) {
+if (!class_exists(__NAMESPACE__ . "\\PurchaseOrderExpense")) {
 /**
  * PurchaseOrderExpense
  */
@@ -90547,7 +90547,7 @@ class PurchaseOrderExpense {
 	);
 }}
 
-if (!class_exists("PurchaseOrderExpenseList")) {
+if (!class_exists(__NAMESPACE__ . "\\PurchaseOrderExpenseList")) {
 /**
  * PurchaseOrderExpenseList
  */
@@ -90569,7 +90569,7 @@ class PurchaseOrderExpenseList {
 	);
 }}
 
-if (!class_exists("PurchaseOrderItem")) {
+if (!class_exists(__NAMESPACE__ . "\\PurchaseOrderItem")) {
 /**
  * PurchaseOrderItem
  */
@@ -90765,7 +90765,7 @@ class PurchaseOrderItem {
 	);
 }}
 
-if (!class_exists("PurchaseOrderItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\PurchaseOrderItemList")) {
 /**
  * PurchaseOrderItemList
  */
@@ -90787,7 +90787,7 @@ class PurchaseOrderItemList {
 	);
 }}
 
-if (!class_exists("ItemReceipt")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemReceipt")) {
 /**
  * ItemReceipt
  */
@@ -90923,7 +90923,7 @@ class ItemReceipt extends Record {
 	);
 }}
 
-if (!class_exists("ItemReceiptItem")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemReceiptItem")) {
 /**
  * ItemReceiptItem
  */
@@ -91077,7 +91077,7 @@ class ItemReceiptItem {
 	);
 }}
 
-if (!class_exists("ItemReceiptItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemReceiptItemList")) {
 /**
  * ItemReceiptItemList
  */
@@ -91099,7 +91099,7 @@ class ItemReceiptItemList {
 	);
 }}
 
-if (!class_exists("ItemReceiptExpense")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemReceiptExpense")) {
 /**
  * ItemReceiptExpense
  */
@@ -91151,7 +91151,7 @@ class ItemReceiptExpense {
 	);
 }}
 
-if (!class_exists("ItemReceiptExpenseList")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemReceiptExpenseList")) {
 /**
  * ItemReceiptExpenseList
  */
@@ -91173,7 +91173,7 @@ class ItemReceiptExpenseList {
 	);
 }}
 
-if (!class_exists("VendorPayment")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorPayment")) {
 /**
  * VendorPayment
  */
@@ -91369,7 +91369,7 @@ class VendorPayment extends Record {
 	);
 }}
 
-if (!class_exists("VendorPaymentApply")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorPaymentApply")) {
 /**
  * VendorPaymentApply
  */
@@ -91463,7 +91463,7 @@ class VendorPaymentApply {
 	);
 }}
 
-if (!class_exists("VendorPaymentApplyList")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorPaymentApplyList")) {
 /**
  * VendorPaymentApplyList
  */
@@ -91485,7 +91485,7 @@ class VendorPaymentApplyList {
 	);
 }}
 
-if (!class_exists("VendorPaymentCredit")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorPaymentCredit")) {
 /**
  * VendorPaymentCredit
  */
@@ -91561,7 +91561,7 @@ class VendorPaymentCredit {
 	);
 }}
 
-if (!class_exists("VendorPaymentCreditList")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorPaymentCreditList")) {
 /**
  * VendorPaymentCreditList
  */
@@ -91583,7 +91583,7 @@ class VendorPaymentCreditList {
 	);
 }}
 
-if (!class_exists("VendorCredit")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorCredit")) {
 /**
  * VendorCredit
  */
@@ -91761,7 +91761,7 @@ class VendorCredit extends Record {
 	);
 }}
 
-if (!class_exists("VendorCreditExpense")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorCreditExpense")) {
 /**
  * VendorCreditExpense
  */
@@ -91897,7 +91897,7 @@ class VendorCreditExpense {
 	);
 }}
 
-if (!class_exists("VendorCreditExpenseList")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorCreditExpenseList")) {
 /**
  * VendorCreditExpenseList
  */
@@ -91919,7 +91919,7 @@ class VendorCreditExpenseList {
 	);
 }}
 
-if (!class_exists("VendorCreditItem")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorCreditItem")) {
 /**
  * VendorCreditItem
  */
@@ -92097,7 +92097,7 @@ class VendorCreditItem {
 	);
 }}
 
-if (!class_exists("VendorCreditItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorCreditItemList")) {
 /**
  * VendorCreditItemList
  */
@@ -92119,7 +92119,7 @@ class VendorCreditItemList {
 	);
 }}
 
-if (!class_exists("VendorCreditApply")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorCreditApply")) {
 /**
  * VendorCreditApply
  */
@@ -92189,7 +92189,7 @@ class VendorCreditApply {
 	);
 }}
 
-if (!class_exists("VendorCreditApplyList")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorCreditApplyList")) {
 /**
  * VendorCreditApplyList
  */
@@ -92211,7 +92211,7 @@ class VendorCreditApplyList {
 	);
 }}
 
-if (!class_exists("VendorReturnAuthorization")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorReturnAuthorization")) {
 /**
  * VendorReturnAuthorization
  */
@@ -92365,7 +92365,7 @@ class VendorReturnAuthorization extends Record {
 	);
 }}
 
-if (!class_exists("VendorReturnAuthorizationExpense")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorReturnAuthorizationExpense")) {
 /**
  * VendorReturnAuthorizationExpense
  */
@@ -92501,7 +92501,7 @@ class VendorReturnAuthorizationExpense {
 	);
 }}
 
-if (!class_exists("VendorReturnAuthorizationExpenseList")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorReturnAuthorizationExpenseList")) {
 /**
  * VendorReturnAuthorizationExpenseList
  */
@@ -92523,7 +92523,7 @@ class VendorReturnAuthorizationExpenseList {
 	);
 }}
 
-if (!class_exists("VendorReturnAuthorizationItem")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorReturnAuthorizationItem")) {
 /**
  * VendorReturnAuthorizationItem
  */
@@ -92713,7 +92713,7 @@ class VendorReturnAuthorizationItem {
 	);
 }}
 
-if (!class_exists("VendorReturnAuthorizationItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\VendorReturnAuthorizationItemList")) {
 /**
  * VendorReturnAuthorizationItemList
  */
@@ -92735,7 +92735,7 @@ class VendorReturnAuthorizationItemList {
 	);
 }}
 
-if (!class_exists("ReturnAuthorizationOrderStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\ReturnAuthorizationOrderStatus")) {
 /**
  * ReturnAuthorizationOrderStatus
  */
@@ -92753,7 +92753,7 @@ class ReturnAuthorizationOrderStatus {
 	const _pendingReceipt = "_pendingReceipt";
 }}
 
-if (!class_exists("CashRefund")) {
+if (!class_exists(__NAMESPACE__ . "\\CashRefund")) {
 /**
  * CashRefund
  */
@@ -93381,7 +93381,7 @@ class CashRefund extends Record {
 	);
 }}
 
-if (!class_exists("CashRefundItem")) {
+if (!class_exists(__NAMESPACE__ . "\\CashRefundItem")) {
 /**
  * CashRefundItem
  */
@@ -93643,7 +93643,7 @@ class CashRefundItem {
 	);
 }}
 
-if (!class_exists("CashRefundItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\CashRefundItemList")) {
 /**
  * CashRefundItemList
  */
@@ -93665,7 +93665,7 @@ class CashRefundItemList {
 	);
 }}
 
-if (!class_exists("CashRefundSalesTeam")) {
+if (!class_exists(__NAMESPACE__ . "\\CashRefundSalesTeam")) {
 /**
  * CashRefundSalesTeam
  */
@@ -93699,7 +93699,7 @@ class CashRefundSalesTeam {
 	);
 }}
 
-if (!class_exists("CashRefundSalesTeamList")) {
+if (!class_exists(__NAMESPACE__ . "\\CashRefundSalesTeamList")) {
 /**
  * CashRefundSalesTeamList
  */
@@ -93721,7 +93721,7 @@ class CashRefundSalesTeamList {
 	);
 }}
 
-if (!class_exists("CashRefundPartnersList")) {
+if (!class_exists(__NAMESPACE__ . "\\CashRefundPartnersList")) {
 /**
  * CashRefundPartnersList
  */
@@ -93743,7 +93743,7 @@ class CashRefundPartnersList {
 	);
 }}
 
-if (!class_exists("CustomerPayment")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerPayment")) {
 /**
  * CustomerPayment
  */
@@ -94077,7 +94077,7 @@ class CustomerPayment extends Record {
 	);
 }}
 
-if (!class_exists("CustomerPaymentApply")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerPaymentApply")) {
 /**
  * CustomerPaymentApply
  */
@@ -94171,7 +94171,7 @@ class CustomerPaymentApply {
 	);
 }}
 
-if (!class_exists("CustomerPaymentApplyList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerPaymentApplyList")) {
 /**
  * CustomerPaymentApplyList
  */
@@ -94193,7 +94193,7 @@ class CustomerPaymentApplyList {
 	);
 }}
 
-if (!class_exists("CustomerPaymentCredit")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerPaymentCredit")) {
 /**
  * CustomerPaymentCredit
  */
@@ -94269,7 +94269,7 @@ class CustomerPaymentCredit {
 	);
 }}
 
-if (!class_exists("CustomerPaymentCreditList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerPaymentCreditList")) {
 /**
  * CustomerPaymentCreditList
  */
@@ -94291,7 +94291,7 @@ class CustomerPaymentCreditList {
 	);
 }}
 
-if (!class_exists("CustomerPaymentDeposit")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerPaymentDeposit")) {
 /**
  * CustomerPaymentDeposit
  */
@@ -94355,7 +94355,7 @@ class CustomerPaymentDeposit {
 	);
 }}
 
-if (!class_exists("CustomerPaymentDepositList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerPaymentDepositList")) {
 /**
  * CustomerPaymentDepositList
  */
@@ -94377,7 +94377,7 @@ class CustomerPaymentDepositList {
 	);
 }}
 
-if (!class_exists("ReturnAuthorization")) {
+if (!class_exists(__NAMESPACE__ . "\\ReturnAuthorization")) {
 /**
  * ReturnAuthorization
  */
@@ -94957,7 +94957,7 @@ class ReturnAuthorization extends Record {
 	);
 }}
 
-if (!class_exists("ReturnAuthorizationItem")) {
+if (!class_exists(__NAMESPACE__ . "\\ReturnAuthorizationItem")) {
 /**
  * ReturnAuthorizationItem
  */
@@ -95255,7 +95255,7 @@ class ReturnAuthorizationItem {
 	);
 }}
 
-if (!class_exists("ReturnAuthorizationItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\ReturnAuthorizationItemList")) {
 /**
  * ReturnAuthorizationItemList
  */
@@ -95277,7 +95277,7 @@ class ReturnAuthorizationItemList {
 	);
 }}
 
-if (!class_exists("ReturnAuthorizationSalesTeam")) {
+if (!class_exists(__NAMESPACE__ . "\\ReturnAuthorizationSalesTeam")) {
 /**
  * ReturnAuthorizationSalesTeam
  */
@@ -95311,7 +95311,7 @@ class ReturnAuthorizationSalesTeam {
 	);
 }}
 
-if (!class_exists("ReturnAuthorizationSalesTeamList")) {
+if (!class_exists(__NAMESPACE__ . "\\ReturnAuthorizationSalesTeamList")) {
 /**
  * ReturnAuthorizationSalesTeamList
  */
@@ -95333,7 +95333,7 @@ class ReturnAuthorizationSalesTeamList {
 	);
 }}
 
-if (!class_exists("ReturnAuthorizationPartnersList")) {
+if (!class_exists(__NAMESPACE__ . "\\ReturnAuthorizationPartnersList")) {
 /**
  * ReturnAuthorizationPartnersList
  */
@@ -95355,7 +95355,7 @@ class ReturnAuthorizationPartnersList {
 	);
 }}
 
-if (!class_exists("CreditMemo")) {
+if (!class_exists(__NAMESPACE__ . "\\CreditMemo")) {
 /**
  * CreditMemo
  */
@@ -95905,7 +95905,7 @@ class CreditMemo extends Record {
 	);
 }}
 
-if (!class_exists("CreditMemoSalesTeam")) {
+if (!class_exists(__NAMESPACE__ . "\\CreditMemoSalesTeam")) {
 /**
  * CreditMemoSalesTeam
  */
@@ -95939,7 +95939,7 @@ class CreditMemoSalesTeam {
 	);
 }}
 
-if (!class_exists("CreditMemoSalesTeamList")) {
+if (!class_exists(__NAMESPACE__ . "\\CreditMemoSalesTeamList")) {
 /**
  * CreditMemoSalesTeamList
  */
@@ -95961,7 +95961,7 @@ class CreditMemoSalesTeamList {
 	);
 }}
 
-if (!class_exists("CreditMemoItem")) {
+if (!class_exists(__NAMESPACE__ . "\\CreditMemoItem")) {
 /**
  * CreditMemoItem
  */
@@ -96235,7 +96235,7 @@ class CreditMemoItem {
 	);
 }}
 
-if (!class_exists("CreditMemoItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\CreditMemoItemList")) {
 /**
  * CreditMemoItemList
  */
@@ -96257,7 +96257,7 @@ class CreditMemoItemList {
 	);
 }}
 
-if (!class_exists("CreditMemoApply")) {
+if (!class_exists(__NAMESPACE__ . "\\CreditMemoApply")) {
 /**
  * CreditMemoApply
  */
@@ -96333,7 +96333,7 @@ class CreditMemoApply {
 	);
 }}
 
-if (!class_exists("CreditMemoApplyList")) {
+if (!class_exists(__NAMESPACE__ . "\\CreditMemoApplyList")) {
 /**
  * CreditMemoApplyList
  */
@@ -96355,7 +96355,7 @@ class CreditMemoApplyList {
 	);
 }}
 
-if (!class_exists("CreditMemoPartnersList")) {
+if (!class_exists(__NAMESPACE__ . "\\CreditMemoPartnersList")) {
 /**
  * CreditMemoPartnersList
  */
@@ -96377,7 +96377,7 @@ class CreditMemoPartnersList {
 	);
 }}
 
-if (!class_exists("CustomerRefund")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerRefund")) {
 /**
  * CustomerRefund
  */
@@ -96645,7 +96645,7 @@ class CustomerRefund extends Record {
 	);
 }}
 
-if (!class_exists("CustomerRefundApply")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerRefundApply")) {
 /**
  * CustomerRefundApply
  */
@@ -96715,7 +96715,7 @@ class CustomerRefundApply {
 	);
 }}
 
-if (!class_exists("CustomerRefundApplyList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerRefundApplyList")) {
 /**
  * CustomerRefundApplyList
  */
@@ -96737,7 +96737,7 @@ class CustomerRefundApplyList {
 	);
 }}
 
-if (!class_exists("CustomerRefundDeposit")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerRefundDeposit")) {
 /**
  * CustomerRefundDeposit
  */
@@ -96801,7 +96801,7 @@ class CustomerRefundDeposit {
 	);
 }}
 
-if (!class_exists("CustomerRefundDepositList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerRefundDepositList")) {
 /**
  * CustomerRefundDepositList
  */
@@ -96823,7 +96823,7 @@ class CustomerRefundDepositList {
 	);
 }}
 
-if (!class_exists("CustomerDeposit")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerDeposit")) {
 /**
  * CustomerDeposit
  */
@@ -97115,7 +97115,7 @@ class CustomerDeposit extends Record {
 	);
 }}
 
-if (!class_exists("CustomerDepositApply")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerDepositApply")) {
 /**
  * CustomerDepositApply
  */
@@ -97179,7 +97179,7 @@ class CustomerDepositApply {
 	);
 }}
 
-if (!class_exists("CustomerDepositApplyList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomerDepositApplyList")) {
 /**
  * CustomerDepositApplyList
  */
@@ -97201,7 +97201,7 @@ class CustomerDepositApplyList {
 	);
 }}
 
-if (!class_exists("DepositApplication")) {
+if (!class_exists(__NAMESPACE__ . "\\DepositApplication")) {
 /**
  * DepositApplication
  */
@@ -97349,7 +97349,7 @@ class DepositApplication extends Record {
 	);
 }}
 
-if (!class_exists("DepositApplicationApply")) {
+if (!class_exists(__NAMESPACE__ . "\\DepositApplicationApply")) {
 /**
  * DepositApplicationApply
  */
@@ -97425,7 +97425,7 @@ class DepositApplicationApply {
 	);
 }}
 
-if (!class_exists("DepositApplicationApplyList")) {
+if (!class_exists(__NAMESPACE__ . "\\DepositApplicationApplyList")) {
 /**
  * DepositApplicationApplyList
  */
@@ -97447,7 +97447,7 @@ class DepositApplicationApplyList {
 	);
 }}
 
-if (!class_exists("BudgetBudgetType")) {
+if (!class_exists(__NAMESPACE__ . "\\BudgetBudgetType")) {
 /**
  * BudgetBudgetType
  */
@@ -97465,7 +97465,7 @@ class BudgetBudgetType {
 	const _local = "_local";
 }}
 
-if (!class_exists("Budget")) {
+if (!class_exists(__NAMESPACE__ . "\\Budget")) {
 /**
  * Budget
  */
@@ -97625,7 +97625,7 @@ class Budget extends Record {
 	);
 }}
 
-if (!class_exists("BudgetSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\BudgetSearch")) {
 /**
  * BudgetSearch
  */
@@ -97641,7 +97641,7 @@ class BudgetSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("BudgetSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\BudgetSearchAdvanced")) {
 /**
  * BudgetSearchAdvanced
  */
@@ -97675,7 +97675,7 @@ class BudgetSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("BudgetSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\BudgetSearchRow")) {
 /**
  * BudgetSearchRow
  */
@@ -97691,7 +97691,7 @@ class BudgetSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("CheckLandedCostList")) {
+if (!class_exists(__NAMESPACE__ . "\\CheckLandedCostList")) {
 /**
  * CheckLandedCostList
  */
@@ -97713,7 +97713,7 @@ class CheckLandedCostList {
 	);
 }}
 
-if (!class_exists("Check")) {
+if (!class_exists(__NAMESPACE__ . "\\Check")) {
 /**
  * Check
  */
@@ -97909,7 +97909,7 @@ class Check extends Record {
 	);
 }}
 
-if (!class_exists("CheckExpense")) {
+if (!class_exists(__NAMESPACE__ . "\\CheckExpense")) {
 /**
  * CheckExpense
  */
@@ -98015,7 +98015,7 @@ class CheckExpense {
 	);
 }}
 
-if (!class_exists("CheckExpenseList")) {
+if (!class_exists(__NAMESPACE__ . "\\CheckExpenseList")) {
 /**
  * CheckExpenseList
  */
@@ -98037,7 +98037,7 @@ class CheckExpenseList {
 	);
 }}
 
-if (!class_exists("CheckItem")) {
+if (!class_exists(__NAMESPACE__ . "\\CheckItem")) {
 /**
  * CheckItem
  */
@@ -98191,7 +98191,7 @@ class CheckItem {
 	);
 }}
 
-if (!class_exists("CheckItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\CheckItemList")) {
 /**
  * CheckItemList
  */
@@ -98213,7 +98213,7 @@ class CheckItemList {
 	);
 }}
 
-if (!class_exists("TransferOrderItemCommitInventory")) {
+if (!class_exists(__NAMESPACE__ . "\\TransferOrderItemCommitInventory")) {
 /**
  * TransferOrderItemCommitInventory
  */
@@ -98235,7 +98235,7 @@ class TransferOrderItemCommitInventory {
 	const _doNotCommit = "_doNotCommit";
 }}
 
-if (!class_exists("TransferOrderOrderStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\TransferOrderOrderStatus")) {
 /**
  * TransferOrderOrderStatus
  */
@@ -98281,7 +98281,7 @@ class TransferOrderOrderStatus {
 	const _undefined = "_undefined";
 }}
 
-if (!class_exists("WorkOrderItemItemCreatePo")) {
+if (!class_exists(__NAMESPACE__ . "\\WorkOrderItemItemCreatePo")) {
 /**
  * WorkOrderItemItemCreatePo
  */
@@ -98299,7 +98299,7 @@ class WorkOrderItemItemCreatePo {
 	const _specialOrder = "_specialOrder";
 }}
 
-if (!class_exists("WorkOrderItemItemCommitInventory")) {
+if (!class_exists(__NAMESPACE__ . "\\WorkOrderItemItemCommitInventory")) {
 /**
  * WorkOrderItemItemCommitInventory
  */
@@ -98321,7 +98321,7 @@ class WorkOrderItemItemCommitInventory {
 	const _doNotCommit = "_doNotCommit";
 }}
 
-if (!class_exists("InventoryAdjustment")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryAdjustment")) {
 /**
  * InventoryAdjustment
  */
@@ -98445,7 +98445,7 @@ class InventoryAdjustment extends Record {
 	);
 }}
 
-if (!class_exists("InventoryAdjustmentInventory")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryAdjustmentInventory")) {
 /**
  * InventoryAdjustmentInventory
  */
@@ -98563,7 +98563,7 @@ class InventoryAdjustmentInventory {
 	);
 }}
 
-if (!class_exists("InventoryAdjustmentInventoryList")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryAdjustmentInventoryList")) {
 /**
  * InventoryAdjustmentInventoryList
  */
@@ -98585,7 +98585,7 @@ class InventoryAdjustmentInventoryList {
 	);
 }}
 
-if (!class_exists("AssemblyBuild")) {
+if (!class_exists(__NAMESPACE__ . "\\AssemblyBuild")) {
 /**
  * AssemblyBuild
  */
@@ -98751,7 +98751,7 @@ class AssemblyBuild extends Record {
 	);
 }}
 
-if (!class_exists("AssemblyUnbuild")) {
+if (!class_exists(__NAMESPACE__ . "\\AssemblyUnbuild")) {
 /**
  * AssemblyUnbuild
  */
@@ -98899,7 +98899,7 @@ class AssemblyUnbuild extends Record {
 	);
 }}
 
-if (!class_exists("AssemblyComponent")) {
+if (!class_exists(__NAMESPACE__ . "\\AssemblyComponent")) {
 /**
  * AssemblyComponent
  */
@@ -98945,7 +98945,7 @@ class AssemblyComponent {
 	);
 }}
 
-if (!class_exists("AssemblyComponentList")) {
+if (!class_exists(__NAMESPACE__ . "\\AssemblyComponentList")) {
 /**
  * AssemblyComponentList
  */
@@ -98967,7 +98967,7 @@ class AssemblyComponentList {
 	);
 }}
 
-if (!class_exists("TransferOrder")) {
+if (!class_exists(__NAMESPACE__ . "\\TransferOrder")) {
 /**
  * TransferOrder
  */
@@ -99205,7 +99205,7 @@ class TransferOrder extends Record {
 	);
 }}
 
-if (!class_exists("TransferOrderItem")) {
+if (!class_exists(__NAMESPACE__ . "\\TransferOrderItem")) {
 /**
  * TransferOrderItem
  */
@@ -99377,7 +99377,7 @@ class TransferOrderItem {
 	);
 }}
 
-if (!class_exists("TransferOrderItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\TransferOrderItemList")) {
 /**
  * TransferOrderItemList
  */
@@ -99399,7 +99399,7 @@ class TransferOrderItemList {
 	);
 }}
 
-if (!class_exists("InterCompanyTransferOrder")) {
+if (!class_exists(__NAMESPACE__ . "\\InterCompanyTransferOrder")) {
 /**
  * InterCompanyTransferOrder
  */
@@ -99643,7 +99643,7 @@ class InterCompanyTransferOrder extends Record {
 	);
 }}
 
-if (!class_exists("InterCompanyTransferOrderItem")) {
+if (!class_exists(__NAMESPACE__ . "\\InterCompanyTransferOrderItem")) {
 /**
  * InterCompanyTransferOrderItem
  */
@@ -99779,7 +99779,7 @@ class InterCompanyTransferOrderItem {
 	);
 }}
 
-if (!class_exists("InterCompanyTransferOrderItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\InterCompanyTransferOrderItemList")) {
 /**
  * InterCompanyTransferOrderItemList
  */
@@ -99801,7 +99801,7 @@ class InterCompanyTransferOrderItemList {
 	);
 }}
 
-if (!class_exists("WorkOrder")) {
+if (!class_exists(__NAMESPACE__ . "\\WorkOrder")) {
 /**
  * WorkOrder
  */
@@ -99997,7 +99997,7 @@ class WorkOrder extends Record {
 	);
 }}
 
-if (!class_exists("WorkOrderItem")) {
+if (!class_exists(__NAMESPACE__ . "\\WorkOrderItem")) {
 /**
  * WorkOrderItem
  */
@@ -100157,7 +100157,7 @@ class WorkOrderItem {
 	);
 }}
 
-if (!class_exists("WorkOrderItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\WorkOrderItemList")) {
 /**
  * WorkOrderItemList
  */
@@ -100179,7 +100179,7 @@ class WorkOrderItemList {
 	);
 }}
 
-if (!class_exists("SalesTeamList")) {
+if (!class_exists(__NAMESPACE__ . "\\SalesTeamList")) {
 /**
  * SalesTeamList
  */
@@ -100201,7 +100201,7 @@ class SalesTeamList {
 	);
 }}
 
-if (!class_exists("PartnersList")) {
+if (!class_exists(__NAMESPACE__ . "\\PartnersList")) {
 /**
  * PartnersList
  */
@@ -100223,7 +100223,7 @@ class PartnersList {
 	);
 }}
 
-if (!class_exists("InventoryTransfer")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryTransfer")) {
 /**
  * InventoryTransfer
  */
@@ -100317,7 +100317,7 @@ class InventoryTransfer extends Record {
 	);
 }}
 
-if (!class_exists("InventoryTransferInventory")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryTransferInventory")) {
 /**
  * InventoryTransferInventory
  */
@@ -100387,7 +100387,7 @@ class InventoryTransferInventory {
 	);
 }}
 
-if (!class_exists("InventoryTransferInventoryList")) {
+if (!class_exists(__NAMESPACE__ . "\\InventoryTransferInventoryList")) {
 /**
  * InventoryTransferInventoryList
  */
@@ -100409,7 +100409,7 @@ class InventoryTransferInventoryList {
 	);
 }}
 
-if (!class_exists("BinTransfer")) {
+if (!class_exists(__NAMESPACE__ . "\\BinTransfer")) {
 /**
  * BinTransfer
  */
@@ -100473,7 +100473,7 @@ class BinTransfer extends Record {
 	);
 }}
 
-if (!class_exists("BinTransferInventory")) {
+if (!class_exists(__NAMESPACE__ . "\\BinTransferInventory")) {
 /**
  * BinTransferInventory
  */
@@ -100537,7 +100537,7 @@ class BinTransferInventory {
 	);
 }}
 
-if (!class_exists("BinTransferInventoryList")) {
+if (!class_exists(__NAMESPACE__ . "\\BinTransferInventoryList")) {
 /**
  * BinTransferInventoryList
  */
@@ -100559,7 +100559,7 @@ class BinTransferInventoryList {
 	);
 }}
 
-if (!class_exists("BinWorksheet")) {
+if (!class_exists(__NAMESPACE__ . "\\BinWorksheet")) {
 /**
  * BinWorksheet
  */
@@ -100617,7 +100617,7 @@ class BinWorksheet extends Record {
 	);
 }}
 
-if (!class_exists("BinWorksheetItem")) {
+if (!class_exists(__NAMESPACE__ . "\\BinWorksheetItem")) {
 /**
  * BinWorksheetItem
  */
@@ -100699,7 +100699,7 @@ class BinWorksheetItem {
 	);
 }}
 
-if (!class_exists("BinWorksheetItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\BinWorksheetItemList")) {
 /**
  * BinWorksheetItemList
  */
@@ -100721,7 +100721,7 @@ class BinWorksheetItemList {
 	);
 }}
 
-if (!class_exists("JournalEntry")) {
+if (!class_exists(__NAMESPACE__ . "\\JournalEntry")) {
 /**
  * JournalEntry
  */
@@ -100869,7 +100869,7 @@ class JournalEntry extends Record {
 	);
 }}
 
-if (!class_exists("JournalEntryLine")) {
+if (!class_exists(__NAMESPACE__ . "\\JournalEntryLine")) {
 /**
  * JournalEntryLine
  */
@@ -100999,7 +100999,7 @@ class JournalEntryLine {
 	);
 }}
 
-if (!class_exists("JournalEntryLineList")) {
+if (!class_exists(__NAMESPACE__ . "\\JournalEntryLineList")) {
 /**
  * JournalEntryLineList
  */
@@ -101021,7 +101021,7 @@ class JournalEntryLineList {
 	);
 }}
 
-if (!class_exists("InterCompanyJournalEntry")) {
+if (!class_exists(__NAMESPACE__ . "\\InterCompanyJournalEntry")) {
 /**
  * InterCompanyJournalEntry
  */
@@ -101169,7 +101169,7 @@ class InterCompanyJournalEntry extends Record {
 	);
 }}
 
-if (!class_exists("InterCompanyJournalEntryLine")) {
+if (!class_exists(__NAMESPACE__ . "\\InterCompanyJournalEntryLine")) {
 /**
  * InterCompanyJournalEntryLine
  */
@@ -101329,7 +101329,7 @@ class InterCompanyJournalEntryLine {
 	);
 }}
 
-if (!class_exists("InterCompanyJournalEntryLineList")) {
+if (!class_exists(__NAMESPACE__ . "\\InterCompanyJournalEntryLineList")) {
 /**
  * InterCompanyJournalEntryLineList
  */
@@ -101351,7 +101351,7 @@ class InterCompanyJournalEntryLineList {
 	);
 }}
 
-if (!class_exists("CustomizationFieldType")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomizationFieldType")) {
 /**
  * CustomizationFieldType
  */
@@ -101449,7 +101449,7 @@ class CustomizationFieldType {
 	const _timeOfDay = "_timeOfDay";
 }}
 
-if (!class_exists("CustomizationDynamicDefault")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomizationDynamicDefault")) {
 /**
  * CustomizationDynamicDefault
  */
@@ -101483,7 +101483,7 @@ class CustomizationDynamicDefault {
 	const _currentUsersSubsidiary = "_currentUsersSubsidiary";
 }}
 
-if (!class_exists("CustomizationDisplayType")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomizationDisplayType")) {
 /**
  * CustomizationDisplayType
  */
@@ -101513,7 +101513,7 @@ class CustomizationDisplayType {
 	const _showAsList = "_showAsList";
 }}
 
-if (!class_exists("CustomizationFilterCompareType")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomizationFilterCompareType")) {
 /**
  * CustomizationFilterCompareType
  */
@@ -101547,7 +101547,7 @@ class CustomizationFilterCompareType {
 	const _notEqual = "_notEqual";
 }}
 
-if (!class_exists("CustomRecordTypePermissionsPermittedLevel")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypePermissionsPermittedLevel")) {
 /**
  * CustomRecordTypePermissionsPermittedLevel
  */
@@ -101577,7 +101577,7 @@ class CustomRecordTypePermissionsPermittedLevel {
 	const _view = "_view";
 }}
 
-if (!class_exists("CustomRecordTypePermissionsRestriction")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypePermissionsRestriction")) {
 /**
  * CustomRecordTypePermissionsRestriction
  */
@@ -101595,7 +101595,7 @@ class CustomRecordTypePermissionsRestriction {
 	const _viewingAndEditing = "_viewingAndEditing";
 }}
 
-if (!class_exists("ItemCustomFieldItemSubType")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemCustomFieldItemSubType")) {
 /**
  * ItemCustomFieldItemSubType
  */
@@ -101617,7 +101617,7 @@ class ItemCustomFieldItemSubType {
 	const _sale = "_sale";
 }}
 
-if (!class_exists("CustomizationAccessLevel")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomizationAccessLevel")) {
 /**
  * CustomizationAccessLevel
  */
@@ -101639,7 +101639,7 @@ class CustomizationAccessLevel {
 	const _view = "_view";
 }}
 
-if (!class_exists("CustomizationSearchLevel")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomizationSearchLevel")) {
 /**
  * CustomizationSearchLevel
  */
@@ -101661,7 +101661,7 @@ class CustomizationSearchLevel {
 	const _run = "_run";
 }}
 
-if (!class_exists("CustomRecordTypeAccessType")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeAccessType")) {
 /**
  * CustomRecordTypeAccessType
  */
@@ -101683,7 +101683,7 @@ class CustomRecordTypeAccessType {
 	const _usePermissionList = "_usePermissionList";
 }}
 
-if (!class_exists("CustomRecord")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecord")) {
 /**
  * CustomRecord
  */
@@ -101933,7 +101933,7 @@ class CustomRecord extends Record {
 	);
 }}
 
-if (!class_exists("CustomRecordSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordSearch")) {
 /**
  * CustomRecordSearch
  */
@@ -101979,7 +101979,7 @@ class CustomRecordSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CustomRecordSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordSearchAdvanced")) {
 /**
  * CustomRecordSearchAdvanced
  */
@@ -102013,7 +102013,7 @@ class CustomRecordSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CustomRecordSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordSearchRow")) {
 /**
  * CustomRecordSearchRow
  */
@@ -102059,7 +102059,7 @@ class CustomRecordSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("CustomList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomList")) {
 /**
  * CustomList
  */
@@ -102135,7 +102135,7 @@ class CustomList extends Record {
 	);
 }}
 
-if (!class_exists("CustomListCustomValue")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomListCustomValue")) {
 /**
  * CustomListCustomValue
  */
@@ -102175,7 +102175,7 @@ class CustomListCustomValue {
 	);
 }}
 
-if (!class_exists("CustomListCustomValueList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomListCustomValueList")) {
 /**
  * CustomListCustomValueList
  */
@@ -102197,7 +102197,7 @@ class CustomListCustomValueList {
 	);
 }}
 
-if (!class_exists("CustomListTranslations")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomListTranslations")) {
 /**
  * CustomListTranslations
  */
@@ -102225,7 +102225,7 @@ class CustomListTranslations {
 	);
 }}
 
-if (!class_exists("CustomListTranslationsList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomListTranslationsList")) {
 /**
  * CustomListTranslationsList
  */
@@ -102247,7 +102247,7 @@ class CustomListTranslationsList {
 	);
 }}
 
-if (!class_exists("CustomRecordType")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordType")) {
 /**
  * CustomRecordType
  */
@@ -102515,7 +102515,7 @@ class CustomRecordType extends Record {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeFieldList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeFieldList")) {
 /**
  * CustomRecordTypeFieldList
  */
@@ -102537,7 +102537,7 @@ class CustomRecordTypeFieldList {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeTabs")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeTabs")) {
 /**
  * CustomRecordTypeTabs
  */
@@ -102565,7 +102565,7 @@ class CustomRecordTypeTabs {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeTabsList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeTabsList")) {
 /**
  * CustomRecordTypeTabsList
  */
@@ -102587,7 +102587,7 @@ class CustomRecordTypeTabsList {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeForms")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeForms")) {
 /**
  * CustomRecordTypeForms
  */
@@ -102615,7 +102615,7 @@ class CustomRecordTypeForms {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeFormsList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeFormsList")) {
 /**
  * CustomRecordTypeFormsList
  */
@@ -102637,7 +102637,7 @@ class CustomRecordTypeFormsList {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeOnlineForms")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeOnlineForms")) {
 /**
  * CustomRecordTypeOnlineForms
  */
@@ -102665,7 +102665,7 @@ class CustomRecordTypeOnlineForms {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeOnlineFormsList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeOnlineFormsList")) {
 /**
  * CustomRecordTypeOnlineFormsList
  */
@@ -102687,7 +102687,7 @@ class CustomRecordTypeOnlineFormsList {
 	);
 }}
 
-if (!class_exists("CustomRecordTypePermissions")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypePermissions")) {
 /**
  * CustomRecordTypePermissions
  */
@@ -102775,7 +102775,7 @@ class CustomRecordTypePermissions {
 	);
 }}
 
-if (!class_exists("CustomRecordTypePermissionsList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypePermissionsList")) {
 /**
  * CustomRecordTypePermissionsList
  */
@@ -102797,7 +102797,7 @@ class CustomRecordTypePermissionsList {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeLinks")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeLinks")) {
 /**
  * CustomRecordTypeLinks
  */
@@ -102825,7 +102825,7 @@ class CustomRecordTypeLinks {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeLinksList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeLinksList")) {
 /**
  * CustomRecordTypeLinksList
  */
@@ -102847,7 +102847,7 @@ class CustomRecordTypeLinksList {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeManagers")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeManagers")) {
 /**
  * CustomRecordTypeManagers
  */
@@ -102863,7 +102863,7 @@ class CustomRecordTypeManagers {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeManagersList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeManagersList")) {
 /**
  * CustomRecordTypeManagersList
  */
@@ -102885,7 +102885,7 @@ class CustomRecordTypeManagersList {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeChildren")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeChildren")) {
 /**
  * CustomRecordTypeChildren
  */
@@ -102907,7 +102907,7 @@ class CustomRecordTypeChildren {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeChildrenList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeChildrenList")) {
 /**
  * CustomRecordTypeChildrenList
  */
@@ -102929,7 +102929,7 @@ class CustomRecordTypeChildrenList {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeParents")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeParents")) {
 /**
  * CustomRecordTypeParents
  */
@@ -102945,7 +102945,7 @@ class CustomRecordTypeParents {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeParentsList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeParentsList")) {
 /**
  * CustomRecordTypeParentsList
  */
@@ -102967,7 +102967,7 @@ class CustomRecordTypeParentsList {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeTranslations")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeTranslations")) {
 /**
  * CustomRecordTypeTranslations
  */
@@ -102995,7 +102995,7 @@ class CustomRecordTypeTranslations {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeTranslationsList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeTranslationsList")) {
 /**
  * CustomRecordTypeTranslationsList
  */
@@ -103017,7 +103017,7 @@ class CustomRecordTypeTranslationsList {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeSublists")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeSublists")) {
 /**
  * CustomRecordTypeSublists
  */
@@ -103057,7 +103057,7 @@ class CustomRecordTypeSublists {
 	);
 }}
 
-if (!class_exists("CustomRecordTypeSublistsList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordTypeSublistsList")) {
 /**
  * CustomRecordTypeSublistsList
  */
@@ -103079,7 +103079,7 @@ class CustomRecordTypeSublistsList {
 	);
 }}
 
-if (!class_exists("EntityCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\EntityCustomField")) {
 /**
  * EntityCustomField
  */
@@ -103395,7 +103395,7 @@ class EntityCustomField extends Record {
 	);
 }}
 
-if (!class_exists("EntityCustomFieldFilter")) {
+if (!class_exists(__NAMESPACE__ . "\\EntityCustomFieldFilter")) {
 /**
  * EntityCustomFieldFilter
  */
@@ -103441,7 +103441,7 @@ class EntityCustomFieldFilter {
 	);
 }}
 
-if (!class_exists("EntityCustomFieldFilterList")) {
+if (!class_exists(__NAMESPACE__ . "\\EntityCustomFieldFilterList")) {
 /**
  * EntityCustomFieldFilterList
  */
@@ -103463,7 +103463,7 @@ class EntityCustomFieldFilterList {
 	);
 }}
 
-if (!class_exists("FldFilterSelList")) {
+if (!class_exists(__NAMESPACE__ . "\\FldFilterSelList")) {
 /**
  * FldFilterSelList
  */
@@ -103479,7 +103479,7 @@ class FldFilterSelList {
 	);
 }}
 
-if (!class_exists("CrmCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\CrmCustomField")) {
 /**
  * CrmCustomField
  */
@@ -103789,7 +103789,7 @@ class CrmCustomField extends Record {
 	);
 }}
 
-if (!class_exists("CrmCustomFieldFilter")) {
+if (!class_exists(__NAMESPACE__ . "\\CrmCustomFieldFilter")) {
 /**
  * CrmCustomFieldFilter
  */
@@ -103835,7 +103835,7 @@ class CrmCustomFieldFilter {
 	);
 }}
 
-if (!class_exists("CrmCustomFieldFilterList")) {
+if (!class_exists(__NAMESPACE__ . "\\CrmCustomFieldFilterList")) {
 /**
  * CrmCustomFieldFilterList
  */
@@ -103857,7 +103857,7 @@ class CrmCustomFieldFilterList {
 	);
 }}
 
-if (!class_exists("OtherCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\OtherCustomField")) {
 /**
  * OtherCustomField
  */
@@ -104077,7 +104077,7 @@ class OtherCustomField extends Record {
 	);
 }}
 
-if (!class_exists("OtherCustomFieldFilter")) {
+if (!class_exists(__NAMESPACE__ . "\\OtherCustomFieldFilter")) {
 /**
  * OtherCustomFieldFilter
  */
@@ -104123,7 +104123,7 @@ class OtherCustomFieldFilter {
 	);
 }}
 
-if (!class_exists("OtherCustomFieldFilterList")) {
+if (!class_exists(__NAMESPACE__ . "\\OtherCustomFieldFilterList")) {
 /**
  * OtherCustomFieldFilterList
  */
@@ -104145,7 +104145,7 @@ class OtherCustomFieldFilterList {
 	);
 }}
 
-if (!class_exists("ItemCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemCustomField")) {
 /**
  * ItemCustomField
  */
@@ -104449,7 +104449,7 @@ class ItemCustomField extends Record {
 	);
 }}
 
-if (!class_exists("ItemCustomFieldFilter")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemCustomFieldFilter")) {
 /**
  * ItemCustomFieldFilter
  */
@@ -104495,7 +104495,7 @@ class ItemCustomFieldFilter {
 	);
 }}
 
-if (!class_exists("ItemCustomFieldFilterList")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemCustomFieldFilterList")) {
 /**
  * ItemCustomFieldFilterList
  */
@@ -104517,7 +104517,7 @@ class ItemCustomFieldFilterList {
 	);
 }}
 
-if (!class_exists("TransactionBodyCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionBodyCustomField")) {
 /**
  * TransactionBodyCustomField
  */
@@ -104893,7 +104893,7 @@ class TransactionBodyCustomField extends Record {
 	);
 }}
 
-if (!class_exists("TransactionBodyCustomFieldFilter")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionBodyCustomFieldFilter")) {
 /**
  * TransactionBodyCustomFieldFilter
  */
@@ -104939,7 +104939,7 @@ class TransactionBodyCustomFieldFilter {
 	);
 }}
 
-if (!class_exists("TransactionBodyCustomFieldFilterList")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionBodyCustomFieldFilterList")) {
 /**
  * TransactionBodyCustomFieldFilterList
  */
@@ -104961,7 +104961,7 @@ class TransactionBodyCustomFieldFilterList {
 	);
 }}
 
-if (!class_exists("TransactionColumnCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionColumnCustomField")) {
 /**
  * TransactionColumnCustomField
  */
@@ -105307,7 +105307,7 @@ class TransactionColumnCustomField extends Record {
 	);
 }}
 
-if (!class_exists("TransactionColumnCustomFieldFilter")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionColumnCustomFieldFilter")) {
 /**
  * TransactionColumnCustomFieldFilter
  */
@@ -105353,7 +105353,7 @@ class TransactionColumnCustomFieldFilter {
 	);
 }}
 
-if (!class_exists("TransactionColumnCustomFieldFilterList")) {
+if (!class_exists(__NAMESPACE__ . "\\TransactionColumnCustomFieldFilterList")) {
 /**
  * TransactionColumnCustomFieldFilterList
  */
@@ -105375,7 +105375,7 @@ class TransactionColumnCustomFieldFilterList {
 	);
 }}
 
-if (!class_exists("ItemOptionCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemOptionCustomField")) {
 /**
  * ItemOptionCustomField
  */
@@ -105637,7 +105637,7 @@ class ItemOptionCustomField extends Record {
 	);
 }}
 
-if (!class_exists("ItemsList")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemsList")) {
 /**
  * ItemsList
  */
@@ -105653,7 +105653,7 @@ class ItemsList {
 	);
 }}
 
-if (!class_exists("ItemOptionCustomFieldFilter")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemOptionCustomFieldFilter")) {
 /**
  * ItemOptionCustomFieldFilter
  */
@@ -105699,7 +105699,7 @@ class ItemOptionCustomFieldFilter {
 	);
 }}
 
-if (!class_exists("ItemOptionCustomFieldFilterList")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemOptionCustomFieldFilterList")) {
 /**
  * ItemOptionCustomFieldFilterList
  */
@@ -105721,7 +105721,7 @@ class ItemOptionCustomFieldFilterList {
 	);
 }}
 
-if (!class_exists("CustomRecordCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordCustomField")) {
 /**
  * CustomRecordCustomField
  */
@@ -105971,7 +105971,7 @@ class CustomRecordCustomField extends Record {
 	);
 }}
 
-if (!class_exists("CustomRecordCustomFieldFilter")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordCustomFieldFilter")) {
 /**
  * CustomRecordCustomFieldFilter
  */
@@ -106017,7 +106017,7 @@ class CustomRecordCustomFieldFilter {
 	);
 }}
 
-if (!class_exists("CustomRecordCustomFieldFilterList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomRecordCustomFieldFilterList")) {
 /**
  * CustomRecordCustomFieldFilterList
  */
@@ -106039,7 +106039,7 @@ class CustomRecordCustomFieldFilterList {
 	);
 }}
 
-if (!class_exists("CustomFieldRoleAccess")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomFieldRoleAccess")) {
 /**
  * CustomFieldRoleAccess
  */
@@ -106067,7 +106067,7 @@ class CustomFieldRoleAccess {
 	);
 }}
 
-if (!class_exists("CustomFieldRoleAccessList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomFieldRoleAccessList")) {
 /**
  * CustomFieldRoleAccessList
  */
@@ -106089,7 +106089,7 @@ class CustomFieldRoleAccessList {
 	);
 }}
 
-if (!class_exists("CustomFieldDepartmentAccess")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomFieldDepartmentAccess")) {
 /**
  * CustomFieldDepartmentAccess
  */
@@ -106117,7 +106117,7 @@ class CustomFieldDepartmentAccess {
 	);
 }}
 
-if (!class_exists("CustomFieldDepartmentAccessList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomFieldDepartmentAccessList")) {
 /**
  * CustomFieldDepartmentAccessList
  */
@@ -106139,7 +106139,7 @@ class CustomFieldDepartmentAccessList {
 	);
 }}
 
-if (!class_exists("CustomFieldSubAccess")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomFieldSubAccess")) {
 /**
  * CustomFieldSubAccess
  */
@@ -106167,7 +106167,7 @@ class CustomFieldSubAccess {
 	);
 }}
 
-if (!class_exists("CustomFieldSubAccessList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomFieldSubAccessList")) {
 /**
  * CustomFieldSubAccessList
  */
@@ -106189,7 +106189,7 @@ class CustomFieldSubAccessList {
 	);
 }}
 
-if (!class_exists("LanguageValue")) {
+if (!class_exists(__NAMESPACE__ . "\\LanguageValue")) {
 /**
  * LanguageValue
  */
@@ -106211,7 +106211,7 @@ class LanguageValue {
 	);
 }}
 
-if (!class_exists("LanguageValueList")) {
+if (!class_exists(__NAMESPACE__ . "\\LanguageValueList")) {
 /**
  * LanguageValueList
  */
@@ -106233,7 +106233,7 @@ class LanguageValueList {
 	);
 }}
 
-if (!class_exists("CustomFieldTranslations")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomFieldTranslations")) {
 /**
  * CustomFieldTranslations
  */
@@ -106267,7 +106267,7 @@ class CustomFieldTranslations {
 	);
 }}
 
-if (!class_exists("CustomFieldTranslationsList")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomFieldTranslationsList")) {
 /**
  * CustomFieldTranslationsList
  */
@@ -106289,7 +106289,7 @@ class CustomFieldTranslationsList {
 	);
 }}
 
-if (!class_exists("ItemNumberCustomField")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemNumberCustomField")) {
 /**
  * ItemNumberCustomField
  */
@@ -106527,7 +106527,7 @@ class ItemNumberCustomField extends Record {
 	);
 }}
 
-if (!class_exists("ItemNumberCustomFieldFilter")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemNumberCustomFieldFilter")) {
 /**
  * ItemNumberCustomFieldFilter
  */
@@ -106579,7 +106579,7 @@ class ItemNumberCustomFieldFilter {
 	);
 }}
 
-if (!class_exists("ItemNumberCustomFieldFilterList")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemNumberCustomFieldFilterList")) {
 /**
  * ItemNumberCustomFieldFilterList
  */
@@ -106601,7 +106601,7 @@ class ItemNumberCustomFieldFilterList {
 	);
 }}
 
-if (!class_exists("CustomListSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomListSearch")) {
 /**
  * CustomListSearch
  */
@@ -106623,7 +106623,7 @@ class CustomListSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CustomListSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\CustomListSearchRow")) {
 /**
  * CustomListSearchRow
  */
@@ -106645,7 +106645,7 @@ class CustomListSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("AppDefinition")) {
+if (!class_exists(__NAMESPACE__ . "\\AppDefinition")) {
 /**
  * AppDefinition
  */
@@ -106685,7 +106685,7 @@ class AppDefinition extends Record {
 	);
 }}
 
-if (!class_exists("AppDefinitionPackages")) {
+if (!class_exists(__NAMESPACE__ . "\\AppDefinitionPackages")) {
 /**
  * AppDefinitionPackages
  */
@@ -106695,7 +106695,7 @@ class AppDefinitionPackages {
 	);
 }}
 
-if (!class_exists("AppDefinitionPackagesList")) {
+if (!class_exists(__NAMESPACE__ . "\\AppDefinitionPackagesList")) {
 /**
  * AppDefinitionPackagesList
  */
@@ -106717,7 +106717,7 @@ class AppDefinitionPackagesList {
 	);
 }}
 
-if (!class_exists("AppDefinitionSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\AppDefinitionSearch")) {
 /**
  * AppDefinitionSearch
  */
@@ -106751,7 +106751,7 @@ class AppDefinitionSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("AppDefinitionSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\AppDefinitionSearchAdvanced")) {
 /**
  * AppDefinitionSearchAdvanced
  */
@@ -106785,7 +106785,7 @@ class AppDefinitionSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("AppDefinitionSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\AppDefinitionSearchRow")) {
 /**
  * AppDefinitionSearchRow
  */
@@ -106819,7 +106819,7 @@ class AppDefinitionSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("AppPackage")) {
+if (!class_exists(__NAMESPACE__ . "\\AppPackage")) {
 /**
  * AppPackage
  */
@@ -106871,7 +106871,7 @@ class AppPackage extends Record {
 	);
 }}
 
-if (!class_exists("AppPackageSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\AppPackageSearch")) {
 /**
  * AppPackageSearch
  */
@@ -106911,7 +106911,7 @@ class AppPackageSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("AppPackageSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\AppPackageSearchAdvanced")) {
 /**
  * AppPackageSearchAdvanced
  */
@@ -106945,7 +106945,7 @@ class AppPackageSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("AppPackageSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\AppPackageSearchRow")) {
 /**
  * AppPackageSearchRow
  */
@@ -106985,7 +106985,7 @@ class AppPackageSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("EmployeePayFrequency")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeePayFrequency")) {
 /**
  * EmployeePayFrequency
  */
@@ -107063,7 +107063,7 @@ class EmployeePayFrequency {
 	const _weekly = "_weekly";
 }}
 
-if (!class_exists("EmployeeUseTimeData")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeUseTimeData")) {
 /**
  * EmployeeUseTimeData
  */
@@ -107081,7 +107081,7 @@ class EmployeeUseTimeData {
 	const _salary = "_salary";
 }}
 
-if (!class_exists("EmployeeCommissionPaymentPreference")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeCommissionPaymentPreference")) {
 /**
  * EmployeeCommissionPaymentPreference
  */
@@ -107103,7 +107103,7 @@ class EmployeeCommissionPaymentPreference {
 	const _systemPreference = "_systemPreference";
 }}
 
-if (!class_exists("Gender")) {
+if (!class_exists(__NAMESPACE__ . "\\Gender")) {
 /**
  * Gender
  */
@@ -107125,7 +107125,7 @@ class Gender {
 	const _male = "_male";
 }}
 
-if (!class_exists("EmployeeAccruedTimeAccrualMethod")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeAccruedTimeAccrualMethod")) {
 /**
  * EmployeeAccruedTimeAccrualMethod
  */
@@ -107147,7 +107147,7 @@ class EmployeeAccruedTimeAccrualMethod {
 	const _perPayPeriod = "_perPayPeriod";
 }}
 
-if (!class_exists("EmployeeDirectDepositAccountStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeDirectDepositAccountStatus")) {
 /**
  * EmployeeDirectDepositAccountStatus
  */
@@ -107177,7 +107177,7 @@ class EmployeeDirectDepositAccountStatus {
 	const _inactive = "_inactive";
 }}
 
-if (!class_exists("PayrollItemItemTypeNoHierarchy")) {
+if (!class_exists(__NAMESPACE__ . "\\PayrollItemItemTypeNoHierarchy")) {
 /**
  * PayrollItemItemTypeNoHierarchy
  */
@@ -107263,7 +107263,7 @@ class PayrollItemItemTypeNoHierarchy {
 	const _wage = "_wage";
 }}
 
-if (!class_exists("Employee")) {
+if (!class_exists(__NAMESPACE__ . "\\Employee")) {
 /**
  * Employee
  */
@@ -107807,7 +107807,7 @@ class Employee extends Record {
 	);
 }}
 
-if (!class_exists("EmployeeSubscriptions")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeSubscriptions")) {
 /**
  * EmployeeSubscriptions
  */
@@ -107835,7 +107835,7 @@ class EmployeeSubscriptions {
 	);
 }}
 
-if (!class_exists("EmployeeSubscriptionsList")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeSubscriptionsList")) {
 /**
  * EmployeeSubscriptionsList
  */
@@ -107857,7 +107857,7 @@ class EmployeeSubscriptionsList {
 	);
 }}
 
-if (!class_exists("EmployeeAddressbook")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeAddressbook")) {
 /**
  * EmployeeAddressbook
  */
@@ -107963,7 +107963,7 @@ class EmployeeAddressbook {
 	);
 }}
 
-if (!class_exists("EmployeeAddressbookList")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeAddressbookList")) {
 /**
  * EmployeeAddressbookList
  */
@@ -107985,7 +107985,7 @@ class EmployeeAddressbookList {
 	);
 }}
 
-if (!class_exists("EmployeeRoles")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeRoles")) {
 /**
  * EmployeeRoles
  */
@@ -108001,7 +108001,7 @@ class EmployeeRoles {
 	);
 }}
 
-if (!class_exists("EmployeeRolesList")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeRolesList")) {
 /**
  * EmployeeRolesList
  */
@@ -108023,7 +108023,7 @@ class EmployeeRolesList {
 	);
 }}
 
-if (!class_exists("EmployeeSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeSearch")) {
 /**
  * EmployeeSearch
  */
@@ -108111,7 +108111,7 @@ class EmployeeSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("EmployeeSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeSearchAdvanced")) {
 /**
  * EmployeeSearchAdvanced
  */
@@ -108145,7 +108145,7 @@ class EmployeeSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("EmployeeSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeSearchRow")) {
 /**
  * EmployeeSearchRow
  */
@@ -108233,7 +108233,7 @@ class EmployeeSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("EmployeeEmergencyContact")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeEmergencyContact")) {
 /**
  * EmployeeEmergencyContact
  */
@@ -108273,7 +108273,7 @@ class EmployeeEmergencyContact {
 	);
 }}
 
-if (!class_exists("EmployeeEmergencyContactList")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeEmergencyContactList")) {
 /**
  * EmployeeEmergencyContactList
  */
@@ -108295,7 +108295,7 @@ class EmployeeEmergencyContactList {
 	);
 }}
 
-if (!class_exists("EmployeeHrEducation")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeHrEducation")) {
 /**
  * EmployeeHrEducation
  */
@@ -108323,7 +108323,7 @@ class EmployeeHrEducation {
 	);
 }}
 
-if (!class_exists("EmployeeHrEducationList")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeHrEducationList")) {
 /**
  * EmployeeHrEducationList
  */
@@ -108345,7 +108345,7 @@ class EmployeeHrEducationList {
 	);
 }}
 
-if (!class_exists("EmployeeAccruedTime")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeAccruedTime")) {
 /**
  * EmployeeAccruedTime
  */
@@ -108403,7 +108403,7 @@ class EmployeeAccruedTime {
 	);
 }}
 
-if (!class_exists("EmployeeAccruedTimeList")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeAccruedTimeList")) {
 /**
  * EmployeeAccruedTimeList
  */
@@ -108425,7 +108425,7 @@ class EmployeeAccruedTimeList {
 	);
 }}
 
-if (!class_exists("EmployeeDeduction")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeDeduction")) {
 /**
  * EmployeeDeduction
  */
@@ -108459,7 +108459,7 @@ class EmployeeDeduction {
 	);
 }}
 
-if (!class_exists("EmployeeDeductionList")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeDeductionList")) {
 /**
  * EmployeeDeductionList
  */
@@ -108481,7 +108481,7 @@ class EmployeeDeductionList {
 	);
 }}
 
-if (!class_exists("EmployeeCompanyContribution")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeCompanyContribution")) {
 /**
  * EmployeeCompanyContribution
  */
@@ -108515,7 +108515,7 @@ class EmployeeCompanyContribution {
 	);
 }}
 
-if (!class_exists("EmployeeCompanyContributionList")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeCompanyContributionList")) {
 /**
  * EmployeeCompanyContributionList
  */
@@ -108537,7 +108537,7 @@ class EmployeeCompanyContributionList {
 	);
 }}
 
-if (!class_exists("EmployeeEarning")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeEarning")) {
 /**
  * EmployeeEarning
  */
@@ -108583,7 +108583,7 @@ class EmployeeEarning {
 	);
 }}
 
-if (!class_exists("EmployeeEarningList")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeEarningList")) {
 /**
  * EmployeeEarningList
  */
@@ -108605,7 +108605,7 @@ class EmployeeEarningList {
 	);
 }}
 
-if (!class_exists("EmployeeDirectDeposit")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeDirectDeposit")) {
 /**
  * EmployeeDirectDeposit
  */
@@ -108687,7 +108687,7 @@ class EmployeeDirectDeposit {
 	);
 }}
 
-if (!class_exists("EmployeeDirectDepositList")) {
+if (!class_exists(__NAMESPACE__ . "\\EmployeeDirectDepositList")) {
 /**
  * EmployeeDirectDepositList
  */
@@ -108709,7 +108709,7 @@ class EmployeeDirectDepositList {
 	);
 }}
 
-if (!class_exists("PayrollItem")) {
+if (!class_exists(__NAMESPACE__ . "\\PayrollItem")) {
 /**
  * PayrollItem
  */
@@ -108785,7 +108785,7 @@ class PayrollItem extends Record {
 	);
 }}
 
-if (!class_exists("PayrollItemSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\PayrollItemSearch")) {
 /**
  * PayrollItemSearch
  */
@@ -108801,7 +108801,7 @@ class PayrollItemSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PayrollItemSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\PayrollItemSearchRow")) {
 /**
  * PayrollItemSearchRow
  */
@@ -108817,7 +108817,7 @@ class PayrollItemSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("MediaType")) {
+if (!class_exists(__NAMESPACE__ . "\\MediaType")) {
 /**
  * MediaType
  */
@@ -108983,7 +108983,7 @@ class MediaType {
 	const _ZIP = "_ZIP";
 }}
 
-if (!class_exists("FileAttachFrom")) {
+if (!class_exists(__NAMESPACE__ . "\\FileAttachFrom")) {
 /**
  * FileAttachFrom
  */
@@ -109001,7 +109001,7 @@ class FileAttachFrom {
 	const _web = "_web";
 }}
 
-if (!class_exists("FileEncoding")) {
+if (!class_exists(__NAMESPACE__ . "\\FileEncoding")) {
 /**
  * FileEncoding
  */
@@ -109027,7 +109027,7 @@ class FileEncoding {
 	const _windows1252 = "_windows1252";
 }}
 
-if (!class_exists("TextFileEncoding")) {
+if (!class_exists(__NAMESPACE__ . "\\TextFileEncoding")) {
 /**
  * TextFileEncoding
  */
@@ -109069,7 +109069,7 @@ class TextFileEncoding {
 	const _windows1252 = "_windows1252";
 }}
 
-if (!class_exists("SiteCategoryTranslation")) {
+if (!class_exists(__NAMESPACE__ . "\\SiteCategoryTranslation")) {
 /**
  * SiteCategoryTranslation
  */
@@ -109115,7 +109115,7 @@ class SiteCategoryTranslation {
 	);
 }}
 
-if (!class_exists("SiteCategoryTranslationList")) {
+if (!class_exists(__NAMESPACE__ . "\\SiteCategoryTranslationList")) {
 /**
  * SiteCategoryTranslationList
  */
@@ -109137,7 +109137,7 @@ class SiteCategoryTranslationList {
 	);
 }}
 
-if (!class_exists("SiteCategoryPresentationItemList")) {
+if (!class_exists(__NAMESPACE__ . "\\SiteCategoryPresentationItemList")) {
 /**
  * SiteCategoryPresentationItemList
  */
@@ -109159,7 +109159,7 @@ class SiteCategoryPresentationItemList {
 	);
 }}
 
-if (!class_exists("SiteCategorySearch")) {
+if (!class_exists(__NAMESPACE__ . "\\SiteCategorySearch")) {
 /**
  * SiteCategorySearch
  */
@@ -109187,7 +109187,7 @@ class SiteCategorySearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("SiteCategorySearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\SiteCategorySearchAdvanced")) {
 /**
  * SiteCategorySearchAdvanced
  */
@@ -109221,7 +109221,7 @@ class SiteCategorySearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("SiteCategorySearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\SiteCategorySearchRow")) {
 /**
  * SiteCategorySearchRow
  */
@@ -109249,7 +109249,7 @@ class SiteCategorySearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("TimeBillTimeType")) {
+if (!class_exists(__NAMESPACE__ . "\\TimeBillTimeType")) {
 /**
  * TimeBillTimeType
  */
@@ -109267,7 +109267,7 @@ class TimeBillTimeType {
 	const _plannedTime = "_plannedTime";
 }}
 
-if (!class_exists("TimeBill")) {
+if (!class_exists(__NAMESPACE__ . "\\TimeBill")) {
 /**
  * TimeBill
  */
@@ -109451,7 +109451,7 @@ class TimeBill extends Record {
 	);
 }}
 
-if (!class_exists("TimeBillSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\TimeBillSearch")) {
 /**
  * TimeBillSearch
  */
@@ -109527,7 +109527,7 @@ class TimeBillSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("TimeBillSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\TimeBillSearchAdvanced")) {
 /**
  * TimeBillSearchAdvanced
  */
@@ -109561,7 +109561,7 @@ class TimeBillSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("TimeBillSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\TimeBillSearchRow")) {
 /**
  * TimeBillSearchRow
  */
@@ -109637,7 +109637,7 @@ class TimeBillSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("ExpenseReport")) {
+if (!class_exists(__NAMESPACE__ . "\\ExpenseReport")) {
 /**
  * ExpenseReport
  */
@@ -109827,7 +109827,7 @@ class ExpenseReport extends Record {
 	);
 }}
 
-if (!class_exists("ExpenseReportExpense")) {
+if (!class_exists(__NAMESPACE__ . "\\ExpenseReportExpense")) {
 /**
  * ExpenseReportExpense
  */
@@ -109963,7 +109963,7 @@ class ExpenseReportExpense {
 	);
 }}
 
-if (!class_exists("ExpenseReportExpenseList")) {
+if (!class_exists(__NAMESPACE__ . "\\ExpenseReportExpenseList")) {
 /**
  * ExpenseReportExpenseList
  */
@@ -109985,7 +109985,7 @@ class ExpenseReportExpenseList {
 	);
 }}
 
-if (!class_exists("PaycheckJournal")) {
+if (!class_exists(__NAMESPACE__ . "\\PaycheckJournal")) {
 /**
  * PaycheckJournal
  */
@@ -110121,7 +110121,7 @@ class PaycheckJournal extends Record {
 	);
 }}
 
-if (!class_exists("PaycheckJournalCompanyTax")) {
+if (!class_exists(__NAMESPACE__ . "\\PaycheckJournalCompanyTax")) {
 /**
  * PaycheckJournalCompanyTax
  */
@@ -110173,7 +110173,7 @@ class PaycheckJournalCompanyTax {
 	);
 }}
 
-if (!class_exists("PaycheckJournalCompanyTaxList")) {
+if (!class_exists(__NAMESPACE__ . "\\PaycheckJournalCompanyTaxList")) {
 /**
  * PaycheckJournalCompanyTaxList
  */
@@ -110195,7 +110195,7 @@ class PaycheckJournalCompanyTaxList {
 	);
 }}
 
-if (!class_exists("PaycheckJournalDeduction")) {
+if (!class_exists(__NAMESPACE__ . "\\PaycheckJournalDeduction")) {
 /**
  * PaycheckJournalDeduction
  */
@@ -110247,7 +110247,7 @@ class PaycheckJournalDeduction {
 	);
 }}
 
-if (!class_exists("PaycheckJournalDeductionList")) {
+if (!class_exists(__NAMESPACE__ . "\\PaycheckJournalDeductionList")) {
 /**
  * PaycheckJournalDeductionList
  */
@@ -110269,7 +110269,7 @@ class PaycheckJournalDeductionList {
 	);
 }}
 
-if (!class_exists("PaycheckJournalCompanyContribution")) {
+if (!class_exists(__NAMESPACE__ . "\\PaycheckJournalCompanyContribution")) {
 /**
  * PaycheckJournalCompanyContribution
  */
@@ -110321,7 +110321,7 @@ class PaycheckJournalCompanyContribution {
 	);
 }}
 
-if (!class_exists("PaycheckJournalCompanyContributionList")) {
+if (!class_exists(__NAMESPACE__ . "\\PaycheckJournalCompanyContributionList")) {
 /**
  * PaycheckJournalCompanyContributionList
  */
@@ -110343,7 +110343,7 @@ class PaycheckJournalCompanyContributionList {
 	);
 }}
 
-if (!class_exists("PaycheckJournalEarning")) {
+if (!class_exists(__NAMESPACE__ . "\\PaycheckJournalEarning")) {
 /**
  * PaycheckJournalEarning
  */
@@ -110401,7 +110401,7 @@ class PaycheckJournalEarning {
 	);
 }}
 
-if (!class_exists("PaycheckJournalEarningList")) {
+if (!class_exists(__NAMESPACE__ . "\\PaycheckJournalEarningList")) {
 /**
  * PaycheckJournalEarningList
  */
@@ -110423,7 +110423,7 @@ class PaycheckJournalEarningList {
 	);
 }}
 
-if (!class_exists("PaycheckJournalEmployeeTax")) {
+if (!class_exists(__NAMESPACE__ . "\\PaycheckJournalEmployeeTax")) {
 /**
  * PaycheckJournalEmployeeTax
  */
@@ -110475,7 +110475,7 @@ class PaycheckJournalEmployeeTax {
 	);
 }}
 
-if (!class_exists("PaycheckJournalEmployeeTaxList")) {
+if (!class_exists(__NAMESPACE__ . "\\PaycheckJournalEmployeeTaxList")) {
 /**
  * PaycheckJournalEmployeeTaxList
  */
@@ -110497,7 +110497,7 @@ class PaycheckJournalEmployeeTaxList {
 	);
 }}
 
-if (!class_exists("CampaignCampaignDirectMailStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignCampaignDirectMailStatus")) {
 /**
  * CampaignCampaignDirectMailStatus
  */
@@ -110523,7 +110523,7 @@ class CampaignCampaignDirectMailStatus {
 	const _notStarted = "_notStarted";
 }}
 
-if (!class_exists("CampaignCampaignEmailStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignCampaignEmailStatus")) {
 /**
  * CampaignCampaignEmailStatus
  */
@@ -110549,7 +110549,7 @@ class CampaignCampaignEmailStatus {
 	const _sent = "_sent";
 }}
 
-if (!class_exists("CampaignCampaignEventStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignCampaignEventStatus")) {
 /**
  * CampaignCampaignEventStatus
  */
@@ -110575,7 +110575,7 @@ class CampaignCampaignEventStatus {
 	const _notStarted = "_notStarted";
 }}
 
-if (!class_exists("CampaignChannelEventType")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignChannelEventType")) {
 /**
  * CampaignChannelEventType
  */
@@ -110601,7 +110601,7 @@ class CampaignChannelEventType {
 	const _other = "_other";
 }}
 
-if (!class_exists("CampaignResponseResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignResponseResponse")) {
 /**
  * CampaignResponseResponse
  */
@@ -110643,7 +110643,7 @@ class CampaignResponseResponse {
 	const _unsubscribed = "_unsubscribed";
 }}
 
-if (!class_exists("CampaignCampaignEventType")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignCampaignEventType")) {
 /**
  * CampaignCampaignEventType
  */
@@ -110677,7 +110677,7 @@ class CampaignCampaignEventType {
 	const _other = "_other";
 }}
 
-if (!class_exists("CampaignResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignResponse")) {
 /**
  * CampaignResponse
  */
@@ -110747,7 +110747,7 @@ class CampaignResponse extends Record {
 	);
 }}
 
-if (!class_exists("CampaignStatus")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignStatus")) {
 /**
  * CampaignStatus
  */
@@ -110785,7 +110785,7 @@ class CampaignStatus {
 	const _toPrint = "_toPrint";
 }}
 
-if (!class_exists("PromotionCodeApplyDiscountTo")) {
+if (!class_exists(__NAMESPACE__ . "\\PromotionCodeApplyDiscountTo")) {
 /**
  * PromotionCodeApplyDiscountTo
  */
@@ -110803,7 +110803,7 @@ class PromotionCodeApplyDiscountTo {
 	const _firstSaleOnly = "_firstSaleOnly";
 }}
 
-if (!class_exists("CampaignResponseCategory")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignResponseCategory")) {
 /**
  * CampaignResponseCategory
  */
@@ -110849,7 +110849,7 @@ class CampaignResponseCategory {
 	const _unsubscribed = "_unsubscribed";
 }}
 
-if (!class_exists("PromotionCodeUseType")) {
+if (!class_exists(__NAMESPACE__ . "\\PromotionCodeUseType")) {
 /**
  * PromotionCodeUseType
  */
@@ -110867,7 +110867,7 @@ class PromotionCodeUseType {
 	const _singleUse = "_singleUse";
 }}
 
-if (!class_exists("Campaign")) {
+if (!class_exists(__NAMESPACE__ . "\\Campaign")) {
 /**
  * Campaign
  */
@@ -111099,7 +111099,7 @@ class Campaign extends Record {
 	);
 }}
 
-if (!class_exists("CampaignEmail")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignEmail")) {
 /**
  * CampaignEmail
  */
@@ -111175,7 +111175,7 @@ class CampaignEmail {
 	);
 }}
 
-if (!class_exists("CampaignEmailList")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignEmailList")) {
 /**
  * CampaignEmailList
  */
@@ -111197,7 +111197,7 @@ class CampaignEmailList {
 	);
 }}
 
-if (!class_exists("CampaignDirectMail")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignDirectMail")) {
 /**
  * CampaignDirectMail
  */
@@ -111273,7 +111273,7 @@ class CampaignDirectMail {
 	);
 }}
 
-if (!class_exists("CampaignDirectMailList")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignDirectMailList")) {
 /**
  * CampaignDirectMailList
  */
@@ -111295,7 +111295,7 @@ class CampaignDirectMailList {
 	);
 }}
 
-if (!class_exists("CampaignEvent")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignEvent")) {
 /**
  * CampaignEvent
  */
@@ -111365,7 +111365,7 @@ class CampaignEvent {
 	);
 }}
 
-if (!class_exists("CampaignEventList")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignEventList")) {
 /**
  * CampaignEventList
  */
@@ -111387,7 +111387,7 @@ class CampaignEventList {
 	);
 }}
 
-if (!class_exists("CampaignEventResponse")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignEventResponse")) {
 /**
  * CampaignEventResponse
  */
@@ -111481,7 +111481,7 @@ class CampaignEventResponse {
 	);
 }}
 
-if (!class_exists("CampaignEventResponseList")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignEventResponseList")) {
 /**
  * CampaignEventResponseList
  */
@@ -111503,7 +111503,7 @@ class CampaignEventResponseList {
 	);
 }}
 
-if (!class_exists("CampaignSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignSearch")) {
 /**
  * CampaignSearch
  */
@@ -111567,7 +111567,7 @@ class CampaignSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CampaignSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignSearchAdvanced")) {
 /**
  * CampaignSearchAdvanced
  */
@@ -111601,7 +111601,7 @@ class CampaignSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CampaignSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignSearchRow")) {
 /**
  * CampaignSearchRow
  */
@@ -111665,7 +111665,7 @@ class CampaignSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("CampaignCategory")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignCategory")) {
 /**
  * CampaignCategory
  */
@@ -111723,7 +111723,7 @@ class CampaignCategory extends Record {
 	);
 }}
 
-if (!class_exists("CampaignAudience")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignAudience")) {
 /**
  * CampaignAudience
  */
@@ -111763,7 +111763,7 @@ class CampaignAudience extends Record {
 	);
 }}
 
-if (!class_exists("CampaignFamily")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignFamily")) {
 /**
  * CampaignFamily
  */
@@ -111803,7 +111803,7 @@ class CampaignFamily extends Record {
 	);
 }}
 
-if (!class_exists("CampaignSearchEngine")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignSearchEngine")) {
 /**
  * CampaignSearchEngine
  */
@@ -111843,7 +111843,7 @@ class CampaignSearchEngine extends Record {
 	);
 }}
 
-if (!class_exists("CampaignChannel")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignChannel")) {
 /**
  * CampaignChannel
  */
@@ -111889,7 +111889,7 @@ class CampaignChannel extends Record {
 	);
 }}
 
-if (!class_exists("CampaignOffer")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignOffer")) {
 /**
  * CampaignOffer
  */
@@ -111929,7 +111929,7 @@ class CampaignOffer extends Record {
 	);
 }}
 
-if (!class_exists("CampaignResponseResponses")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignResponseResponses")) {
 /**
  * CampaignResponseResponses
  */
@@ -111963,7 +111963,7 @@ class CampaignResponseResponses {
 	);
 }}
 
-if (!class_exists("CampaignResponseResponsesList")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignResponseResponsesList")) {
 /**
  * CampaignResponseResponsesList
  */
@@ -111985,7 +111985,7 @@ class CampaignResponseResponsesList {
 	);
 }}
 
-if (!class_exists("CampaignVertical")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignVertical")) {
 /**
  * CampaignVertical
  */
@@ -112025,7 +112025,7 @@ class CampaignVertical extends Record {
 	);
 }}
 
-if (!class_exists("CampaignSubscription")) {
+if (!class_exists(__NAMESPACE__ . "\\CampaignSubscription")) {
 /**
  * CampaignSubscription
  */
@@ -112089,7 +112089,7 @@ class CampaignSubscription extends Record {
 	);
 }}
 
-if (!class_exists("PromotionCode")) {
+if (!class_exists(__NAMESPACE__ . "\\PromotionCode")) {
 /**
  * PromotionCode
  */
@@ -112249,7 +112249,7 @@ class PromotionCode extends Record {
 	);
 }}
 
-if (!class_exists("PromotionCodePartners")) {
+if (!class_exists(__NAMESPACE__ . "\\PromotionCodePartners")) {
 /**
  * PromotionCodePartners
  */
@@ -112271,7 +112271,7 @@ class PromotionCodePartners {
 	);
 }}
 
-if (!class_exists("PromotionCodePartnersList")) {
+if (!class_exists(__NAMESPACE__ . "\\PromotionCodePartnersList")) {
 /**
  * PromotionCodePartnersList
  */
@@ -112293,7 +112293,7 @@ class PromotionCodePartnersList {
 	);
 }}
 
-if (!class_exists("PromotionCodeItems")) {
+if (!class_exists(__NAMESPACE__ . "\\PromotionCodeItems")) {
 /**
  * PromotionCodeItems
  */
@@ -112309,7 +112309,7 @@ class PromotionCodeItems {
 	);
 }}
 
-if (!class_exists("PromotionCodeItemsList")) {
+if (!class_exists(__NAMESPACE__ . "\\PromotionCodeItemsList")) {
 /**
  * PromotionCodeItemsList
  */
@@ -112331,7 +112331,7 @@ class PromotionCodeItemsList {
 	);
 }}
 
-if (!class_exists("PromotionCodeSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\PromotionCodeSearch")) {
 /**
  * PromotionCodeSearch
  */
@@ -112353,7 +112353,7 @@ class PromotionCodeSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PromotionCodeSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\PromotionCodeSearchAdvanced")) {
 /**
  * PromotionCodeSearchAdvanced
  */
@@ -112387,7 +112387,7 @@ class PromotionCodeSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("PromotionCodeSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\PromotionCodeSearchRow")) {
 /**
  * PromotionCodeSearchRow
  */
@@ -112409,7 +112409,7 @@ class PromotionCodeSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("PromotionCodeCurrency")) {
+if (!class_exists(__NAMESPACE__ . "\\PromotionCodeCurrency")) {
 /**
  * PromotionCodeCurrency
  */
@@ -112431,7 +112431,7 @@ class PromotionCodeCurrency {
 	);
 }}
 
-if (!class_exists("PromotionCodeCurrencyList")) {
+if (!class_exists(__NAMESPACE__ . "\\PromotionCodeCurrencyList")) {
 /**
  * PromotionCodeCurrencyList
  */
@@ -112453,7 +112453,7 @@ class PromotionCodeCurrencyList {
 	);
 }}
 
-if (!class_exists("CouponCode")) {
+if (!class_exists(__NAMESPACE__ . "\\CouponCode")) {
 /**
  * CouponCode
  */
@@ -112511,7 +112511,7 @@ class CouponCode extends Record {
 	);
 }}
 
-if (!class_exists("CouponCodeSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\CouponCodeSearch")) {
 /**
  * CouponCodeSearch
  */
@@ -112533,7 +112533,7 @@ class CouponCodeSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CouponCodeSearchAdvanced")) {
+if (!class_exists(__NAMESPACE__ . "\\CouponCodeSearchAdvanced")) {
 /**
  * CouponCodeSearchAdvanced
  */
@@ -112567,7 +112567,7 @@ class CouponCodeSearchAdvanced extends SearchRecord {
 	);
 }}
 
-if (!class_exists("CouponCodeSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\CouponCodeSearchRow")) {
 /**
  * CouponCodeSearchRow
  */
@@ -112589,7 +112589,7 @@ class CouponCodeSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("DemandPlanCalendarType")) {
+if (!class_exists(__NAMESPACE__ . "\\DemandPlanCalendarType")) {
 /**
  * DemandPlanCalendarType
  */
@@ -112611,7 +112611,7 @@ class DemandPlanCalendarType {
 	const _weekly = "_weekly";
 }}
 
-if (!class_exists("DemandPlanMonth")) {
+if (!class_exists(__NAMESPACE__ . "\\DemandPlanMonth")) {
 /**
  * DemandPlanMonth
  */
@@ -112669,7 +112669,7 @@ class DemandPlanMonth {
 	const _september = "_september";
 }}
 
-if (!class_exists("DayOfTheWeek")) {
+if (!class_exists(__NAMESPACE__ . "\\DayOfTheWeek")) {
 /**
  * DayOfTheWeek
  */
@@ -112707,7 +112707,7 @@ class DayOfTheWeek {
 	const _saturday = "_saturday";
 }}
 
-if (!class_exists("ItemDemandPlanProjectionMethod")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemDemandPlanProjectionMethod")) {
 /**
  * ItemDemandPlanProjectionMethod
  */
@@ -112733,7 +112733,7 @@ class ItemDemandPlanProjectionMethod {
 	const _seasonalAverage = "_seasonalAverage";
 }}
 
-if (!class_exists("ItemSupplyPlanOrderType")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemSupplyPlanOrderType")) {
 /**
  * ItemSupplyPlanOrderType
  */
@@ -112751,7 +112751,7 @@ class ItemSupplyPlanOrderType {
 	const _workOrder = "_workOrder";
 }}
 
-if (!class_exists("ItemDemandPlan")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemDemandPlan")) {
 /**
  * ItemDemandPlan
  */
@@ -112851,7 +112851,7 @@ class ItemDemandPlan extends Record {
 	);
 }}
 
-if (!class_exists("DemandPlan")) {
+if (!class_exists(__NAMESPACE__ . "\\DemandPlan")) {
 /**
  * DemandPlan
  */
@@ -112885,7 +112885,7 @@ class DemandPlan {
 	);
 }}
 
-if (!class_exists("DemandPlanMatrix")) {
+if (!class_exists(__NAMESPACE__ . "\\DemandPlanMatrix")) {
 /**
  * DemandPlanMatrix
  */
@@ -112907,7 +112907,7 @@ class DemandPlanMatrix {
 	);
 }}
 
-if (!class_exists("PeriodDemandPlanList")) {
+if (!class_exists(__NAMESPACE__ . "\\PeriodDemandPlanList")) {
 /**
  * PeriodDemandPlanList
  */
@@ -112923,7 +112923,7 @@ class PeriodDemandPlanList {
 	);
 }}
 
-if (!class_exists("PeriodDemandPlan")) {
+if (!class_exists(__NAMESPACE__ . "\\PeriodDemandPlan")) {
 /**
  * PeriodDemandPlan
  */
@@ -112945,7 +112945,7 @@ class PeriodDemandPlan {
 	);
 }}
 
-if (!class_exists("ItemDemandPlanSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemDemandPlanSearch")) {
 /**
  * ItemDemandPlanSearch
  */
@@ -112985,7 +112985,7 @@ class ItemDemandPlanSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ItemDemandPlanSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemDemandPlanSearchRow")) {
 /**
  * ItemDemandPlanSearchRow
  */
@@ -113025,7 +113025,7 @@ class ItemDemandPlanSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("ItemSupplyPlan")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemSupplyPlan")) {
 /**
  * ItemSupplyPlan
  */
@@ -113095,7 +113095,7 @@ class ItemSupplyPlan extends Record {
 	);
 }}
 
-if (!class_exists("ItemSupplyPlanOrder")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemSupplyPlanOrder")) {
 /**
  * ItemSupplyPlanOrder
  */
@@ -113141,7 +113141,7 @@ class ItemSupplyPlanOrder {
 	);
 }}
 
-if (!class_exists("ItemSupplyPlanOrderList")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemSupplyPlanOrderList")) {
 /**
  * ItemSupplyPlanOrderList
  */
@@ -113163,7 +113163,7 @@ class ItemSupplyPlanOrderList {
 	);
 }}
 
-if (!class_exists("ItemSupplyPlanSearch")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemSupplyPlanSearch")) {
 /**
  * ItemSupplyPlanSearch
  */
@@ -113197,7 +113197,7 @@ class ItemSupplyPlanSearch extends SearchRecord {
 	);
 }}
 
-if (!class_exists("ItemSupplyPlanSearchRow")) {
+if (!class_exists(__NAMESPACE__ . "\\ItemSupplyPlanSearchRow")) {
 /**
  * ItemSupplyPlanSearchRow
  */
@@ -113231,7 +113231,7 @@ class ItemSupplyPlanSearchRow extends SearchRow {
 	);
 }}
 
-if (!class_exists("NetSuiteService")) {
+if (!class_exists(__NAMESPACE__ . "\\NetSuiteService")) {
 /**
  * NetSuiteService
  * @author NetSuite, Inc
