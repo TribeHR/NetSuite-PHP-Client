@@ -273,6 +273,27 @@ class NSPHPClient {
         unset($this->soapHeaders[$header_name]);
     }
 
+    public function prepSoapStringForLog($soapString) {
+        $soapString = cleanUpNamespaces($soapString);
+
+        $xml = simplexml_load_string($soapString, 'SimpleXMLElement', LIBXML_NOCDATA);
+
+        $passwordFields = $xml->xpath("//password | //password2 | //currentPassword | //newPassword | //newPassword2 | //ccNumber | //ccSecurityCode | //socialSecurityNumber");
+
+        foreach ($passwordFields as &$pwdField) {
+            (string)$pwdField[0] = "[Content Removed for Security Reasons]";
+        }
+
+        $stringCustomFields = $xml->xpath("//customField[@xsitype='StringCustomFieldRef']");
+
+        foreach ($stringCustomFields as $field) {
+            (string)$field->value = "[Content Removed for Security Reasons]";
+        }
+
+        $xml_string = str_replace('xsitype', 'xsi:type', $xml->asXML());
+        return $xml_string;
+    }
+
     protected function makeSoapCall($operation, $parameter) {
         if ($this->userequest) {
             // use request level credentials, add passport as a SOAP header
@@ -291,25 +312,7 @@ class NSPHPClient {
             $req = dirname(__FILE__) . '/nslog' . "/" . date("Ymd.His") . "." . milliseconds() . "-" . $operation . "-request.xml";
             $Handle = fopen($req, 'w');
             $Data = $this->client->__getLastRequest();
-
-            $Data = cleanUpNamespaces($Data);
-
-            $xml = simplexml_load_string($Data, 'SimpleXMLElement', LIBXML_NOCDATA);
-
-            $passwordFields = $xml->xpath("//password | //password2 | //currentPassword | //newPassword | //newPassword2 | //ccNumber | //ccSecurityCode | //socialSecurityNumber");
-
-            foreach ($passwordFields as &$pwdField) {
-                (string)$pwdField[0] = "[Content Removed for Security Reasons]";
-            }
-
-            $stringCustomFields = $xml->xpath("//customField[@xsitype='StringCustomFieldRef']");
-
-            foreach ($stringCustomFields as $field) {
-                (string)$field->value = "[Content Removed for Security Reasons]";
-            }
-
-            $xml_string = str_replace('xsitype', 'xsi:type', $xml->asXML());
-
+            $xml_string = $this->prepSoapStringForLog($Data);
             fwrite($Handle, $xml_string);
             fclose($Handle);
 
@@ -317,7 +320,8 @@ class NSPHPClient {
             $resp = dirname(__FILE__) . '/nslog' . "/" . date("Ymd.His") . "." . milliseconds() . "-" . $operation . "-response.xml";
             $Handle = fopen($resp, 'w');
             $Data = $this->client->__getLastResponse();
-            fwrite($Handle, $Data);
+            $xml_string = $this->prepSoapStringForLog($Data);
+            fwrite($Handle, $xml_string);
             fclose($Handle);
 
         }
