@@ -136,6 +136,10 @@ function milliseconds()
     return (int)round($m[0]*10000,4);
 }
 
+function millitime() {
+    return round(microtime(true) * 1000);
+}
+
 function cleanUpNamespaces($xml_root)
 {
     $xml_root = str_replace('xsi:type', 'xsitype', $xml_root);
