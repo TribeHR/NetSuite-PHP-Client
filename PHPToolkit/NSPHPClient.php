@@ -277,6 +277,34 @@ class NSPHPClient {
         unset($this->soapHeaders[$header_name]);
     }
 
+    private function _encryptToken($tokenString, $privateKeyPath) {
+        $resource = openssl_pkey_get_private('file://'. $privateKeyPath);
+        if (!openssl_private_encrypt($tokenString, $tokenEncrypted, $resource)) {
+            // Lets get all of the errors in the openssl error buffer
+            $opensslErrors = openssl_error_string();
+            while ($opensslError = openssl_error_string()) {
+                $opensslErrors .= ', '. $opensslError;
+            }
+	    
+            throw new Exception('Could not encrypt authentication token. ['. $opensslErrors .']');
+        }
+
+        return $tokenEncrypted;
+    }
+
+    public function generateAuthenticationToken($companyId, $userId, $privateKeyPath) {
+        $tokenString = $companyId .' '. $userId .' '. millitime();
+	
+        try {
+            $tokenEncrypted = $this->_encryptToken($tokenString, $privateKeyPath);
+        } catch (Exception $e) {
+            throw $e;
+        }
+
+        $tokenEncoded = bin2hex($tokenEncrypted);
+        return $tokenEncoded;
+    }
+
     public function prepSoapStringForLog($soapString) {
         $soapString = cleanUpNamespaces($soapString);
 
