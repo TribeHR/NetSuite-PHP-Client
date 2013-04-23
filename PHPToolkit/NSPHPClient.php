@@ -171,6 +171,18 @@ function cleanUpNamespaces($xml_root)
     return $xml_root;
 }
 
+function getNetSuiteHosts($account_id) {
+    $NetSuiteService = new NetSuiteService();
+    $NetSuiteService->setPassport($account_id, null, null, null);
+    
+    $dataCenterUrlsRequest = new GetDataCenterUrlsRequest();
+    $dataCenterUrlsRequest->account = $account_id;
+    $dataCenterUrlsResponse = $NetSuiteService->getDataCenterUrls($dataCenterUrlsRequest);
+
+    return $dataCenterUrlsResponse->getDataCenterUrlsResult->dataCenterUrls;
+}
+
+
 class NSPHPClient {
     private $nsversion = "2012_2r1";    
 
@@ -182,9 +194,14 @@ class NSPHPClient {
     public $generated_from_endpoint = "";
 
 
-    protected function __construct($wsdl=null, $options=array()) {
+    protected function __construct($wsdl=null, $options=array(), $accountId=null) {
         global $nshost, $nsendpoint;
         global $debuginfo;
+
+        if (!empty($accountId)) {
+            $hosts = getNetSuiteHosts($accountId);
+            $nshost = $hosts->webservicesDomain;
+        }
 
         if (!isset($wsdl)) {
              if (!isset($nshost)) {
@@ -361,7 +378,6 @@ class NSPHPClient {
         return $response;
 
     }
-
 }
 
 
