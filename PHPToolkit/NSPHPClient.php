@@ -136,6 +136,10 @@ function milliseconds()
     return (int)round($m[0]*10000,4);
 }
 
+function millitime() {
+    return round(microtime(true) * 1000);
+}
+
 function cleanUpNamespaces($xml_root)
 {
     $xml_root = str_replace('xsi:type', 'xsitype', $xml_root);
@@ -167,6 +171,18 @@ function cleanUpNamespaces($xml_root)
     return $xml_root;
 }
 
+function getNetSuiteHosts($account_id) {
+    $NetSuiteService = new NetSuiteService();
+    $NetSuiteService->setPassport($account_id, null, null, null);
+    
+    $dataCenterUrlsRequest = new GetDataCenterUrlsRequest();
+    $dataCenterUrlsRequest->account = $account_id;
+    $dataCenterUrlsResponse = $NetSuiteService->getDataCenterUrls($dataCenterUrlsRequest);
+
+    return $dataCenterUrlsResponse->getDataCenterUrlsResult->dataCenterUrls;
+}
+
+
 class NSPHPClient {
     private $nsversion = "2012_2r1";    
 
@@ -178,9 +194,14 @@ class NSPHPClient {
     public $generated_from_endpoint = "";
 
 
-    protected function __construct($wsdl=null, $options=array()) {
+    protected function __construct($wsdl=null, $options=array(), $accountId=null) {
         global $nshost, $nsendpoint;
         global $debuginfo;
+
+        if (!empty($accountId)) {
+            $hosts = getNetSuiteHosts($accountId);
+            $nshost = $hosts->webservicesDomain;
+        }
 
         if (!isset($wsdl)) {
              if (!isset($nshost)) {
@@ -273,6 +294,34 @@ class NSPHPClient {
         unset($this->soapHeaders[$header_name]);
     }
 
+    private function _encryptToken($tokenString, $privateKeyPath) {
+        $resource = openssl_pkey_get_private('file://'. $privateKeyPath);
+        if (!openssl_private_encrypt($tokenString, $tokenEncrypted, $resource)) {
+            // Lets get all of the errors in the openssl error buffer
+            $opensslErrors = openssl_error_string();
+            while ($opensslError = openssl_error_string()) {
+                $opensslErrors .= ', '. $opensslError;
+            }
+	    
+            throw new Exception('Could not encrypt authentication token. ['. $opensslErrors .']');
+        }
+
+        return $tokenEncrypted;
+    }
+
+    public function generateAuthenticationToken($companyId, $userId, $privateKeyPath) {
+        $tokenString = $companyId .' '. $userId .' '. millitime();
+	
+        try {
+            $tokenEncrypted = $this->_encryptToken($tokenString, $privateKeyPath);
+        } catch (Exception $e) {
+            throw $e;
+        }
+
+        $tokenEncoded = bin2hex($tokenEncrypted);
+        return $tokenEncoded;
+    }
+
     public function prepSoapStringForLog($soapString) {
         $soapString = cleanUpNamespaces($soapString);
 
@@ -329,7 +378,6 @@ class NSPHPClient {
         return $response;
 
     }
-
 }
 
 
