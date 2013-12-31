@@ -212,9 +212,9 @@ class NSPHPClient {
             //   webservices.na1.netsuite.com -> webservices.sandbox.netsuite.com
             //   webservices.netsuite.com -> webservices.sandbox.netsuite.com
             if (preg_match("/\.na\d\./", $nshost)) {
-                $nshost = preg_replace("/\.na\d\./", ".system.", $nshost);
+                $nshost = preg_replace("/\.na\d\./", ".sandbox.", $nshost);
             } else {
-                $nshost = preg_replace("/.netsuite/", ".system.netsuite", $nshost);
+                $nshost = preg_replace("/.netsuite/", ".sandbox.netsuite", $nshost);
             }
         }
 
