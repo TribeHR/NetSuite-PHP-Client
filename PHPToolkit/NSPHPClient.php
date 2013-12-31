@@ -194,13 +194,28 @@ class NSPHPClient {
     public $generated_from_endpoint = "";
 
 
-    protected function __construct($wsdl=null, $options=array(), $accountId=null) {
+    protected function __construct($wsdl=null, $options=array(), $accountId=null, $sandbox=false) {
         global $nshost, $nsendpoint;
         global $debuginfo;
 
         if (!empty($accountId)) {
             $hosts = getNetSuiteHosts($accountId);
             $nshost = $hosts->webservicesDomain;
+        }
+
+        if ($sandbox) {
+            // If the account is on a datacenter that is not the default it 
+            // will look like webservices.na1.netsuite.com. All sandbox 
+            // accounts are in the same datacenter so we just need to replace 
+            // the na1 with sandbox.
+            // Example:
+            //   webservices.na1.netsuite.com -> webservices.sandbox.netsuite.com
+            //   webservices.netsuite.com -> webservices.sandbox.netsuite.com
+            if (preg_match("/\.na\d\./", $nshost)) {
+                $nshost = preg_replace("/\.na\d\./", ".system.", $nshost);
+            } else {
+                $nshost = preg_replace("/.netsuite/", ".system.netsuite", $nshost);
+            }
         }
 
         if (!isset($wsdl)) {

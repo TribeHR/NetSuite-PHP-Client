@@ -114586,8 +114586,8 @@ class NetSuiteService extends NSPHPClient {
 	 * @param string $wsdl WSDL location for this service
 	 * @param array $options Options for the SoapClient
 	 */
-	public function __construct($wsdl=null, $options=array(), $accountId=null) {
-		parent::__construct($wsdl, $options, $accountId);
+	public function __construct($wsdl=null, $options=array(), $accountId=null, $sandbox=false) {
+		parent::__construct($wsdl, $options, $accountId, $sandbox);
 	}
 
 	/**
