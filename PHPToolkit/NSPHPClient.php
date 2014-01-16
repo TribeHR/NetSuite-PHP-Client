@@ -195,8 +195,10 @@ class NSPHPClient {
 
 
     protected function __construct($wsdl=null, $options=array(), $accountId=null, $sandbox=false) {
-        global $nshost, $nsendpoint;
+        global $nsendpoint;
         global $debuginfo;
+
+        $nshost = "https://webservices.netsuite.com";
 
         if (!empty($accountId)) {
             $hosts = getNetSuiteHosts($accountId);
