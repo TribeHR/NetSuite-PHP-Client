@@ -171,8 +171,8 @@ function cleanUpNamespaces($xml_root)
     return $xml_root;
 }
 
-function getNetSuiteHosts($account_id) {
-    $NetSuiteService = new NetSuiteService();
+function getNetSuiteHosts($account_id, $options = array()) {
+    $NetSuiteService = new NetSuiteService(null, $options);
     $NetSuiteService->setPassport($account_id, null, null, null);
     
     $dataCenterUrlsRequest = new GetDataCenterUrlsRequest();
@@ -201,7 +201,7 @@ class NSPHPClient {
         $nshost = "https://webservices.netsuite.com";
 
         if (!empty($accountId)) {
-            $hosts = getNetSuiteHosts($accountId);
+            $hosts = getNetSuiteHosts($accountId, $options);
             $nshost = $hosts->webservicesDomain;
         }
 
