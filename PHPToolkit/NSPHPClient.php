@@ -1,5 +1,4 @@
 <?php
-
 namespace NetSuite\WebServices;
 require_once "NSconfig.php";
 
@@ -88,7 +87,7 @@ function setFields($object, array $fieldArray=null)
         }
         elseif (is_array($fldValue) && !array_is_associative($fldValue))
         {
-            // array type 
+            // array type
             if (substr($typesmap[$fldName],-2) != "[]") {
                 // the type is not an array, skipping this value
                 trigger_error("Trying to assign an array value into parameter \"" .$fldName . "\" of class \"" . $classname . "\", it will be omitted", E_USER_WARNING);
@@ -171,44 +170,51 @@ function cleanUpNamespaces($xml_root)
     return $xml_root;
 }
 
+/**
+ * iTokenPassportGenerator
+ */
+interface iTokenPassportGenerator {
+    /**
+     * returns one time Token Passport
+     */
+    public function generateTokenPassport();
+}
+
 function getNetSuiteHosts($account_id) {
     $NetSuiteService = new NetSuiteService();
     $NetSuiteService->setPassport($account_id, null, null, null);
-    
+
     $dataCenterUrlsRequest = new GetDataCenterUrlsRequest();
     $dataCenterUrlsRequest->account = $account_id;
     $dataCenterUrlsResponse = $NetSuiteService->getDataCenterUrls($dataCenterUrlsRequest);
-
     return $dataCenterUrlsResponse->getDataCenterUrlsResult->dataCenterUrls;
 }
 
-
 class NSPHPClient {
-    private $nsversion = "2012_2r1";    
+    private $nsversion = "2018_2";
 
     public $client = null;
     public $passport = null;
+    public $applicationInfo = null;
+    public $tokenPassport = null;
     private $soapHeaders = array();
     private $userequest = true;
+    private $usetba = false;
     protected $classmap = null;
     public $generated_from_endpoint = "";
+    protected $tokenGenerator = null;
 
 
     protected function __construct($wsdl=null, $options=array(), $accountId=null, $sandbox=false) {
-        global $nsendpoint;
-        global $debuginfo;
-
-        $nshost = "https://webservices.netsuite.com";
-
         if (!empty($accountId)) {
             $hosts = getNetSuiteHosts($accountId);
             $nshost = $hosts->webservicesDomain;
         }
 
-        if ($sandbox) {
-            // If the account is on a datacenter that is not the default it 
-            // will look like webservices.na1.netsuite.com. All sandbox 
-            // accounts are in the same datacenter so we just need to replace 
+		if ($sandbox) {
+            // If the account is on a datacenter that is not the default it
+            // will look like webservices.na1.netsuite.com. All sandbox
+            // accounts are in the same datacenter so we just need to replace
             // the na1 with sandbox.
             // Example:
             //   webservices.na1.netsuite.com -> webservices.sandbox.netsuite.com
@@ -220,14 +226,16 @@ class NSPHPClient {
             }
         }
 
+		$nshost = !empty($nshost) ? $nshost : (defined('NS_HOST') ? NS_HOST : null);
+
         if (!isset($wsdl)) {
-             if (!isset($nshost)) {
+             if (empty($nshost)) {
                 throw new Exception('Webservice host must be specified');
              }
-             if (!isset($nsendpoint)) {
+             if (!defined('NS_ENDPOINT')) {
                 throw new Exception('Webservice endpoint must be specified');
              }
-             $wsdl = $nshost . "/wsdl/v" . $nsendpoint . "_0/netsuite.wsdl";
+             $wsdl = $nshost . "/wsdl/v" . NS_ENDPOINT . "_0/netsuite.wsdl";
         }
 
         if (!extension_loaded('soap')) {
@@ -242,9 +250,9 @@ class NSPHPClient {
             trigger_error($soap_warning, E_USER_WARNING);
         }
 
-        if ( $this->generated_from_endpoint != $nsendpoint ) {
+        if ( $this->generated_from_endpoint != NS_ENDPOINT ) {
             // check for the endpoint compatibility failed, but it might still be compatible. Issue only warning
-            $endpoint_warning = 'The NetSuiteService classes were generated from the '.$this->generated_from_endpoint .' endpoint but you are running against ' . $nsendpoint;
+            $endpoint_warning = 'The NetSuiteService classes were generated from the '.$this->generated_from_endpoint .' endpoint but you are running against ' . NS_ENDPOINT;
             trigger_error($endpoint_warning, E_USER_WARNING);
         }
 
@@ -254,7 +262,9 @@ class NSPHPClient {
         $options['cache_wsdl'] = WSDL_CACHE_BOTH;
         $httpheaders = "PHP-SOAP/" . phpversion() . " + NetSuite PHP Toolkit " . $this->nsversion;
 
-        $options['location'] = $nshost . "/services/NetSuitePort_" . $nsendpoint;
+        if (!empty($nshost) && defined('NS_ENDPOINT')) {
+            $options['location'] = $nshost . "/services/NetSuitePort_" . NS_ENDPOINT;
+        }
         $options['keep_alive'] = false; // do not maintain http connection to the server.
         $options['features'] = SOAP_SINGLE_ELEMENT_ARRAYS;
 
@@ -264,13 +274,6 @@ class NSPHPClient {
             )
         );
         //$options['stream_context'] = stream_context_create($context);
-
-        if (isset($debuginfo)) {
-            $httpheaders .= "\r\nDebug: true";
-            $httpheaders .= "\r\nUser: " . $debuginfo["email"];
-            $httpheaders .= "\r\nPassword: " . $debuginfo["password"];
-            $httpheaders .= "\r\nIssue: " . $debuginfo["issue"];
-        }
 
         $options['user_agent'] =  $httpheaders;
 
@@ -282,12 +285,41 @@ class NSPHPClient {
         $this->passport->account = $nsaccount;
         $this->passport->email = $nsemail;
         $this->passport->password = $nspassword;
-        $this->passport->role = new RecordRef();
-        $this->passport->role->internalId = $nsrole;
+        if (isset($nsrole)) {
+            $this->passport->role = new RecordRef();
+            $this->passport->role->internalId = $nsrole;
+        }
+    }
+
+
+    public function setApplicationInfo($nsappid) {
+        $this->applicationInfo = new ApplicationInfo();
+        $this->applicationInfo->applicationId = $nsappid;
+        $this->addHeader("applicationInfo", $this->applicationInfo);
+    }
+
+    protected function setTokenPassport($tokenPassport) {
+        $this->tokenPassport = $tokenPassport;
     }
 
     public function useRequestLevelCredentials($option) {
          $this->userequest = $option;
+    }
+
+    public function setPreferences ($warningAsError = false, $disableMandatoryCustomFieldValidation = false, $disableSystemNotesForCustomFields = false,  $ignoreReadOnlyFields = false, $runServerSuiteScriptAndTriggerWorkflows = null)
+    {
+        $sp = new Preferences();
+        $sp->warningAsError = $warningAsError;
+        $sp->disableMandatoryCustomFieldValidation = $disableMandatoryCustomFieldValidation;
+        $sp->disableSystemNotesForCustomFields = $disableSystemNotesForCustomFields;
+        $sp->ignoreReadOnlyFields = $ignoreReadOnlyFields;
+        $sp->runServerSuiteScriptAndTriggerWorkflows = $runServerSuiteScriptAndTriggerWorkflows;
+
+        $this->addHeader("preferences", $sp);
+    }
+
+    public function clearPreferences() {
+        $this->clearHeader("preferences");
     }
 
     public function setSearchPreferences ($bodyFieldsOnly = true, $pageSize = 50, $returnSearchColumns = true)
@@ -311,7 +343,7 @@ class NSPHPClient {
         unset($this->soapHeaders[$header_name]);
     }
 
-    private function _encryptToken($tokenString, $privateKeyPath) {
+	private function _encryptToken($tokenString, $privateKeyPath) {
         $resource = openssl_pkey_get_private('file://'. $privateKeyPath);
         if (!openssl_private_encrypt($tokenString, $tokenEncrypted, $resource)) {
             // Lets get all of the errors in the openssl error buffer
@@ -319,55 +351,63 @@ class NSPHPClient {
             while ($opensslError = openssl_error_string()) {
                 $opensslErrors .= ', '. $opensslError;
             }
-	    
+
             throw new Exception('Could not encrypt authentication token. ['. $opensslErrors .']');
         }
-
         return $tokenEncrypted;
     }
-
     public function generateAuthenticationToken($companyId, $userId, $privateKeyPath) {
         $tokenString = $companyId .' '. $userId .' '. millitime();
-	
+
         try {
             $tokenEncrypted = $this->_encryptToken($tokenString, $privateKeyPath);
         } catch (Exception $e) {
             throw $e;
         }
-
         $tokenEncoded = bin2hex($tokenEncrypted);
         return $tokenEncoded;
     }
 
-    public function prepSoapStringForLog($soapString) {
+	public function prepSoapStringForLog($soapString) {
         $soapString = cleanUpNamespaces($soapString);
 
         $xml = simplexml_load_string($soapString, 'SimpleXMLElement', LIBXML_NOCDATA);
 
-        $passwordFields = $xml->xpath("//password | //password2 | //currentPassword | //newPassword | //newPassword2 | //ccNumber | //ccSecurityCode | //socialSecurityNumber");
+		$passwordFields = $xml->xpath("//password | //password2 | //currentPassword | //newPassword | //newPassword2 | //ccNumber | //ccSecurityCode | //socialSecurityNumber");
 
-        foreach ($passwordFields as &$pwdField) {
-            (string)$pwdField[0] = "[Content Removed for Security Reasons]";
-        }
+		foreach ($passwordFields as &$pwdField) {
+			(string)$pwdField[0] = "[Content Removed for Security Reasons]";
+		}
 
-        $stringCustomFields = $xml->xpath("//customField[@xsitype='StringCustomFieldRef']");
+		$stringCustomFields = $xml->xpath("//customField[@xsitype='StringCustomFieldRef']");
 
-        foreach ($stringCustomFields as $field) {
-            (string)$field->value = "[Content Removed for Security Reasons]";
-        }
+		foreach ($stringCustomFields as $field) {
+			(string)$field->value = "[Content Removed for Security Reasons]";
+		}
 
-        $xml_string = str_replace('xsitype', 'xsi:type', $xml->asXML());
-        return $xml_string;
-    }
+		return str_replace('xsitype', 'xsi:type', $xml->asXML());
+	}
 
     protected function makeSoapCall($operation, $parameter) {
         if ($this->userequest) {
             // use request level credentials, add passport as a SOAP header
+            $this->clearHeader("tokenPassport");
             $this->addHeader("passport", $this->passport);
+            $this->addHeader("applicationInfo", $this->applicationInfo);
             // SoapClient, even with keep-alive set to false, keeps sending the JSESSIONID cookie back to the server on subsequent requests. Unsetting the cookie to prevent this.
             $this->client->__setCookie("JSESSIONID");
+        } else if ($this->usetba) {
+            if (isset($this->tokenGenerator)) {
+                $token = $this->tokenGenerator->generateTokenPassport();
+                $this->setTokenPassport($token);
+            }
+            $this->addHeader("tokenPassport", $this->tokenPassport);
+            $this->clearHeader("passport");
+            $this->clearHeader("applicationInfo");
         } else {
             $this->clearHeader("passport");
+            $this->clearHeader("tokenPassport");
+            $this->addHeader("applicationInfo", $this->applicationInfo);
         }
 
         $response = $this->client->__soapCall($operation, array($parameter), NULL, $this->soapHeaders);
@@ -378,7 +418,9 @@ class NSPHPClient {
             $req = dirname(__FILE__) . '/nslog' . "/" . date("Ymd.His") . "." . milliseconds() . "-" . $operation . "-request.xml";
             $Handle = fopen($req, 'w');
             $Data = $this->client->__getLastRequest();
+
             $xml_string = $this->prepSoapStringForLog($Data);
+
             fwrite($Handle, $xml_string);
             fclose($Handle);
 
@@ -394,6 +436,20 @@ class NSPHPClient {
 
         return $response;
 
+    }
+
+    public function setHost($hostName) {
+        return $this->client->__setLocation($hostName . "/services/NetSuitePort_" . NS_ENDPOINT);
+    }
+
+    public function setTokenGenerator(iTokenPassportGenerator $generator = null) {
+        $this->tokenGenerator = $generator;
+        if ($generator != null) {
+          $this->usetba = true;
+          $this->userequest = false;
+        } else {
+          $this->usetba = false;
+        }
     }
 }
 
