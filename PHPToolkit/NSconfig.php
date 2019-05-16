@@ -1,6 +1,3 @@
 <?php
-
-// Mark them in global context so that NSPHPClient can always find them.
-global $nsendpoint;
-
-$nsendpoint = "2012_2";
+define("NS_ENDPOINT", "2018_2");
+define("NS_HOST", "https://webservices.netsuite.com");
